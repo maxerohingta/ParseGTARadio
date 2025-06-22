@@ -78,7 +78,7 @@ extension DumpsDTO.TrackList {
             files: files
         )
     }
-    
+
     func introList(trackListID: String) -> [FileList] {
         struct FileIntro {
             let path: String

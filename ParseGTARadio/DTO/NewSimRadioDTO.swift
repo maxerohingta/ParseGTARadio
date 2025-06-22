@@ -61,33 +61,33 @@ enum NewSimRadioDTO {
 
     // ===============================================================================================
 
-    struct GameSeries: Codable, Sendable {
-        let origin: String?
-        let info: SeriesInfo
-        let stations: [Station]
-        let common: GameSeriesShared
-    }
+//    struct GameSeries: Codable, Sendable {
+//        let origin: String?
+//        let info: SeriesInfo
+//        let stations: [Station]
+//        let common: GameSeriesShared
+//    }
 
-    struct SeriesInfo: Codable {
-        let title: String
-        let logo: String
-    }
+//    struct SeriesInfo: Codable {
+//        let title: String
+//        let logo: String
+//    }
 
-    struct GameSeriesShared: Codable, Sendable {
-        let fileGroups: [FileGroup]
-    }
+//    struct GameSeriesShared: Codable, Sendable {
+//        let fileGroups: [FileGroup]
+//    }
 
-    struct Station: Codable {
-        let tag: String
-        let info: StationInfo
-        let fileGroups: [FileGroup]
-        let playlist: Playlist
-    }
+//    struct Station: Codable {
+//        let tag: String
+//        let info: StationInfo
+//        let fileGroups: [FileGroup]
+//        let playlist: Playlist
+//    }
 
-    struct FileGroup: Codable, Sendable {
-        let tag: String
+//    struct FileGroup: Codable, Sendable {
+//        let tag: String
 //      let files: [File]
-    }
+//    }
 
     //  struct File: Codable, Sendable {
 //      let tag: String?

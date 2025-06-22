@@ -42,7 +42,10 @@ final class ParseViewModel {
         return try JSONDecoder().decode(OldSimRadioDTO.GameSeries.self, from: data)
     }
 
-    func convert(simRadio: OldSimRadioDTO.GameSeries, dumps: DumpsDTO.RadioData) -> NewSimRadioDTO.RadioData {
+    func convert(
+        simRadio: OldSimRadioDTO.GameSeries?,
+        dumps: DumpsDTO.RadioData
+    ) -> NewSimRadioDTO.RadioData {
         let adverts = dumps.advertsTrackLists(simRadio)
         let news = dumps.newsTrackLists(simRadio)
         let stationsTrackLists = dumps.stationsTrackLists(simRadio)
@@ -74,11 +77,11 @@ final class ParseViewModel {
     func loadAndParseLocalJSON() async {
         do {
             let dumps = try await fetchDumps()
-            let simRadio = try await fetchSimRadio()
-            
+//            let simRadio = try await fetchSimRadio()
+
             printFileLists(dumps: dumps)
 
-            let newSimRadioDTO = convert(simRadio: simRadio, dumps: dumps)
+            let newSimRadioDTO = convert(simRadio: nil, dumps: dumps)
             detectAnomalies(newSimRadioDTO)
             let updatedTrackLists = extractCommonTrackLists(trackLists: newSimRadioDTO.trackLists)
             let updatedNewSimRadioDTO = NewSimRadioDTO.RadioData(
@@ -105,9 +108,8 @@ final class ParseViewModel {
             print("Error encoding or writing JSON: \(error)")
         }
     }
-    
-    func printFileLists(dumps: DumpsDTO.RadioData) {
 
+    func printFileLists(dumps: DumpsDTO.RadioData) {
         let radioIDs = dumps.stations.keys.sorted()
         var allPacks = Set<String>()
         for radioID in radioIDs {
