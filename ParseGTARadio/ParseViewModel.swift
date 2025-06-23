@@ -52,7 +52,8 @@ final class ParseViewModel {
         let stationsSpeechTrackLists = dumps.stationsSpeechTrackLists(simRadio)
         let stations = (stationsTrackLists + stationsSpeechTrackLists).sorted { $0.id.value < $1.id.value }
         return .init(
-            trackLists: adverts + news + stations
+            trackLists: adverts + news + stations,
+            stations: dumps.stations.map { .init(id: $0.key, data: $0.value) }.sorted { $0.id.value < $1.id.value }
         )
     }
 
@@ -85,7 +86,7 @@ final class ParseViewModel {
             detectAnomalies(newSimRadioDTO)
             let updatedTrackLists = extractCommonTrackLists(trackLists: newSimRadioDTO.trackLists)
             let updatedNewSimRadioDTO = NewSimRadioDTO.RadioData(
-                trackLists: updatedTrackLists
+                trackLists: updatedTrackLists, stations: newSimRadioDTO.stations
             )
             saveJSON(simRadio: updatedNewSimRadioDTO, name: "new_sim_radio_stations.json")
 

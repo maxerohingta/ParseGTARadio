@@ -14,6 +14,7 @@ enum NewSimRadioDTO {
 
     struct RadioData: Codable {
         let trackLists: [TrackList]
+        let stations: [Station]
     }
 
     struct Track: Codable, Hashable {
@@ -27,7 +28,7 @@ enum NewSimRadioDTO {
     }
 
     struct TrackMarker: Codable, Hashable {
-        let offset: Int
+        let offset: Double
         let id: Int
         let title: String?
         let artist: String?
@@ -41,7 +42,7 @@ enum NewSimRadioDTO {
     }
 
     struct ValueMarker: Codable, Hashable {
-        let offset: Int
+        let offset: Double
         let value: Int
     }
 
@@ -55,8 +56,28 @@ enum NewSimRadioDTO {
     }
 
     struct TypeMarker: Codable, Hashable {
-        let offset: Int
+        let offset: Double
         let value: MarkerType
+    }
+
+    struct Station: Codable {
+        struct ID: Codable, Hashable { let value: String }
+        let id: ID
+        let genre: String
+        let trackLists: [TrackList.ID]
+    }
+
+    enum StationFlag: String, Codable {
+        case noBack2BackMusic
+        case playNews
+        case playsUsersMusic
+        case isMixStation
+        case back2BackAds
+        case sequentialMusic
+        case identsInsteadOfAds
+        case locked
+        case useRandomizedStrideSelection
+        case playWeather
     }
 
     // ===============================================================================================
@@ -212,6 +233,22 @@ extension NewSimRadioDTO.TrackList.ID {
 }
 
 extension NewSimRadioDTO.Track.ID {
+    init(_ value: String) {
+        self.value = value
+    }
+
+    init(from decoder: Decoder) throws {
+        let container = try decoder.singleValueContainer()
+        value = try container.decode(String.self)
+    }
+
+    func encode(to encoder: Encoder) throws {
+        var container = encoder.singleValueContainer()
+        try container.encode(value)
+    }
+}
+
+extension NewSimRadioDTO.Station.ID {
     init(_ value: String) {
         self.value = value
     }

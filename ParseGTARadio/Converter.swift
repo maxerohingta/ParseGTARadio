@@ -97,7 +97,7 @@ extension DumpsDTO.RadioData {
         let radioNews = (news1 + news2)
             .map {
                 let path = $0.path?.split(separator: "/").last ?? "--"
-                let forcedDuration = durations[String(path)] ?? -1
+                let forcedDuration = durations[String(path)]
 
                 return NewSimRadioDTO.Track(
                     data: $0,
@@ -125,7 +125,7 @@ extension DumpsDTO.RadioData {
         let radioAdverts = (countryAdverts + generalAdverts)
             .map {
                 let path = $0.path?.split(separator: "/").last ?? "--"
-                let forcedDuration = durations[String(path)] ?? -1
+                let forcedDuration = durations[String(path)]
                 return NewSimRadioDTO.Track(
                     data: $0,
                     forcedDuration: forcedDuration,
@@ -329,17 +329,17 @@ extension NewSimRadioDTO.Track {
         intro: [ID]?,
         trackList: NewSimRadioDTO.TrackList.ID? = nil
     ) {
-        if data.path == nil {
-//            print("❌ error: no path for track \(data.id)")
+        if data.path == nil, data.trackList == nil {
+            print("❌ error: no path for track \(data.id)")
         }
         let dataDuration = data.duration.map { Double($0) / 1000 }
         self.init(
             id: .init(data.id),
             path: data.path,
-            duration: forcedDuration ?? dataDuration ?? -1,
+            duration: forcedDuration ?? dataDuration,
             intro: intro,
             markers: data.markers.map { .init(data: $0) },
-            trackList: trackList
+            trackList: trackList ?? data.trackList.map { .init($0) }
         )
     }
 
@@ -364,11 +364,26 @@ extension NewSimRadioDTO.TrackMarkers {
     ) {
         self.init(
             track: data.track.map { $0.map {
-                .init(offset: $0.offset, id: $0.id, title: $0.title, artist: $0.artist)
+                .init(offset: Double($0.offset) / 1000, id: $0.id, title: $0.title, artist: $0.artist)
             } },
-            dj: data.dj.map { $0.map { .init(offset: $0.offset, value: .init(data: $0.value)) } },
-            rockout: data.rockout.map { $0.map { .init(offset: $0.offset, value: .init(data: $0.value)) } },
-            beat: data.beat.map { $0.map { .init(offset: $0.offset, value: $0.value) } }
+            dj: data.dj.map { $0.map {
+                .init(
+                    offset: Double($0.offset) / 1000,
+                    value: .init(data: $0.value)
+                )
+            } },
+            rockout: data.rockout.map { $0.map {
+                .init(
+                    offset: Double($0.offset) / 1000,
+                    value: .init(data: $0.value)
+                )
+            } },
+            beat: data.beat.map { $0.map {
+                .init(
+                    offset: Double($0.offset) / 1000,
+                    value: $0.value
+                )
+            } }
         )
     }
 }
@@ -407,5 +422,41 @@ extension NewSimRadioDTO.MarkerType {
         case .outroEnd:
             self = .outroEnd
         }
+    }
+}
+
+extension NewSimRadioDTO.Station {
+    init(id: String, data: DumpsDTO.Station) {
+        let speechIDs = (
+            data.speech
+                .map { $0.trackLists(stationId: id, simStation: nil) } ?? []
+        )
+        .map(\.id)
+
+        let tracklistIDs: [NewSimRadioDTO.TrackList.ID] = data.trackLists.map { .init(value: $0) }
+
+        self.init(
+            id: .init(id),
+            genre: data.genre,
+            trackLists: (tracklistIDs + speechIDs).sorted { $0.value < $1.value }
+        )
+    }
+}
+
+extension NewSimRadioDTO.StationFlag {
+    init(data: DumpsDTO.StationFlag) {
+        self =
+            switch data {
+            case .noBack2BackMusic: .noBack2BackMusic
+            case .playNews: .playNews
+            case .playsUsersMusic: .playsUsersMusic
+            case .isMixStation: .isMixStation
+            case .back2BackAds: .back2BackAds
+            case .sequentialMusic: .sequentialMusic
+            case .identsInsteadOfAds: .identsInsteadOfAds
+            case .locked: .locked
+            case .useRandomizedStrideSelection: .useRandomizedStrideSelection
+            case .playWeather: .playWeather
+            }
     }
 }
