@@ -8,12 +8,9 @@
 import Foundation
 
 extension DumpsDTO.RadioData {
-    func stationsSpeechTrackLists(
-        _ simRadio: OldSimRadioDTO.GameSeries?
-    ) -> [NewSimRadioDTO.TrackList] {
+    func stationsSpeechTrackLists() -> [NewSimRadioDTO.TrackList] {
         let speeches = stations.compactMap { key, value in
-            let simStation = simRadio?.stations.first { $0.tag == key }
-            return value.speech.map { $0.trackLists(stationId: key, simStation: simStation) }
+            return value.speech.map { $0.trackLists(stationId: key) }
         }
         return speeches.flatMap(\.self)
     }
@@ -37,71 +34,50 @@ extension DumpsDTO.RadioData {
         }
         return result
     }
-
-    func stationsTrackLists(
-        _ simRadio: OldSimRadioDTO.GameSeries?
-    ) -> [NewSimRadioDTO.TrackList] {
+    
+    func stationTrackList(id: String, trackList: DumpsDTO.TrackList) -> [NewSimRadioDTO.TrackList] {
         var tracklistIntros: [NewSimRadioDTO.Track] = []
+        let simTrackList: [NewSimRadioDTO.Track] = trackList.tracks.map { trackListItem in
+            let trackIntros = trackListItem
+                .intro?
+                .trackListItems(
+                    trackID: trackListItem.id,
+                    trackPath: trackListItem.path
+                ) ?? []
+
+            tracklistIntros.append(contentsOf: trackIntros)
+            return NewSimRadioDTO.Track(
+                data: trackListItem,
+                intro: !trackIntros.isEmpty ? trackIntros.map(\.id) : nil,
+                trackList: nil
+            )
+        }
+        if tracklistIntros.isEmpty {
+            return [
+                .init(id: .init(id), tracks: simTrackList)
+            ]
+        } else {
+            return [
+                .init(id: .init(id), tracks: simTrackList),
+                .init(id: .init([id, "intro"].joined(separator: "_")), tracks: tracklistIntros)
+            ]
+        }
+    }
+
+    func stationsTrackLists() -> [NewSimRadioDTO.TrackList] {
         let result: [[NewSimRadioDTO.TrackList]] = stationsTrackListsWithIDs.map { id, trackList in
-            tracklistIntros = []
-            let simTrackList: [NewSimRadioDTO.Track] = trackList.tracks.map { trackListItem in
-                let simStations = simRadio?.stations ?? []
-                let simStation = trackListItem.path?.split(separator: "/").first.flatMap { stationID in
-                    simStations.first { $0.tag == stationID } ?? nil
-                }
-                let trackId = String(trackListItem.path?.split(separator: "/").last ?? "")
-                let forcedDuration = simStation?.duration(trackId: trackId)
-
-                let trackFileGroup = simStation?.fileGroups.first { $0.tag == "track" }
-
-                let trackIntros = trackListItem
-                    .intro?
-                    .trackListItems(
-                        trackID: trackListItem.id,
-                        trackPath: trackListItem.path,
-                        fileGroup: trackFileGroup
-                    ) ?? []
-
-                tracklistIntros.append(contentsOf: trackIntros)
-                return NewSimRadioDTO.Track(
-                    data: trackListItem,
-                    forcedDuration: forcedDuration,
-                    intro: !trackIntros.isEmpty ? trackIntros.map(\.id) : nil,
-                    trackList: nil
-                )
-            }
-            if tracklistIntros.isEmpty {
-                return [
-                    .init(id: .init(id), tracks: simTrackList)
-                ]
-            } else {
-                return [
-                    .init(id: .init(id), tracks: simTrackList),
-                    .init(id: .init([id, "intro"].joined(separator: "_")), tracks: tracklistIntros)
-                ]
-            }
+            return stationTrackList(id: id, trackList: trackList)
         }
         return result.flatMap(\.self)
     }
 
-    func newsTrackLists(
-        _ simRadio: OldSimRadioDTO.GameSeries?
-    ) -> [NewSimRadioDTO.TrackList] {
-        let durations = simRadio?
-            .gameSeriesShared
-            .fileGroups
-            .first(where: { $0.tag == "news" })?.durations ?? [:]
-
+    func newsTrackLists() -> [NewSimRadioDTO.TrackList] {
         let news1 = trackLists["RADIO_NEWS_01"]?.tracks ?? []
         let news2 = trackLists["RADIO_NEWS_02"]?.tracks ?? []
         let radioNews = (news1 + news2)
             .map {
-                let path = $0.path?.split(separator: "/").last ?? "--"
-                let forcedDuration = durations[String(path)]
-
                 return NewSimRadioDTO.Track(
                     data: $0,
-                    forcedDuration: forcedDuration,
                     intro: nil,
                     trackList: nil
                 )
@@ -113,22 +89,13 @@ extension DumpsDTO.RadioData {
         ]
     }
 
-    func advertsTrackLists(
-        _ simRadio: OldSimRadioDTO.GameSeries?
-    ) -> [NewSimRadioDTO.TrackList] {
-        let durations = simRadio?
-            .gameSeriesShared
-            .fileGroups
-            .first(where: { $0.tag == "adverts" })?.durations ?? [:]
+    func advertsTrackLists() -> [NewSimRadioDTO.TrackList] {
         let countryAdverts = trackLists["country_adverts"]?.tracks ?? []
         let generalAdverts = trackLists["general_adverts"]?.tracks ?? []
         let radioAdverts = (countryAdverts + generalAdverts)
             .map {
-                let path = $0.path?.split(separator: "/").last ?? "--"
-                let forcedDuration = durations[String(path)]
                 return NewSimRadioDTO.Track(
                     data: $0,
-                    forcedDuration: forcedDuration,
                     intro: nil,
                     trackList: nil
                 )
@@ -158,28 +125,18 @@ extension DumpsDTO.RadioData {
 extension DumpsDTO.TrackIntro {
     func trackListItems(
         trackID _: String,
-        trackPath: String?,
-        fileGroup: OldSimRadioDTO.FileGroup?
+        trackPath: String?
     ) -> [NewSimRadioDTO.Track] {
         let trackFileName = String(trackPath?.split(separator: "/").last ?? "")
         let names = generateFileList(count: variations, prefix: trackFileName, exension: "")
 
-        let trackFile = fileGroup?.files.first { $0.path.dropLast(4) == trackFileName }
         return names.map { name in
-            let forcedDuration = trackFile?.attachments?.files.first {
-                let attachmentName = String($0.path.split(separator: "/").last?.dropLast(4) ?? "")
-                return attachmentName == name
-            }?.duration ?? -1
-
-            if trackFile != nil, forcedDuration == -1 {
-                print("❌ error: \(name) duration not found")
-            }
             let path = [containerPath, name].joined(separator: "/")
             let id = path.replacingOccurrences(of: "/", with: "_")
             return .init(
                 id: .init(id),
                 path: path,
-                duration: forcedDuration,
+                duration: -1,
                 intro: nil,
                 markers: nil,
                 trackList: nil
@@ -189,51 +146,42 @@ extension DumpsDTO.TrackIntro {
 }
 
 extension DumpsDTO.Speech {
-    func trackLists(stationId: String, simStation: OldSimRadioDTO.Station?) -> [NewSimRadioDTO.TrackList] {
+    func trackLists(stationId: String) -> [NewSimRadioDTO.TrackList] {
         let generalList = general?.trackLists(
             stationId: stationId,
-            prefix: "general",
-            fileGroup: simStation?.fileGroups.first { $0.tag == "general" }
+            prefix: "general"
         )
         let ddGeneralList = ddGeneral?.trackLists(
             stationId: stationId,
-            prefix: "dd_general",
-            fileGroup: nil
+            prefix: "dd_general"
         )
         let plGeneralList = plGeneral?.trackLists(
             stationId: stationId,
-            prefix: "pl_general",
-            fileGroup: nil
+            prefix: "pl_general"
         )
         let morningList = time?.morning?.trackLists(
             stationId: stationId,
-            prefix: "morning",
-            fileGroup: simStation?.fileGroups.first { $0.tag == "time_morning" }
+            prefix: "morning"
         )
         let afternoomList = time?.afternoom?.trackLists(
             stationId: stationId,
-            prefix: "afternoom",
-            fileGroup: simStation?.fileGroups.first { $0.tag == "time_afternoom" }
+            prefix: "afternoom"
         )
         let eveningList = time?.evening?.trackLists(
             stationId: stationId,
-            prefix: "evening",
-            fileGroup: simStation?.fileGroups.first { $0.tag == "time_evening" }
+            prefix: "evening"
         )
         let nightList = time?.night?.trackLists(
             stationId: stationId,
-            prefix: "night",
-            fileGroup: simStation?.fileGroups.first { $0.tag == "time_night" }
+            prefix: "night"
         )
         let newsList = to?.toNews?.trackLists(
             stationId: stationId,
-            prefix: "news",
-            fileGroup: simStation?.fileGroups.first { $0.tag == "to_news" }
+            prefix: "news"
         )
         let adList = to?.toAd?.trackLists(
             stationId: stationId,
-            prefix: "ad",
-            fileGroup: simStation?.fileGroups.first { $0.tag == "to_adverts" }
+            prefix: "ad"
         )
 
         return [
@@ -253,8 +201,7 @@ extension DumpsDTO.Speech {
 extension DumpsDTO.SpeechCategory {
     func trackLists(
         stationId: String,
-        prefix: String,
-        fileGroup: OldSimRadioDTO.FileGroup?
+        prefix: String
     ) -> NewSimRadioDTO.TrackList {
         let names = generateFileList(count: variations, prefix: prefix, exension: "")
         let path = containerPath.split(separator: "/").suffix(2).joined(separator: "/")
@@ -275,15 +222,6 @@ extension DumpsDTO.SpeechCategory {
                     name
                 }
 
-                let forcedDuration = fileGroup?.files.first {
-                    let attachmentName = String($0.path.split(separator: "/").last?.dropLast(4) ?? "")
-                    return attachmentName == searchName
-                }?.duration ?? -1
-
-                if fileGroup != nil, forcedDuration == -1 {
-                    print("❌ error: \(name) duration not found, station: \(stationId)")
-                }
-
                 let isSubstringDuplicated = name.prefix(prefix.count) == trackListID.suffix(prefix.count)
                 let itemID = trackListID
                     + (isSubstringDuplicated ? "" : "_")
@@ -293,7 +231,7 @@ extension DumpsDTO.SpeechCategory {
                 return .init(
                     id: .init(itemID),
                     path: itemPath,
-                    duration: forcedDuration,
+                    duration: -1,
                     intro: nil,
                     markers: nil,
                     trackList: nil
@@ -325,7 +263,6 @@ extension OldSimRadioDTO.Station {
 extension NewSimRadioDTO.Track {
     init(
         data: DumpsDTO.TrackListItem,
-        forcedDuration: Double?,
         intro: [ID]?,
         trackList: NewSimRadioDTO.TrackList.ID? = nil
     ) {
@@ -336,7 +273,7 @@ extension NewSimRadioDTO.Track {
         self.init(
             id: .init(data.id),
             path: data.path,
-            duration: forcedDuration ?? dataDuration,
+            duration: dataDuration,
             intro: intro,
             markers: data.markers.map { .init(data: $0) },
             trackList: trackList ?? data.trackList.map { .init($0) }
@@ -426,19 +363,31 @@ extension NewSimRadioDTO.MarkerType {
 }
 
 extension NewSimRadioDTO.Station {
-    init(id: String, data: DumpsDTO.Station) {
+    init(
+        id: String,
+        data: DumpsDTO.Station,
+        trackLists: [NewSimRadioDTO.TrackList.ID: [NewSimRadioDTO.Track]]
+    ) {
         let speechIDs = (
             data.speech
-                .map { $0.trackLists(stationId: id, simStation: nil) } ?? []
+                .map { $0.trackLists(stationId: id) } ?? []
         )
         .map(\.id)
-
+        
         let tracklistIDs: [NewSimRadioDTO.TrackList.ID] = data.trackLists.map { .init(value: $0) }
+        let needNews = (data.speech?.to?.toNews?.variations ?? 0) > 1
+        let newsTracklist: [NewSimRadioDTO.TrackList.ID] =  needNews
+        ? [.init("radio_news")] : []
+        
+        let introTracklists: [NewSimRadioDTO.TrackList.ID] = tracklistIDs.compactMap { trackListID in
+            let hasIntro = (trackLists[trackListID] ?? []).contains { $0.intro?.isEmpty == false }
+            return hasIntro ? .init(trackListID.value + "_intro")  : nil
+        }
 
         self.init(
             id: .init(id),
             genre: data.genre,
-            trackLists: (tracklistIDs + speechIDs).sorted { $0.value < $1.value }
+            trackLists: (tracklistIDs + newsTracklist + introTracklists + speechIDs).sorted { $0.value < $1.value }
         )
     }
 }

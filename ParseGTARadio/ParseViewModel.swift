@@ -43,17 +43,22 @@ final class ParseViewModel {
     }
 
     func convert(
-        simRadio: OldSimRadioDTO.GameSeries?,
         dumps: DumpsDTO.RadioData
     ) -> NewSimRadioDTO.RadioData {
-        let adverts = dumps.advertsTrackLists(simRadio)
-        let news = dumps.newsTrackLists(simRadio)
-        let stationsTrackLists = dumps.stationsTrackLists(simRadio)
-        let stationsSpeechTrackLists = dumps.stationsSpeechTrackLists(simRadio)
+        let adverts = dumps.advertsTrackLists()
+        let news = dumps.newsTrackLists()
+        let stationsTrackLists = dumps.stationsTrackLists()
+        let stationsSpeechTrackLists = dumps.stationsSpeechTrackLists()
         let stations = (stationsTrackLists + stationsSpeechTrackLists).sorted { $0.id.value < $1.id.value }
+        
+        let trackLists: [NewSimRadioDTO.TrackList.ID :[NewSimRadioDTO.Track]] = Dictionary(
+            uniqueKeysWithValues: stations.map{ ($0.id, $0.tracks) }
+        )
         return .init(
             trackLists: adverts + news + stations,
-            stations: dumps.stations.map { .init(id: $0.key, data: $0.value) }.sorted { $0.id.value < $1.id.value }
+            stations: dumps.stations
+                .map { .init(id: $0.key, data: $0.value, trackLists: trackLists) }
+                .sorted { $0.id.value < $1.id.value }
         )
     }
 
@@ -82,7 +87,7 @@ final class ParseViewModel {
 
             printFileLists(dumps: dumps)
 
-            let newSimRadioDTO = convert(simRadio: nil, dumps: dumps)
+            let newSimRadioDTO = convert(dumps: dumps)
             detectAnomalies(newSimRadioDTO)
             let updatedTrackLists = extractCommonTrackLists(trackLists: newSimRadioDTO.trackLists)
             let updatedNewSimRadioDTO = NewSimRadioDTO.RadioData(
