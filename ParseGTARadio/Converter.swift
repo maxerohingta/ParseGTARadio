@@ -366,7 +366,8 @@ extension NewSimRadioDTO.Station {
     init(
         id: String,
         data: DumpsDTO.Station,
-        trackLists: [NewSimRadioDTO.TrackList.ID: [NewSimRadioDTO.Track]]
+        trackLists: [NewSimRadioDTO.TrackList.ID: [NewSimRadioDTO.Track]],
+        oldSimRadio: OldSimRadioDTO.GameSeries
     ) {
         let speechIDs = (
             data.speech
@@ -384,12 +385,51 @@ extension NewSimRadioDTO.Station {
             return hasIntro ? .init(trackListID.value + "_intro")  : nil
         }
 
+        let simStationMeta = oldSimRadio.stations.first { $0.tag == id }?.info
+        
         self.init(
             id: .init(id),
-            genre: data.genre,
+            meta: stationMeta(stationID: id, genreCode: data.genre, meta: simStationMeta),
             trackLists: (tracklistIDs + newsTracklist + introTracklists + speechIDs).sorted { $0.value < $1.value }
         )
     }
+}
+
+func stationMeta(
+    stationID: String,
+    genreCode: String,
+    meta: OldSimRadioDTO.StationInfo?
+) -> NewSimRadioDTO.StationMeta {
+    let title = meta?.title ?? radioNames[stationID] ?? "???"
+    
+    let hardcoded = radioMetas[stationID]
+    let host: String?
+    
+    if let meta {
+        host = meta.dj
+    } else if let hardcoded {
+        host = hardcoded.dj
+    } else {
+        host = nil
+    }
+    
+    let genre: String
+    
+    if let meta {
+        genre = meta.genre
+    } else if let hardcoded {
+        genre = hardcoded.genre
+    } else {
+        genre = "???"
+    }
+        
+    return .init(
+        title: title,
+        artwork: "textures/\(stationID)",
+        host: host,
+        genre: genre,
+        genreCode: genreCode
+    )
 }
 
 extension NewSimRadioDTO.StationFlag {

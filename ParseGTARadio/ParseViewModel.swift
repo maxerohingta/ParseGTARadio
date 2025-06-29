@@ -43,7 +43,8 @@ final class ParseViewModel {
     }
 
     func convert(
-        dumps: DumpsDTO.RadioData
+        dumps: DumpsDTO.RadioData,
+        oldSimRadio: OldSimRadioDTO.GameSeries
     ) -> NewSimRadioDTO.RadioData {
         let adverts = dumps.advertsTrackLists()
         let news = dumps.newsTrackLists()
@@ -57,7 +58,7 @@ final class ParseViewModel {
         return .init(
             trackLists: adverts + news + stations,
             stations: dumps.stations
-                .map { .init(id: $0.key, data: $0.value, trackLists: trackLists) }
+                .map { .init(id: $0.key, data: $0.value, trackLists: trackLists, oldSimRadio: oldSimRadio) }
                 .sorted { $0.id.value < $1.id.value }
         )
     }
@@ -83,11 +84,11 @@ final class ParseViewModel {
     func loadAndParseLocalJSON() async {
         do {
             let dumps = try await fetchDumps()
-//            let simRadio = try await fetchSimRadio()
+            let simRadio = try await fetchSimRadio()
 
             printFileLists(dumps: dumps)
 
-            let newSimRadioDTO = convert(dumps: dumps)
+            let newSimRadioDTO = convert(dumps: dumps, oldSimRadio: simRadio)
             detectAnomalies(newSimRadioDTO)
             let updatedTrackLists = extractCommonTrackLists(trackLists: newSimRadioDTO.trackLists)
             let updatedNewSimRadioDTO = NewSimRadioDTO.RadioData(

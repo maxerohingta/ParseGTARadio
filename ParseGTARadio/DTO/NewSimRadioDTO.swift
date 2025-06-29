@@ -63,8 +63,16 @@ enum NewSimRadioDTO {
     struct Station: Codable {
         struct ID: Codable, Hashable { let value: String }
         let id: ID
-        let genre: String
+        let meta: StationMeta
         let trackLists: [TrackList.ID]
+    }
+    
+    struct StationMeta: Codable {
+        let title: String
+        let artwork: String
+        let host: String?
+        let genre: String
+        let genreCode: String
     }
 
     enum StationFlag: String, Codable {
