@@ -60,38 +60,11 @@
             },
             "voiceOver": [
               {
-                "id": "voiceover_radio_01_class_rock_to_news",
-                "condition": {
-                  "nextFragment": "fragment_radio_01_class_rock_news"
-                },
-                "positions": [
-                  "track_end"
-                ],
+                "id": "voiceover_radio_01_class_rock_intro",
                 "src": {
-                  "trackLists": [
-                    "radio_01_class_rock_to_news"
-                  ]
-                }
-              },
-              {
-                "id": "voiceover_radio_01_class_rock_to_ad",
-                "condition": {
-                  "nextFragment": "fragment_radio_01_class_rock_adverts"
-                },
-                "positions": [
-                  "track_end"
-                ],
-                "src": {
-                  "trackLists": [
-                    "radio_01_class_rock_to_ad"
-                  ]
-                }
-              },
-              {
-                "id": "voiceover_radio_01_class_rock_general",
-                "src": {
-                  "trackLists": [
-                    "radio_01_class_rock_general"
+                  "introTrackLists": [
+                    "radio_01_class_rock_music_intro",
+                    "radio_01_class_rock_music_new_intro"
                   ]
                 },
                 "condition": {
@@ -103,11 +76,10 @@
                 ]
               },
               {
-                "id": "voiceover_radio_01_class_rock_intro",
+                "id": "voiceover_radio_01_class_rock_general",
                 "src": {
-                  "introTrackLists": [
-                    "radio_01_class_rock_music_intro",
-                    "radio_01_class_rock_music_new_intro"
+                  "trackLists": [
+                    "radio_01_class_rock_general"
                   ]
                 },
                 "condition": {
@@ -155,6 +127,36 @@
                   "track_start",
                   "track_end"
                 ]
+              },
+              {
+                "id": "voiceover_radio_01_class_rock_to_news",
+                "condition": {
+                  "probability": 0.666,
+                  "nextFragment": "fragment_radio_01_class_rock_news"
+                },
+                "positions": [
+                  "track_end"
+                ],
+                "src": {
+                  "trackLists": [
+                    "radio_01_class_rock_to_news"
+                  ]
+                }
+              },
+              {
+                "id": "voiceover_radio_01_class_rock_to_ad",
+                "condition": {
+                  "probability": 0.666,
+                  "nextFragment": "fragment_radio_01_class_rock_adverts"
+                },
+                "positions": [
+                  "track_end"
+                ],
+                "src": {
+                  "trackLists": [
+                    "radio_01_class_rock_to_ad"
+                  ]
+                }
               }
             ],
             "next": [
@@ -250,7 +252,7 @@
         "radio_news"
       ],
       "playlist": {
-        "firstFragment": "fragment_radio_02_pop_rock_ident",
+        "firstFragment": "fragment_radio_02_pop_ident",
         "positions": [
           {
             "id": "track_start",
@@ -263,76 +265,33 @@
         ],
         "fragments": [
           {
-            "id": "fragment_radio_02_pop_rock_ident",
+            "id": "fragment_radio_02_pop_ident",
             "src": {
               "trackLists": [
-                "radio_02_pop_rock_idents"
+                "radio_02_pop_idents"
               ]
             },
             "next": [
               {
-                "fragment": "fragment_radio_02_pop_rock_music"
+                "fragment": "fragment_radio_02_pop_music"
               }
             ]
           },
           {
-            "id": "fragment_radio_02_pop_rock_music",
+            "id": "fragment_radio_02_pop_music",
             "src": {
               "trackLists": [
-                "radio_02_pop_rock_music",
-                "radio_02_pop_rock_music_new"
+                "radio_02_pop_music",
+                "radio_02_pop_music_new"
               ]
             },
             "voiceOver": [
               {
-                "id": "voiceover_radio_02_pop_rock_to_news",
-                "condition": {
-                  "nextFragment": "fragment_radio_02_pop_rock_news"
-                },
-                "positions": [
-                  "track_end"
-                ],
-                "src": {
-                  "trackLists": [
-                    "radio_02_pop_rock_to_news"
-                  ]
-                }
-              },
-              {
-                "id": "voiceover_radio_02_pop_rock_to_ad",
-                "condition": {
-                  "nextFragment": "fragment_radio_02_pop_rock_adverts"
-                },
-                "positions": [
-                  "track_end"
-                ],
-                "src": {
-                  "trackLists": [
-                    "radio_02_pop_rock_to_ad"
-                  ]
-                }
-              },
-              {
-                "id": "voiceover_radio_02_pop_rock_general",
-                "src": {
-                  "trackLists": [
-                    "radio_02_pop_rock_general"
-                  ]
-                },
-                "condition": {
-                  "probability": 0.333
-                },
-                "positions": [
-                  "track_start",
-                  "track_end"
-                ]
-              },
-              {
-                "id": "voiceover_radio_02_pop_rock_intro",
+                "id": "voiceover_radio_02_pop_intro",
                 "src": {
                   "introTrackLists": [
-                    "radio_02_pop_rock_music_intro",
-                    "radio_02_pop_rock_music_new_intro"
+                    "radio_02_pop_music_intro",
+                    "radio_02_pop_music_new_intro"
                   ]
                 },
                 "condition": {
@@ -344,10 +303,25 @@
                 ]
               },
               {
-                "id": "voiceover_radio_02_pop_rock_morning",
+                "id": "voiceover_radio_02_pop_general",
                 "src": {
                   "trackLists": [
-                    "radio_02_pop_rock_time_morning"
+                    "radio_02_pop_general"
+                  ]
+                },
+                "condition": {
+                  "probability": 0.333
+                },
+                "positions": [
+                  "track_start",
+                  "track_end"
+                ]
+              },
+              {
+                "id": "voiceover_radio_02_pop_morning",
+                "src": {
+                  "trackLists": [
+                    "radio_02_pop_time_morning"
                   ]
                 },
                 "condition": {
@@ -363,10 +337,10 @@
                 ]
               },
               {
-                "id": "voiceover_radio_02_pop_rock_evening",
+                "id": "voiceover_radio_02_pop_evening",
                 "src": {
                   "trackLists": [
-                    "radio_02_pop_rock_time_evening"
+                    "radio_02_pop_time_evening"
                   ]
                 },
                 "condition": {
@@ -380,45 +354,75 @@
                   "track_start",
                   "track_end"
                 ]
+              },
+              {
+                "id": "voiceover_radio_02_pop_to_news",
+                "condition": {
+                  "probability": 0.666,
+                  "nextFragment": "fragment_radio_02_pop_news"
+                },
+                "positions": [
+                  "track_end"
+                ],
+                "src": {
+                  "trackLists": [
+                    "radio_02_pop_to_news"
+                  ]
+                }
+              },
+              {
+                "id": "voiceover_radio_02_pop_to_ad",
+                "condition": {
+                  "probability": 0.666,
+                  "nextFragment": "fragment_radio_02_pop_adverts"
+                },
+                "positions": [
+                  "track_end"
+                ],
+                "src": {
+                  "trackLists": [
+                    "radio_02_pop_to_ad"
+                  ]
+                }
               }
             ],
             "next": [
               {
-                "fragment": "fragment_radio_02_pop_rock_adverts",
+                "fragment": "fragment_radio_02_pop_adverts",
                 "probability": 0.357
               },
               {
-                "fragment": "fragment_radio_02_pop_rock_djsolo",
+                "fragment": "fragment_radio_02_pop_djsolo",
                 "probability": 0.286
               },
               {
-                "fragment": "fragment_radio_02_pop_rock_news",
+                "fragment": "fragment_radio_02_pop_news",
                 "probability": 0.143
               },
               {
-                "fragment": "fragment_radio_02_pop_rock_music"
+                "fragment": "fragment_radio_02_pop_music"
               }
             ]
           },
           {
-            "id": "fragment_radio_02_pop_rock_djsolo",
+            "id": "fragment_radio_02_pop_djsolo",
             "src": {
               "trackLists": [
-                "radio_02_pop_rock_djsolo"
+                "radio_02_pop_djsolo"
               ]
             },
             "next": [
               {
-                "fragment": "fragment_radio_02_pop_rock_news",
+                "fragment": "fragment_radio_02_pop_news",
                 "probability": 0.4
               },
               {
-                "fragment": "fragment_radio_02_pop_rock_music"
+                "fragment": "fragment_radio_02_pop_music"
               }
             ]
           },
           {
-            "id": "fragment_radio_02_pop_rock_news",
+            "id": "fragment_radio_02_pop_news",
             "src": {
               "trackLists": [
                 "radio_news"
@@ -426,16 +430,16 @@
             },
             "next": [
               {
-                "fragment": "fragment_radio_02_pop_rock_ident",
+                "fragment": "fragment_radio_02_pop_ident",
                 "probability": 0.667
               },
               {
-                "fragment": "fragment_radio_02_pop_rock_music"
+                "fragment": "fragment_radio_02_pop_music"
               }
             ]
           },
           {
-            "id": "fragment_radio_02_pop_rock_adverts",
+            "id": "fragment_radio_02_pop_adverts",
             "src": {
               "trackLists": [
                 "general_adverts"
@@ -443,7 +447,7 @@
             },
             "next": [
               {
-                "fragment": "fragment_radio_02_pop_rock_music"
+                "fragment": "fragment_radio_02_pop_music"
               }
             ]
           }
@@ -482,7 +486,7 @@
         "radio_news"
       ],
       "playlist": {
-        "firstFragment": "fragment_radio_02_pop_rock_ident",
+        "firstFragment": "fragment_radio_03_hiphop_new_ident",
         "positions": [
           {
             "id": "track_start",
@@ -495,76 +499,36 @@
         ],
         "fragments": [
           {
-            "id": "fragment_radio_02_pop_rock_ident",
+            "id": "fragment_radio_03_hiphop_new_ident",
             "src": {
               "trackLists": [
-                "radio_02_pop_rock_idents"
+                "radio_03_hiphop_new_idents"
               ]
             },
             "next": [
               {
-                "fragment": "fragment_radio_02_pop_rock_music"
+                "fragment": "fragment_radio_03_hiphop_new_music"
               }
             ]
           },
           {
-            "id": "fragment_radio_02_pop_rock_music",
+            "id": "fragment_radio_03_hiphop_new_music",
             "src": {
               "trackLists": [
-                "radio_02_pop_rock_music",
-                "radio_02_pop_rock_music_new"
+                "radio_03_hiphop_new_core_music",
+                "radio_03_hiphop_new_dd_music_launch",
+                "radio_03_hiphop_new_dd_music_post_launch",
+                "radio_03_hiphop_new_dd_music_post_launch_update"
               ]
             },
             "voiceOver": [
               {
-                "id": "voiceover_radio_02_pop_rock_to_news",
-                "condition": {
-                  "nextFragment": "fragment_radio_02_pop_rock_news"
-                },
-                "positions": [
-                  "track_end"
-                ],
-                "src": {
-                  "trackLists": [
-                    "radio_02_pop_rock_to_news"
-                  ]
-                }
-              },
-              {
-                "id": "voiceover_radio_02_pop_rock_to_ad",
-                "condition": {
-                  "nextFragment": "fragment_radio_02_pop_rock_adverts"
-                },
-                "positions": [
-                  "track_end"
-                ],
-                "src": {
-                  "trackLists": [
-                    "radio_02_pop_rock_to_ad"
-                  ]
-                }
-              },
-              {
-                "id": "voiceover_radio_02_pop_rock_general",
-                "src": {
-                  "trackLists": [
-                    "radio_02_pop_rock_general"
-                  ]
-                },
-                "condition": {
-                  "probability": 0.333
-                },
-                "positions": [
-                  "track_start",
-                  "track_end"
-                ]
-              },
-              {
-                "id": "voiceover_radio_02_pop_rock_intro",
+                "id": "voiceover_radio_03_hiphop_new_intro",
                 "src": {
                   "introTrackLists": [
-                    "radio_02_pop_rock_music_intro",
-                    "radio_02_pop_rock_music_new_intro"
+                    "radio_03_hiphop_new_core_music_intro",
+                    "radio_03_hiphop_new_dd_music_launch_intro",
+                    "radio_03_hiphop_new_dd_music_post_launch_intro"
                   ]
                 },
                 "condition": {
@@ -576,10 +540,27 @@
                 ]
               },
               {
-                "id": "voiceover_radio_02_pop_rock_morning",
+                "id": "voiceover_radio_03_hiphop_new_general",
                 "src": {
                   "trackLists": [
-                    "radio_02_pop_rock_time_morning"
+                    "radio_03_hiphop_new_general",
+                    "dlc_security_music_hiphop_new_dd_general",
+                    "dlc_security_music_hiphop_new_pl_general"
+                  ]
+                },
+                "condition": {
+                  "probability": 0.333
+                },
+                "positions": [
+                  "track_start",
+                  "track_end"
+                ]
+              },
+              {
+                "id": "voiceover_radio_03_hiphop_new_morning",
+                "src": {
+                  "trackLists": [
+                    "radio_03_hiphop_new_time_morning"
                   ]
                 },
                 "condition": {
@@ -595,10 +576,10 @@
                 ]
               },
               {
-                "id": "voiceover_radio_02_pop_rock_evening",
+                "id": "voiceover_radio_03_hiphop_new_evening",
                 "src": {
                   "trackLists": [
-                    "radio_02_pop_rock_time_evening"
+                    "radio_03_hiphop_new_time_evening"
                   ]
                 },
                 "condition": {
@@ -612,45 +593,77 @@
                   "track_start",
                   "track_end"
                 ]
+              },
+              {
+                "id": "voiceover_radio_03_hiphop_new_to_news",
+                "condition": {
+                  "probability": 0.666,
+                  "nextFragment": "fragment_radio_03_hiphop_new_news"
+                },
+                "positions": [
+                  "track_end"
+                ],
+                "src": {
+                  "trackLists": [
+                    "radio_03_hiphop_new_to_news"
+                  ]
+                }
+              },
+              {
+                "id": "voiceover_radio_03_hiphop_new_to_ad",
+                "condition": {
+                  "probability": 0.666,
+                  "nextFragment": "fragment_radio_03_hiphop_new_adverts"
+                },
+                "positions": [
+                  "track_end"
+                ],
+                "src": {
+                  "trackLists": [
+                    "radio_03_hiphop_new_to_ad"
+                  ]
+                }
               }
             ],
             "next": [
               {
-                "fragment": "fragment_radio_02_pop_rock_adverts",
+                "fragment": "fragment_radio_03_hiphop_new_adverts",
                 "probability": 0.357
               },
               {
-                "fragment": "fragment_radio_02_pop_rock_djsolo",
+                "fragment": "fragment_radio_03_hiphop_new_djsolo",
                 "probability": 0.286
               },
               {
-                "fragment": "fragment_radio_02_pop_rock_news",
+                "fragment": "fragment_radio_03_hiphop_new_news",
                 "probability": 0.143
               },
               {
-                "fragment": "fragment_radio_02_pop_rock_music"
+                "fragment": "fragment_radio_03_hiphop_new_music"
               }
             ]
           },
           {
-            "id": "fragment_radio_02_pop_rock_djsolo",
+            "id": "fragment_radio_03_hiphop_new_djsolo",
             "src": {
               "trackLists": [
-                "radio_02_pop_rock_djsolo"
+                "radio_03_hiphop_new_djsolo",
+                "radio_03_hiphop_new_dd_djsolo_launch",
+                "radio_03_hiphop_new_dd_djsolo_post_launch"
               ]
             },
             "next": [
               {
-                "fragment": "fragment_radio_02_pop_rock_news",
+                "fragment": "fragment_radio_03_hiphop_new_news",
                 "probability": 0.4
               },
               {
-                "fragment": "fragment_radio_02_pop_rock_music"
+                "fragment": "fragment_radio_03_hiphop_new_music"
               }
             ]
           },
           {
-            "id": "fragment_radio_02_pop_rock_news",
+            "id": "fragment_radio_03_hiphop_new_news",
             "src": {
               "trackLists": [
                 "radio_news"
@@ -658,16 +671,16 @@
             },
             "next": [
               {
-                "fragment": "fragment_radio_02_pop_rock_ident",
+                "fragment": "fragment_radio_03_hiphop_new_ident",
                 "probability": 0.667
               },
               {
-                "fragment": "fragment_radio_02_pop_rock_music"
+                "fragment": "fragment_radio_03_hiphop_new_music"
               }
             ]
           },
           {
-            "id": "fragment_radio_02_pop_rock_adverts",
+            "id": "fragment_radio_03_hiphop_new_adverts",
             "src": {
               "trackLists": [
                 "general_adverts"
@@ -675,7 +688,7 @@
             },
             "next": [
               {
-                "fragment": "fragment_radio_02_pop_rock_music"
+                "fragment": "fragment_radio_03_hiphop_new_music"
               }
             ]
           }
