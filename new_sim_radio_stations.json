@@ -1370,7 +1370,26 @@
       },
       "trackLists": [
         "radio_07_dance_01_music"
-      ]
+      ],
+      "playlist": {
+        "firstFragment": "fragment_radio_07_dance_01_music_01",
+        "fragments": [
+          {
+            "id": "fragment_radio_07_dance_01_music_01",
+            "src": {
+              "trackLists": [
+                "radio_07_dance_01_music"
+              ],
+              "track": "radio_07_dance_01_soulwax_fm_final_mix_32k"
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_07_dance_01_music_01"
+              }
+            ]
+          }
+        ]
+      }
     },
     {
       "id": "radio_08_mexican",
@@ -1383,7 +1402,26 @@
       },
       "trackLists": [
         "radio_08_mexican_music"
-      ]
+      ],
+      "playlist": {
+        "firstFragment": "fragment_radio_08_mexican_music_01",
+        "fragments": [
+          {
+            "id": "fragment_radio_08_mexican_music_01",
+            "src": {
+              "trackLists": [
+                "radio_08_mexican_music"
+              ],
+              "track": "radio_08_mexican_mex_final_mix_32"
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_08_mexican_music_01"
+              }
+            ]
+          }
+        ]
+      }
     },
     {
       "id": "radio_09_hiphop_old",
