@@ -1155,7 +1155,209 @@
         "radio_06_country_to_ad",
         "radio_06_country_to_news",
         "radio_news"
-      ]
+      ],
+      "playlist": {
+        "firstFragment": "fragment_radio_06_country_ident",
+        "positions": [
+          {
+            "id": "track_start",
+            "relativeOffset": 0.03
+          },
+          {
+            "id": "track_end",
+            "relativeOffset": 0.97
+          }
+        ],
+        "fragments": [
+          {
+            "id": "fragment_radio_06_country_ident",
+            "src": {
+              "trackLists": [
+                "radio_06_country_idents"
+              ]
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_06_country_music"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_06_country_music",
+            "src": {
+              "trackLists": [
+                "radio_06_country_music",
+                "radio_06_country_music_new"
+              ]
+            },
+            "voiceOver": [
+              {
+                "id": "voiceover_radio_06_country_intro",
+                "src": {
+                  "introTrackLists": [
+                    "radio_06_country_music_intro",
+                    "radio_06_country_music_new_intro"
+                  ]
+                },
+                "condition": {
+                  "probability": 0.333
+                },
+                "positions": [
+                  "track_start",
+                  "track_end"
+                ]
+              },
+              {
+                "id": "voiceover_radio_06_country_general",
+                "src": {
+                  "trackLists": [
+                    "radio_06_country_general"
+                  ]
+                },
+                "condition": {
+                  "probability": 0.333
+                },
+                "positions": [
+                  "track_start",
+                  "track_end"
+                ]
+              },
+              {
+                "id": "voiceover_radio_06_country_morning",
+                "src": {
+                  "trackLists": [
+                    "radio_06_country_time_morning"
+                  ]
+                },
+                "condition": {
+                  "probability": 0.333,
+                  "timeInterval": {
+                    "from": "5:00",
+                    "to": "11:00"
+                  }
+                },
+                "positions": [
+                  "track_start",
+                  "track_end"
+                ]
+              },
+              {
+                "id": "voiceover_radio_06_country_evening",
+                "src": {
+                  "trackLists": [
+                    "radio_06_country_time_evening"
+                  ]
+                },
+                "condition": {
+                  "probability": 0.333,
+                  "timeInterval": {
+                    "from": "18:00",
+                    "to": "24:00"
+                  }
+                },
+                "positions": [
+                  "track_start",
+                  "track_end"
+                ]
+              },
+              {
+                "id": "voiceover_radio_06_country_to_news",
+                "condition": {
+                  "probability": 0.666,
+                  "nextFragment": "fragment_radio_06_country_news"
+                },
+                "positions": [
+                  "track_end"
+                ],
+                "src": {
+                  "trackLists": [
+                    "radio_06_country_to_news"
+                  ]
+                }
+              },
+              {
+                "id": "voiceover_radio_06_country_to_ad",
+                "condition": {
+                  "probability": 0.666,
+                  "nextFragment": "fragment_radio_06_country_adverts"
+                },
+                "positions": [
+                  "track_end"
+                ],
+                "src": {
+                  "trackLists": [
+                    "radio_06_country_to_ad"
+                  ]
+                }
+              }
+            ],
+            "next": [
+              {
+                "fragment": "fragment_radio_06_country_adverts",
+                "probability": 0.357
+              },
+              {
+                "fragment": "fragment_radio_06_country_djsolo",
+                "probability": 0.286
+              },
+              {
+                "fragment": "fragment_radio_06_country_news",
+                "probability": 0.143
+              },
+              {
+                "fragment": "fragment_radio_06_country_music"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_06_country_djsolo",
+            "src": {
+              "trackLists": [
+                "radio_06_country_djsolo"
+              ]
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_06_country_news",
+                "probability": 0.4
+              },
+              {
+                "fragment": "fragment_radio_06_country_music"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_06_country_news",
+            "src": {
+              "trackLists": [
+                "radio_news"
+              ]
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_06_country_ident",
+                "probability": 0.667
+              },
+              {
+                "fragment": "fragment_radio_06_country_music"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_06_country_adverts",
+            "src": {
+              "trackLists": [
+                "country_adverts"
+              ]
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_06_country_music"
+              }
+            ]
+          }
+        ]
+      }
     },
     {
       "id": "radio_07_dance_01",
