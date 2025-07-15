@@ -718,7 +718,209 @@
         "radio_04_punk_to_ad",
         "radio_04_punk_to_news",
         "radio_news"
-      ]
+      ],
+      "playlist": {
+        "firstFragment": "fragment_radio_04_punk_ident",
+        "positions": [
+          {
+            "id": "track_start",
+            "relativeOffset": 0.03
+          },
+          {
+            "id": "track_end",
+            "relativeOffset": 0.97
+          }
+        ],
+        "fragments": [
+          {
+            "id": "fragment_radio_04_punk_ident",
+            "src": {
+              "trackLists": [
+                "radio_04_punk_idents"
+              ]
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_04_punk_music"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_04_punk_music",
+            "src": {
+              "trackLists": [
+                "radio_04_punk_music",
+                "radio_04_punk_music_new"
+              ]
+            },
+            "voiceOver": [
+              {
+                "id": "voiceover_radio_04_punk_intro",
+                "src": {
+                  "introTrackLists": [
+                    "radio_04_punk_music_intro",
+                    "radio_04_punk_music_new_intro"
+                  ]
+                },
+                "condition": {
+                  "probability": 0.333
+                },
+                "positions": [
+                  "track_start",
+                  "track_end"
+                ]
+              },
+              {
+                "id": "voiceover_radio_04_punk_general",
+                "src": {
+                  "trackLists": [
+                    "radio_04_punk_general"
+                  ]
+                },
+                "condition": {
+                  "probability": 0.333
+                },
+                "positions": [
+                  "track_start",
+                  "track_end"
+                ]
+              },
+              {
+                "id": "voiceover_radio_04_punk_morning",
+                "src": {
+                  "trackLists": [
+                    "radio_04_punk_time_morning"
+                  ]
+                },
+                "condition": {
+                  "probability": 0.333,
+                  "timeInterval": {
+                    "from": "5:00",
+                    "to": "11:00"
+                  }
+                },
+                "positions": [
+                  "track_start",
+                  "track_end"
+                ]
+              },
+              {
+                "id": "voiceover_radio_04_punk_evening",
+                "src": {
+                  "trackLists": [
+                    "radio_04_punk_time_evening"
+                  ]
+                },
+                "condition": {
+                  "probability": 0.333,
+                  "timeInterval": {
+                    "from": "18:00",
+                    "to": "24:00"
+                  }
+                },
+                "positions": [
+                  "track_start",
+                  "track_end"
+                ]
+              },
+              {
+                "id": "voiceover_radio_04_punk_to_news",
+                "condition": {
+                  "probability": 0.666,
+                  "nextFragment": "fragment_radio_04_punk_news"
+                },
+                "positions": [
+                  "track_end"
+                ],
+                "src": {
+                  "trackLists": [
+                    "radio_04_punk_to_news"
+                  ]
+                }
+              },
+              {
+                "id": "voiceover_radio_04_punk_to_ad",
+                "condition": {
+                  "probability": 0.666,
+                  "nextFragment": "fragment_radio_04_punk_adverts"
+                },
+                "positions": [
+                  "track_end"
+                ],
+                "src": {
+                  "trackLists": [
+                    "radio_04_punk_to_ad"
+                  ]
+                }
+              }
+            ],
+            "next": [
+              {
+                "fragment": "fragment_radio_04_punk_adverts",
+                "probability": 0.357
+              },
+              {
+                "fragment": "fragment_radio_04_punk_djsolo",
+                "probability": 0.286
+              },
+              {
+                "fragment": "fragment_radio_04_punk_news",
+                "probability": 0.143
+              },
+              {
+                "fragment": "fragment_radio_04_punk_music"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_04_punk_djsolo",
+            "src": {
+              "trackLists": [
+                "radio_04_punk_djsolo"
+              ]
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_04_punk_news",
+                "probability": 0.4
+              },
+              {
+                "fragment": "fragment_radio_04_punk_music"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_04_punk_news",
+            "src": {
+              "trackLists": [
+                "radio_news"
+              ]
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_04_punk_ident",
+                "probability": 0.667
+              },
+              {
+                "fragment": "fragment_radio_04_punk_music"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_04_punk_adverts",
+            "src": {
+              "trackLists": [
+                "general_adverts"
+              ]
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_04_punk_music"
+              }
+            ]
+          }
+        ]
+      }
     },
     {
       "id": "radio_05_talk_01",
