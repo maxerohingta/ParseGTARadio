@@ -1453,7 +1453,433 @@
         "radio_09_hiphop_old_to_ad",
         "radio_09_hiphop_old_to_news",
         "radio_news"
-      ]
+      ],
+      "playlist": {
+        "firstFragment": "fragment_radio_09_hiphop_old_ident_option_oiginal",
+        "options": [
+          {
+            "id": "option_oiginal",
+            "title": "Original"
+          },
+          {
+            "id": "option_dre_day",
+            "title": "Dre Day"
+          }
+        ],
+        "positions": [
+          {
+            "id": "track_start",
+            "relativeOffset": 0.03
+          },
+          {
+            "id": "track_end",
+            "relativeOffset": 0.97
+          }
+        ],
+        "fragments": [
+          {
+            "id": "fragment_radio_09_hiphop_old_ident_option_oiginal",
+            "src": {
+              "trackLists": [
+                "radio_09_hiphop_old_idents"
+              ]
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_09_hiphop_old_music_option_oiginal",
+                "option": "option_oiginal"
+              },
+              {
+                "fragment": "fragment_radio_09_hiphop_old_music_option_dre_day",
+                "option": "option_dre_day"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_09_hiphop_old_ident_option_dre_day",
+            "src": {
+              "trackLists": [
+                "radio_09_hiphop_old_dd_idents_launch"
+              ]
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_09_hiphop_old_music_option_oiginal",
+                "option": "option_oiginal"
+              },
+              {
+                "fragment": "fragment_radio_09_hiphop_old_music_option_dre_day",
+                "option": "option_dre_day"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_09_hiphop_old_music_option_oiginal",
+            "src": {
+              "trackLists": [
+                "radio_09_hiphop_old_core_music"
+              ]
+            },
+            "voiceOver": [
+              {
+                "id": "voiceover_radio_09_hiphop_old_intro_option_oiginal",
+                "src": {
+                  "introTrackLists": [
+                    "radio_09_hiphop_old_core_music_intro"
+                  ]
+                },
+                "condition": {
+                  "probability": 0.333
+                },
+                "positions": [
+                  "track_start",
+                  "track_end"
+                ]
+              },
+              {
+                "id": "voiceover_radio_09_hiphop_old_general_option_oiginal",
+                "src": {
+                  "trackLists": [
+                    "radio_09_hiphop_old_general"
+                  ]
+                },
+                "condition": {
+                  "probability": 0.333
+                },
+                "positions": [
+                  "track_start",
+                  "track_end"
+                ]
+              },
+              {
+                "id": "voiceover_radio_09_hiphop_old_morning_option_oiginal",
+                "src": {
+                  "trackLists": [
+                    "radio_09_hiphop_old_time_morning"
+                  ]
+                },
+                "condition": {
+                  "probability": 0.333,
+                  "timeInterval": {
+                    "from": "5:00",
+                    "to": "11:00"
+                  }
+                },
+                "positions": [
+                  "track_start",
+                  "track_end"
+                ]
+              },
+              {
+                "id": "voiceover_radio_09_hiphop_old_evening_option_oiginal",
+                "src": {
+                  "trackLists": [
+                    "radio_09_hiphop_old_time_evening"
+                  ]
+                },
+                "condition": {
+                  "probability": 0.333,
+                  "timeInterval": {
+                    "from": "18:00",
+                    "to": "24:00"
+                  }
+                },
+                "positions": [
+                  "track_start",
+                  "track_end"
+                ]
+              },
+              {
+                "id": "voiceover_radio_09_hiphop_old_to_news_option_oiginal",
+                "condition": {
+                  "probability": 0.666,
+                  "nextFragment": "fragment_radio_09_hiphop_old_news"
+                },
+                "positions": [
+                  "track_end"
+                ],
+                "src": {
+                  "trackLists": [
+                    "radio_09_hiphop_old_to_news"
+                  ]
+                }
+              },
+              {
+                "id": "voiceover_radio_09_hiphop_old_to_ad_option_oiginal",
+                "condition": {
+                  "probability": 0.666,
+                  "nextFragment": "fragment_radio_09_hiphop_old_adverts"
+                },
+                "positions": [
+                  "track_end"
+                ],
+                "src": {
+                  "trackLists": [
+                    "radio_09_hiphop_old_to_ad"
+                  ]
+                }
+              }
+            ],
+            "next": [
+              {
+                "fragment": "fragment_radio_09_hiphop_old_adverts",
+                "probability": 0.357
+              },
+              {
+                "fragment": "fragment_radio_09_hiphop_old_djsolo_option_oiginal",
+                "option": "option_oiginal",
+                "probability": 0.286
+              },
+              {
+                "fragment": "fragment_radio_09_hiphop_old_djsolo_option_dre_day",
+                "option": "option_dre_day",
+                "probability": 0.286
+              },
+              {
+                "fragment": "fragment_radio_09_hiphop_old_news",
+                "probability": 0.143
+              },
+              {
+                "fragment": "fragment_radio_09_hiphop_old_music_option_oiginal",
+                "option": "option_oiginal"
+              },
+              {
+                "fragment": "fragment_radio_09_hiphop_old_music_option_dre_day",
+                "option": "option_dre_day"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_09_hiphop_old_music_option_dre_day",
+            "src": {
+              "trackLists": [
+                "radio_09_hiphop_old_dd_music_launch",
+                "radio_09_hiphop_old_dd_music_post_launch"
+              ]
+            },
+            "voiceOver": [
+              {
+                "id": "voiceover_radio_09_hiphop_old_intro_option_dre_day",
+                "src": {
+                  "introTrackLists": [
+                    "radio_09_hiphop_old_dd_music_launch_intro",
+                    "radio_09_hiphop_old_dd_music_post_launch_intro"
+                  ]
+                },
+                "condition": {
+                  "probability": 0.333
+                },
+                "positions": [
+                  "track_start",
+                  "track_end"
+                ]
+              },
+              {
+                "id": "voiceover_radio_09_hiphop_old_general_option_dre_day",
+                "src": {
+                  "trackLists": [
+                    "dlc_security_music_pl_general"
+                  ]
+                },
+                "condition": {
+                  "probability": 0.333
+                },
+                "positions": [
+                  "track_start",
+                  "track_end"
+                ]
+              },
+              {
+                "id": "voiceover_radio_09_hiphop_old_morning_option_dre_day",
+                "src": {
+                  "trackLists": [
+                    "radio_09_hiphop_old_time_morning"
+                  ]
+                },
+                "condition": {
+                  "probability": 0.333,
+                  "timeInterval": {
+                    "from": "5:00",
+                    "to": "11:00"
+                  }
+                },
+                "positions": [
+                  "track_start",
+                  "track_end"
+                ]
+              },
+              {
+                "id": "voiceover_radio_09_hiphop_old_evening_option_dre_day",
+                "src": {
+                  "trackLists": [
+                    "radio_09_hiphop_old_time_evening"
+                  ]
+                },
+                "condition": {
+                  "probability": 0.333,
+                  "timeInterval": {
+                    "from": "18:00",
+                    "to": "24:00"
+                  }
+                },
+                "positions": [
+                  "track_start",
+                  "track_end"
+                ]
+              },
+              {
+                "id": "voiceover_radio_09_hiphop_old_to_news_option_dre_day",
+                "condition": {
+                  "probability": 0.666,
+                  "nextFragment": "fragment_radio_09_hiphop_old_news"
+                },
+                "positions": [
+                  "track_end"
+                ],
+                "src": {
+                  "trackLists": [
+                    "radio_09_hiphop_old_to_news"
+                  ]
+                }
+              },
+              {
+                "id": "voiceover_radio_09_hiphop_old_to_ad_option_dre_day",
+                "condition": {
+                  "probability": 0.666,
+                  "nextFragment": "fragment_radio_09_hiphop_old_adverts"
+                },
+                "positions": [
+                  "track_end"
+                ],
+                "src": {
+                  "trackLists": [
+                    "radio_09_hiphop_old_to_ad"
+                  ]
+                }
+              }
+            ],
+            "next": [
+              {
+                "fragment": "fragment_radio_09_hiphop_old_adverts",
+                "probability": 0.357
+              },
+              {
+                "fragment": "fragment_radio_09_hiphop_old_djsolo_option_oiginal",
+                "option": "option_oiginal",
+                "probability": 0.286
+              },
+              {
+                "fragment": "fragment_radio_09_hiphop_old_djsolo_option_dre_day",
+                "option": "option_dre_day",
+                "probability": 0.286
+              },
+              {
+                "fragment": "fragment_radio_09_hiphop_old_news",
+                "probability": 0.143
+              },
+              {
+                "fragment": "fragment_radio_09_hiphop_old_music_option_oiginal",
+                "option": "option_oiginal"
+              },
+              {
+                "fragment": "fragment_radio_09_hiphop_old_music_option_dre_day",
+                "option": "option_dre_day"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_09_hiphop_old_djsolo_option_oiginal",
+            "src": {
+              "trackLists": [
+                "radio_09_hiphop_old_djsolo",
+              ]
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_09_hiphop_old_news",
+                "probability": 0.4
+              },
+              {
+                "fragment": "fragment_radio_09_hiphop_old_music_option_oiginal",
+                "option": "option_oiginal"
+              },
+              {
+                "fragment": "fragment_radio_09_hiphop_old_music_option_dre_day",
+                "option": "option_dre_day"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_09_hiphop_old_djsolo_option_dre_day",
+            "src": {
+              "trackLists": [
+                "radio_09_hiphop_old_dd_djsolo_launch",
+                "radio_09_hiphop_old_dd_djsolo_post_launch"
+              ]
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_09_hiphop_old_news",
+                "probability": 0.4
+              },
+              {
+                "fragment": "fragment_radio_09_hiphop_old_music_option_oiginal",
+                "option": "option_oiginal"
+              },
+              {
+                "fragment": "fragment_radio_09_hiphop_old_music_option_dre_day",
+                "option": "option_dre_day"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_09_hiphop_old_news",
+            "src": {
+              "trackLists": [
+                "radio_news"
+              ]
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_09_hiphop_old_ident_option_oiginal",
+                "option": "option_oiginal",
+                "probability": 0.667
+              },
+              {
+                "fragment": "fragment_radio_09_hiphop_old_ident_option_dre_day",
+                "option": "option_dre_day",
+                "probability": 0.667
+              },
+              {
+                "fragment": "fragment_radio_09_hiphop_old_music_option_oiginal",
+                "option": "option_oiginal"
+              },
+              {
+                "fragment": "fragment_radio_09_hiphop_old_music_option_dre_day",
+                "option": "option_dre_day"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_09_hiphop_old_adverts",
+            "src": {
+              "trackLists": [
+                "general_adverts"
+              ]
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_09_hiphop_old_music_option_oiginal",
+                "option": "option_oiginal"
+              },
+              {
+                "fragment": "fragment_radio_09_hiphop_old_music_option_dre_day",
+                "option": "option_dre_day"
+              }
+            ]
+          }
+        ]
+      }
     },
     {
       "id": "radio_11_talk_02",
@@ -54183,6 +54609,7 @@
       ]
     },
     {
+      "todo": "use somehow",
       "id": "radio_09_hiphop_old_dlc_23_2_djsolo",
       "tracks": [
         {
