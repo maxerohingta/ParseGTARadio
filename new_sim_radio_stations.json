@@ -1893,7 +1893,252 @@
         "country_adverts",
         "radio_11_talk_02_idents",
         "radio_11_talk_02_music"
-      ]
+      ],
+            "playlist": {
+        "firstFragment": "fragment_radio_11_talk_02_ident_01",
+        "fragments": [
+          {
+            "id": "fragment_radio_11_talk_02_ident_01",
+            "src": {
+              "trackLists": [
+                "radio_11_talk_02_idents"
+              ]
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_11_talk_02_music_01"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_11_talk_02_music_01",
+            "src": {
+              "trackLists": [
+                "radio_11_talk_02_music"
+              ],
+              "track": "radio_11_talk_02_mono_bless_your_heart"
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_11_talk_02_adverts_01",
+                "probability": 0.333
+              },
+              {
+                "fragment": "fragment_radio_11_talk_02_ident_02"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_11_talk_02_adverts_01",
+            "src": {
+              "trackLists": [
+                "general_adverts"
+              ]
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_11_talk_02_adverts_01",
+                "probability": 0.166
+              },
+              {
+                "fragment": "fragment_radio_11_talk_02_ident_02"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_11_talk_02_ident_02",
+            "src": {
+              "trackLists": [
+                "radio_11_talk_02_idents"
+              ]
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_11_talk_02_music_02"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_11_talk_02_music_02",
+            "src": {
+              "trackLists": [
+                "radio_11_talk_02_music"
+              ],
+              "track": "radio_11_talk_02_mono_bcr_community_hour"
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_11_talk_02_adverts_02",
+                "probability": 0.333
+              },
+              {
+                "fragment": "fragment_radio_11_talk_02_ident_03"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_11_talk_02_adverts_02",
+            "src": {
+              "trackLists": [
+                "general_adverts"
+              ]
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_11_talk_02_adverts_02",
+                "probability": 0.166
+              },
+              {
+                "fragment": "fragment_radio_11_talk_02_ident_03"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_11_talk_02_ident_03",
+            "src": {
+              "trackLists": [
+                "radio_11_talk_02_idents"
+              ]
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_11_talk_02_music_03"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_11_talk_02_music_03",
+            "src": {
+              "trackLists": [
+                "radio_11_talk_02_music"
+              ],
+              "track": "radio_11_talk_02_mono_beyond_insemination"
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_11_talk_02_adverts_03",
+                "probability": 0.333
+              },
+              {
+                "fragment": "fragment_radio_11_talk_02_ident_04"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_11_talk_02_adverts_03",
+            "src": {
+              "trackLists": [
+                "general_adverts"
+              ]
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_11_talk_02_adverts_03",
+                "probability": 0.166
+              },
+              {
+                "fragment": "fragment_radio_11_talk_02_ident_04"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_11_talk_02_ident_04",
+            "src": {
+              "trackLists": [
+                "radio_11_talk_02_idents"
+              ]
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_11_talk_02_music_04"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_11_talk_02_music_04",
+            "src": {
+              "trackLists": [
+                "radio_11_talk_02_music"
+              ],
+              "track": "radio_11_talk_02_mono_zbeyond_insemination_part_2"
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_11_talk_02_adverts_04",
+                "probability": 0.333
+              },
+              {
+                "fragment": "fragment_radio_11_talk_02_ident_05"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_11_talk_02_adverts_04",
+            "src": {
+              "trackLists": [
+                "general_adverts"
+              ]
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_11_talk_02_adverts_04",
+                "probability": 0.166
+              },
+              {
+                "fragment": "fragment_radio_11_talk_02_ident_05"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_11_talk_02_ident_05",
+            "src": {
+              "trackLists": [
+                "radio_11_talk_02_idents"
+              ]
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_11_talk_02_music_05"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_11_talk_02_music_05",
+            "src": {
+              "trackLists": [
+                "radio_11_talk_02_music"
+              ],
+              "track": "dlc_smuggler_mono_bcr_2"
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_11_talk_02_adverts_05",
+                "probability": 0.333
+              },
+              {
+                "fragment": "fragment_radio_11_talk_02_ident_01"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_11_talk_02_adverts_05",
+            "src": {
+              "trackLists": [
+                "general_adverts"
+              ]
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_11_talk_02_adverts_05",
+                "probability": 0.166
+              },
+              {
+                "fragment": "fragment_radio_11_talk_02_ident_01"
+              }
+            ]
+          }
+        ]
+      }
     },
     {
       "id": "radio_12_reggae",
