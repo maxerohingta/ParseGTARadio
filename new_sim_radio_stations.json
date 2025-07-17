@@ -25,7 +25,11 @@
         "radio_news"
       ],
       "playlist": {
-        "firstFragment": "fragment_radio_01_class_rock_ident",
+        "firstFragment": [
+          {
+            "id": "fragment_radio_01_class_rock_ident"
+          }
+        ],
         "positions": [
           {
             "id": "track_start",
@@ -252,7 +256,11 @@
         "radio_news"
       ],
       "playlist": {
-        "firstFragment": "fragment_radio_02_pop_ident",
+        "firstFragment": [
+          {
+            "id": "fragment_radio_02_pop_ident"
+          }
+        ],
         "positions": [
           {
             "id": "track_start",
@@ -486,7 +494,11 @@
         "radio_news"
       ],
       "playlist": {
-        "firstFragment": "fragment_radio_03_hiphop_new_ident",
+        "firstFragment": [
+          {
+            "id": "fragment_radio_03_hiphop_new_ident"
+          }
+        ],
         "positions": [
           {
             "id": "track_start",
@@ -720,7 +732,11 @@
         "radio_news"
       ],
       "playlist": {
-        "firstFragment": "fragment_radio_04_punk_ident",
+        "firstFragment": [
+          {
+            "id": "fragment_radio_04_punk_ident"
+          }
+        ],
         "positions": [
           {
             "id": "track_start",
@@ -936,7 +952,11 @@
         "radio_05_talk_01_music"
       ],
       "playlist": {
-        "firstFragment": "fragment_radio_05_talk_01_ident_01",
+        "firstFragment": [
+          {
+            "id": "fragment_radio_05_talk_01_ident_01"
+          }
+        ],
         "fragments": [
           {
             "id": "fragment_radio_05_talk_01_ident_01",
@@ -1157,7 +1177,11 @@
         "radio_news"
       ],
       "playlist": {
-        "firstFragment": "fragment_radio_06_country_ident",
+        "firstFragment": [
+          {
+            "id": "fragment_radio_06_country_ident"
+          }
+        ],
         "positions": [
           {
             "id": "track_start",
@@ -1372,7 +1396,11 @@
         "radio_07_dance_01_music"
       ],
       "playlist": {
-        "firstFragment": "fragment_radio_07_dance_01_music_01",
+        "firstFragment": [
+          {
+            "id": "fragment_radio_07_dance_01_music_01"
+          }
+        ],
         "fragments": [
           {
             "id": "fragment_radio_07_dance_01_music_01",
@@ -1404,7 +1432,11 @@
         "radio_08_mexican_music"
       ],
       "playlist": {
-        "firstFragment": "fragment_radio_08_mexican_music_01",
+        "firstFragment": [
+          {
+            "id": "fragment_radio_08_mexican_music_01"
+          }
+        ],
         "fragments": [
           {
             "id": "fragment_radio_08_mexican_music_01",
@@ -1455,7 +1487,16 @@
         "radio_news"
       ],
       "playlist": {
-        "firstFragment": "fragment_radio_09_hiphop_old_ident_option_oiginal",
+        "firstFragment": [
+          {
+            "id": "fragment_radio_09_hiphop_old_ident_option_oiginal",
+            "option": "option_oiginal"
+          },
+          {
+            "id": "fragment_radio_09_hiphop_old_ident_option_dre_day",
+            "option": "option_dre_day"
+          }
+        ],
         "options": {
           "alternateInterval": 7200.0,
           "available": [
@@ -1898,7 +1939,11 @@
         "radio_11_talk_02_music"
       ],
       "playlist": {
-        "firstFragment": "fragment_radio_11_talk_02_ident_01",
+        "firstFragment": [
+          {
+            "id": "fragment_radio_11_talk_02_ident_01"
+          }
+        ],
         "fragments": [
           {
             "id": "fragment_radio_11_talk_02_ident_01",
@@ -2168,7 +2213,11 @@
         "radio_news"
       ],
       "playlist": {
-        "firstFragment": "fragment_radio_12_reggae_ident",
+        "firstFragment": [
+          {
+            "id": "fragment_radio_12_reggae_ident"
+          }
+        ],
         "positions": [
           {
             "id": "track_start",
@@ -2384,8 +2433,21 @@
         "wwfm_island_update_music_music"
       ],
       "playlist": {
-        "firstFragment": "fragment_radio_13_jazz_music_edited_01",
-          "options": {
+        "firstFragment": [
+          {
+            "id": "fragment_radio_13_jazz_music_edited_01",
+            "option": "option_all"
+          },
+          {
+            "id": "fragment_radio_13_jazz_music_edited_01",
+            "option": "option_oiginal"
+          },
+          {
+            "id": "fragment_radio_13_jazz_music_edited_06",
+            "option": "option_gta_online"
+          }
+        ],
+        "options": {
           "available": [
             {
               "id": "option_all",
@@ -2545,11 +2607,11 @@
             "next": [
               {
                 "fragment": "fragment_radio_13_jazz_music_edited_01",
-                "option": "option_all"                
+                "option": "option_all"
               },
               {
                 "fragment": "fragment_radio_13_jazz_music_edited_06",
-                "option": "option_gta_online"                
+                "option": "option_gta_online"
               }
             ]
           }
