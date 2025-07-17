@@ -2163,7 +2163,209 @@
         "radio_12_reggae_to_ad",
         "radio_12_reggae_to_news",
         "radio_news"
-      ]
+      ],
+      "playlist": {
+        "firstFragment": "fragment_radio_12_reggae_ident",
+        "positions": [
+          {
+            "id": "track_start",
+            "relativeOffset": 0.03
+          },
+          {
+            "id": "track_end",
+            "relativeOffset": 0.97
+          }
+        ],
+        "fragments": [
+          {
+            "id": "fragment_radio_12_reggae_ident",
+            "src": {
+              "trackLists": [
+                "radio_12_reggae_idents"
+              ]
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_12_reggae_music"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_12_reggae_music",
+            "src": {
+              "trackLists": [
+                "radio_12_reggae_music",
+                "radio_12_reggae_music_new"
+              ]
+            },
+            "voiceOver": [
+              {
+                "id": "voiceover_radio_12_reggae_intro",
+                "src": {
+                  "introTrackLists": [
+                    "radio_12_reggae_music_intro",
+                    "radio_12_reggae_music_new_intro"
+                  ]
+                },
+                "condition": {
+                  "probability": 0.333
+                },
+                "positions": [
+                  "track_start",
+                  "track_end"
+                ]
+              },
+              {
+                "id": "voiceover_radio_12_reggae_general",
+                "src": {
+                  "trackLists": [
+                    "radio_12_reggae_general"
+                  ]
+                },
+                "condition": {
+                  "probability": 0.333
+                },
+                "positions": [
+                  "track_start",
+                  "track_end"
+                ]
+              },
+              {
+                "id": "voiceover_radio_12_reggae_morning",
+                "src": {
+                  "trackLists": [
+                    "radio_12_reggae_time_morning"
+                  ]
+                },
+                "condition": {
+                  "probability": 0.333,
+                  "timeInterval": {
+                    "from": "5:00",
+                    "to": "11:00"
+                  }
+                },
+                "positions": [
+                  "track_start",
+                  "track_end"
+                ]
+              },
+              {
+                "id": "voiceover_radio_12_reggae_evening",
+                "src": {
+                  "trackLists": [
+                    "radio_12_reggae_time_evening"
+                  ]
+                },
+                "condition": {
+                  "probability": 0.333,
+                  "timeInterval": {
+                    "from": "18:00",
+                    "to": "24:00"
+                  }
+                },
+                "positions": [
+                  "track_start",
+                  "track_end"
+                ]
+              },
+              {
+                "id": "voiceover_radio_12_reggae_to_news",
+                "condition": {
+                  "probability": 0.666,
+                  "nextFragment": "fragment_radio_12_reggae_news"
+                },
+                "positions": [
+                  "track_end"
+                ],
+                "src": {
+                  "trackLists": [
+                    "radio_12_reggae_to_news"
+                  ]
+                }
+              },
+              {
+                "id": "voiceover_radio_12_reggae_to_ad",
+                "condition": {
+                  "probability": 0.666,
+                  "nextFragment": "fragment_radio_12_reggae_adverts"
+                },
+                "positions": [
+                  "track_end"
+                ],
+                "src": {
+                  "trackLists": [
+                    "radio_12_reggae_to_ad"
+                  ]
+                }
+              }
+            ],
+            "next": [
+              {
+                "fragment": "fragment_radio_12_reggae_adverts",
+                "probability": 0.357
+              },
+              {
+                "fragment": "fragment_radio_12_reggae_djsolo",
+                "probability": 0.286
+              },
+              {
+                "fragment": "fragment_radio_12_reggae_news",
+                "probability": 0.143
+              },
+              {
+                "fragment": "fragment_radio_12_reggae_music"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_12_reggae_djsolo",
+            "src": {
+              "trackLists": [
+                "radio_12_reggae_djsolo"
+              ]
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_12_reggae_news",
+                "probability": 0.4
+              },
+              {
+                "fragment": "fragment_radio_12_reggae_music"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_12_reggae_news",
+            "src": {
+              "trackLists": [
+                "radio_news"
+              ]
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_12_reggae_ident",
+                "probability": 0.667
+              },
+              {
+                "fragment": "fragment_radio_12_reggae_music"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_12_reggae_adverts",
+            "src": {
+              "trackLists": [
+                "general_adverts"
+              ]
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_12_reggae_music"
+              }
+            ]
+          }
+        ]
+      }
     },
     {
       "id": "radio_13_jazz",
