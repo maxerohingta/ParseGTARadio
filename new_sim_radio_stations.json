@@ -1456,16 +1456,19 @@
       ],
       "playlist": {
         "firstFragment": "fragment_radio_09_hiphop_old_ident_option_oiginal",
-        "options": [
-          {
-            "id": "option_oiginal",
-            "title": "Original"
-          },
-          {
-            "id": "option_dre_day",
-            "title": "Dre Day"
-          }
-        ],
+        "options": {
+          "alternateInterval": 7200.0,
+          "available": [
+            {
+              "id": "option_oiginal",
+              "title": "Original"
+            },
+            {
+              "id": "option_dre_day",
+              "title": "Dre Day"
+            }
+          ]
+        },
         "positions": [
           {
             "id": "track_start",
@@ -1894,7 +1897,7 @@
         "radio_11_talk_02_idents",
         "radio_11_talk_02_music"
       ],
-            "playlist": {
+      "playlist": {
         "firstFragment": "fragment_radio_11_talk_02_ident_01",
         "fragments": [
           {
@@ -2379,7 +2382,179 @@
       "trackLists": [
         "radio_13_jazz_music_edited",
         "wwfm_island_update_music_music"
-      ]
+      ],
+      "playlist": {
+        "firstFragment": "fragment_radio_13_jazz_music_edited_01",
+          "options": {
+          "available": [
+            {
+              "id": "option_all",
+              "title": "All Tracks"
+            },
+            {
+              "id": "option_oiginal",
+              "title": "Original"
+            },
+            {
+              "id": "option_gta_online",
+              "title": "GTA Online"
+            }
+          ]
+        },
+        "fragments": [
+          {
+            "id": "fragment_radio_13_jazz_music_edited_01",
+            "src": {
+              "trackLists": [
+                "radio_13_jazz_music_edited"
+              ],
+              "track": "radio_13_jazz_wwfm_p1"
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_13_jazz_music_edited_02"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_13_jazz_music_edited_02",
+            "src": {
+              "trackLists": [
+                "radio_13_jazz_music_edited"
+              ],
+              "track": "radio_13_jazz_wwfm_p2"
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_13_jazz_music_edited_03"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_13_jazz_music_edited_03",
+            "src": {
+              "trackLists": [
+                "radio_13_jazz_music_edited"
+              ],
+              "track": "dlc_update_wwfm_p3_start"
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_13_jazz_music_edited_04"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_13_jazz_music_edited_04",
+            "src": {
+              "trackLists": [
+                "radio_13_jazz_music_edited"
+              ],
+              "track": "radio_13_jazz_wwfm_p3",
+              "trackStart": 279.982
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_13_jazz_music_edited_05"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_13_jazz_music_edited_05",
+            "src": {
+              "trackLists": [
+                "radio_13_jazz_music_edited"
+              ],
+              "track": "radio_13_jazz_wwfm_p4"
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_13_jazz_music_edited_01",
+                "option": "option_oiginal"
+              },
+              {
+                "fragment": "fragment_radio_13_jazz_music_edited_06",
+                "option": "option_all"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_13_jazz_music_edited_06",
+            "src": {
+              "trackLists": [
+                "wwfm_island_update_music_music"
+              ],
+              "track": "dlc_hei4_music_wwfm_island_update_part_1"
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_13_jazz_music_edited_07"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_13_jazz_music_edited_07",
+            "src": {
+              "trackLists": [
+                "wwfm_island_update_music_music"
+              ],
+              "track": "dlc_hei4_music_wwfm_island_update_part_2"
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_13_jazz_music_edited_08"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_13_jazz_music_edited_08",
+            "src": {
+              "trackLists": [
+                "wwfm_island_update_music_music"
+              ],
+              "track": "dlc_hei4_music_wwfm_island_update_part_3"
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_13_jazz_music_edited_09"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_13_jazz_music_edited_09",
+            "src": {
+              "trackLists": [
+                "wwfm_island_update_music_music"
+              ],
+              "track": "dlc_hei4_music_wwfm_island_update_part_4"
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_13_jazz_music_edited_10"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_13_jazz_music_edited_10",
+            "src": {
+              "trackLists": [
+                "wwfm_island_update_music_music"
+              ],
+              "track": "dlc_hei4_music_wwfm_island_update_part_5"
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_13_jazz_music_edited_01",
+                "option": "option_all"                
+              },
+              {
+                "fragment": "fragment_radio_13_jazz_music_edited_06",
+                "option": "option_gta_online"                
+              }
+            ]
+          }
+        ]
+      }
     },
     {
       "id": "radio_14_dance_02",
