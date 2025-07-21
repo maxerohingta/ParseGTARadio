@@ -2630,7 +2630,107 @@
       "trackLists": [
         "flylo_island_update_music_music",
         "radio_14_dance_02_music"
-      ]
+      ],
+      "playlist": {
+        "firstFragment": [
+          {
+            "fragment": "fragment_radio_14_dance_02_01",
+            "option": "option_all"
+          },
+          {
+            "fragment": "fragment_radio_14_dance_02_01",
+            "option": "option_oiginal"
+          },
+          {
+            "fragment": "fragment_radio_14_dance_02_06",
+            "option": "option_gta_online"
+          }
+        ],
+        "options": {
+          "available": [
+            {
+              "id": "option_all",
+              "title": "All Tracks"
+            },
+            {
+              "id": "option_oiginal",
+              "title": "Original"
+            },
+            {
+              "id": "option_gta_online",
+              "title": "GTA Online"
+            }
+          ]
+        },
+        "fragments": [
+          {
+            "id": "fragment_radio_14_dance_02_01",
+            "src": {
+              "trackLists": [
+                "radio_14_dance_02_music"
+              ],
+              "track": "radio_14_dance_02_flylo_part1"
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_14_dance_02_02"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_14_dance_02_02",
+            "src": {
+              "trackLists": [
+                "radio_14_dance_02_music"
+              ],
+              "track": "radio_14_dance_02_flylo_part2"
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_14_dance_02_01",
+                "option": "option_oiginal"
+              },
+              {
+                "fragment": "fragment_radio_14_dance_02_03",
+                "option": "option_all"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_14_dance_02_03",
+            "src": {
+              "trackLists": [
+                "flylo_island_update_music_music"
+              ],
+              "track": "dlc_hei4_music_flylo_island_update_part_1"
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_14_dance_02_04",
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_14_dance_02_04",
+            "src": {
+              "trackLists": [
+                "flylo_island_update_music_music"
+              ],
+              "track": "dlc_hei4_music_flylo_island_update_part_2"
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_14_dance_02_01",
+                "option": "option_all"
+              },
+              {
+                "fragment": "fragment_radio_14_dance_02_03",
+                "option": "option_gta_online"
+              }
+            ]
+          }
+        ]
+      }
     },
     {
       "id": "radio_15_motown",
@@ -2653,7 +2753,173 @@
         "radio_15_motown_time_evening",
         "radio_15_motown_time_morning",
         "radio_15_motown_to_ad"
-      ]
+      ],
+      "playlist": {
+        "firstFragment": [
+          {
+            "fragment": "fragment_radio_15_motown_ident"
+          }
+        ],
+        "positions": [
+          {
+            "id": "track_start",
+            "relativeOffset": 0.03
+          },
+          {
+            "id": "track_end",
+            "relativeOffset": 0.97
+          }
+        ],
+        "fragments": [
+          {
+            "id": "fragment_radio_15_motown_ident",
+            "src": {
+              "trackLists": [
+                "radio_15_motown_idents"
+              ]
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_15_motown_music"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_15_motown_music",
+            "src": {
+              "trackLists": [
+                "radio_15_motown_music",
+                "radio_15_motown_music_new"
+              ]
+            },
+            "voiceOver": [
+              {
+                "id": "voiceover_radio_15_motown_intro",
+                "src": {
+                  "introTrackLists": [
+                    "radio_15_motown_music_intro",
+                    "radio_15_motown_music_new_intro"
+                  ]
+                },
+                "condition": {
+                  "probability": 0.333
+                },
+                "positions": [
+                  "track_start",
+                  "track_end"
+                ]
+              },
+              {
+                "id": "voiceover_radio_15_motown_general",
+                "src": {
+                  "trackLists": [
+                    "radio_15_motown_general"
+                  ]
+                },
+                "condition": {
+                  "probability": 0.333
+                },
+                "positions": [
+                  "track_start",
+                  "track_end"
+                ]
+              },
+              {
+                "id": "voiceover_radio_15_motown_morning",
+                "src": {
+                  "trackLists": [
+                    "radio_15_motown_time_morning"
+                  ]
+                },
+                "condition": {
+                  "probability": 0.333,
+                  "timeInterval": {
+                    "from": "5:00",
+                    "to": "11:00"
+                  }
+                },
+                "positions": [
+                  "track_start",
+                  "track_end"
+                ]
+              },
+              {
+                "id": "voiceover_radio_15_motown_evening",
+                "src": {
+                  "trackLists": [
+                    "radio_15_motown_time_evening"
+                  ]
+                },
+                "condition": {
+                  "probability": 0.333,
+                  "timeInterval": {
+                    "from": "18:00",
+                    "to": "24:00"
+                  }
+                },
+                "positions": [
+                  "track_start",
+                  "track_end"
+                ]
+              },
+              {
+                "id": "voiceover_radio_15_motown_to_ad",
+                "condition": {
+                  "probability": 0.666,
+                  "nextFragment": "fragment_radio_15_motown_adverts"
+                },
+                "positions": [
+                  "track_end"
+                ],
+                "src": {
+                  "trackLists": [
+                    "radio_15_motown_to_ad"
+                  ]
+                }
+              }
+            ],
+            "next": [
+              {
+                "fragment": "fragment_radio_15_motown_adverts",
+                "probability": 0.357
+              },
+              {
+                "fragment": "fragment_radio_15_motown_djsolo",
+                "probability": 0.286
+              },
+              {
+                "fragment": "fragment_radio_15_motown_music"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_15_motown_djsolo",
+            "src": {
+              "trackLists": [
+                "radio_15_motown_djsolo"
+              ]
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_15_motown_music"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_15_motown_adverts",
+            "src": {
+              "trackLists": [
+                "general_adverts"
+              ]
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_15_motown_music"
+              }
+            ]
+          }
+        ]
+      }
     },
     {
       "id": "radio_16_silverlake",
@@ -2680,7 +2946,215 @@
         "radio_16_silverlake_to_ad",
         "radio_16_silverlake_to_news",
         "radio_news"
-      ]
+      ],
+      "playlist": {
+        "firstFragment": [
+          {
+            "fragment": "fragment_radio_16_silverlake_ident"
+          }
+        ],
+        "positions": [
+          {
+            "id": "track_start",
+            "relativeOffset": 0.03
+          },
+          {
+            "id": "track_end",
+            "relativeOffset": 0.97
+          }
+        ],
+        "fragments": [
+          {
+            "id": "fragment_radio_16_silverlake_ident",
+            "src": {
+              "trackLists": [
+                "radio_16_silverlake_idents"
+              ]
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_16_silverlake_music"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_16_silverlake_music",
+            "src": {
+              "trackLists": [
+                "radio_16_silverlake_music",
+                "radio_16_silverlake_music_new", 
+                "mirrorpark_locked"
+              ]
+            },
+            "voiceOver": [
+              {
+                "id": "voiceover_radio_16_silverlake_intro",
+                "src": {
+                  "introTrackLists": [
+                    "radio_16_silverlake_music_intro",
+                    "radio_16_silverlake_music_new_intro",
+                    "mirrorpark_locked_intro"
+                  ]
+                },
+                "condition": {
+                  "probability": 0.333
+                },
+                "positions": [
+                  "track_start",
+                  "track_end"
+                ]
+              },
+              {
+                "id": "voiceover_radio_16_silverlake_general",
+                "src": {
+                  "trackLists": [
+                    "radio_16_silverlake_general"
+                  ]
+                },
+                "condition": {
+                  "probability": 0.333
+                },
+                "positions": [
+                  "track_start",
+                  "track_end"
+                ]
+              },
+              {
+                "id": "voiceover_radio_16_silverlake_morning",
+                "src": {
+                  "trackLists": [
+                    "radio_16_silverlake_time_morning"
+                  ]
+                },
+                "condition": {
+                  "probability": 0.333,
+                  "timeInterval": {
+                    "from": "5:00",
+                    "to": "11:00"
+                  }
+                },
+                "positions": [
+                  "track_start",
+                  "track_end"
+                ]
+              },
+              {
+                "id": "voiceover_radio_16_silverlake_evening",
+                "src": {
+                  "trackLists": [
+                    "radio_16_silverlake_time_evening"
+                  ]
+                },
+                "condition": {
+                  "probability": 0.333,
+                  "timeInterval": {
+                    "from": "18:00",
+                    "to": "24:00"
+                  }
+                },
+                "positions": [
+                  "track_start",
+                  "track_end"
+                ]
+              },
+              {
+                "id": "voiceover_radio_16_silverlake_to_news",
+                "condition": {
+                  "probability": 0.666,
+                  "nextFragment": "fragment_radio_16_silverlake_news"
+                },
+                "positions": [
+                  "track_end"
+                ],
+                "src": {
+                  "trackLists": [
+                    "radio_16_silverlake_to_news"
+                  ]
+                }
+              },
+              {
+                "id": "voiceover_radio_16_silverlake_to_ad",
+                "condition": {
+                  "probability": 0.666,
+                  "nextFragment": "fragment_radio_16_silverlake_adverts"
+                },
+                "positions": [
+                  "track_end"
+                ],
+                "src": {
+                  "trackLists": [
+                    "radio_16_silverlake_to_ad"
+                  ]
+                }
+              }
+            ],
+            "next": [
+              {
+                "fragment": "fragment_radio_16_silverlake_adverts",
+                "probability": 0.357
+              },
+              {
+                "fragment": "fragment_radio_16_silverlake_djsolo",
+                "probability": 0.286
+              },
+              {
+                "fragment": "fragment_radio_16_silverlake_news",
+                "probability": 0.143
+              },
+              {
+                "fragment": "fragment_radio_16_silverlake_music"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_16_silverlake_djsolo",
+            "src": {
+              "trackLists": [
+                "radio_16_silverlake_djsolo"
+              ]
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_16_silverlake_news",
+                "probability": 0.4
+              },
+              {
+                "fragment": "fragment_radio_16_silverlake_music"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_16_silverlake_news",
+            "src": {
+              "trackLists": [
+                "radio_news"
+              ]
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_16_silverlake_ident",
+                "probability": 0.667
+              },
+              {
+                "fragment": "fragment_radio_16_silverlake_music"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_16_silverlake_adverts",
+            "src": {
+              "trackLists": [
+                "general_adverts"
+              ]
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_16_silverlake_music"
+              }
+            ]
+          }
+        ]
+      }
     },
     {
       "id": "radio_17_funk",
