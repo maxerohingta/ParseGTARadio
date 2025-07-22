@@ -1489,8 +1489,8 @@
       "playlist": {
         "firstFragment": [
           {
-            "fragment": "fragment_radio_09_hiphop_old_ident_option_oiginal",
-            "option": "option_oiginal"
+            "fragment": "fragment_radio_09_hiphop_old_ident_option_original",
+            "option": "option_original"
           },
           {
             "fragment": "fragment_radio_09_hiphop_old_ident_option_dre_day",
@@ -1501,7 +1501,7 @@
           "alternateInterval": 7200.0,
           "available": [
             {
-              "id": "option_oiginal",
+              "id": "option_original",
               "title": "Original"
             },
             {
@@ -1522,7 +1522,7 @@
         ],
         "fragments": [
           {
-            "id": "fragment_radio_09_hiphop_old_ident_option_oiginal",
+            "id": "fragment_radio_09_hiphop_old_ident_option_original",
             "src": {
               "trackLists": [
                 "radio_09_hiphop_old_idents"
@@ -1530,8 +1530,8 @@
             },
             "next": [
               {
-                "fragment": "fragment_radio_09_hiphop_old_music_option_oiginal",
-                "option": "option_oiginal"
+                "fragment": "fragment_radio_09_hiphop_old_music_option_original",
+                "option": "option_original"
               },
               {
                 "fragment": "fragment_radio_09_hiphop_old_music_option_dre_day",
@@ -1548,8 +1548,8 @@
             },
             "next": [
               {
-                "fragment": "fragment_radio_09_hiphop_old_music_option_oiginal",
-                "option": "option_oiginal"
+                "fragment": "fragment_radio_09_hiphop_old_music_option_original",
+                "option": "option_original"
               },
               {
                 "fragment": "fragment_radio_09_hiphop_old_music_option_dre_day",
@@ -1558,7 +1558,7 @@
             ]
           },
           {
-            "id": "fragment_radio_09_hiphop_old_music_option_oiginal",
+            "id": "fragment_radio_09_hiphop_old_music_option_original",
             "src": {
               "trackLists": [
                 "radio_09_hiphop_old_core_music"
@@ -1566,7 +1566,7 @@
             },
             "voiceOver": [
               {
-                "id": "voiceover_radio_09_hiphop_old_intro_option_oiginal",
+                "id": "voiceover_radio_09_hiphop_old_intro_option_original",
                 "src": {
                   "introTrackLists": [
                     "radio_09_hiphop_old_core_music_intro"
@@ -1581,7 +1581,7 @@
                 ]
               },
               {
-                "id": "voiceover_radio_09_hiphop_old_general_option_oiginal",
+                "id": "voiceover_radio_09_hiphop_old_general_option_original",
                 "src": {
                   "trackLists": [
                     "radio_09_hiphop_old_general"
@@ -1596,7 +1596,7 @@
                 ]
               },
               {
-                "id": "voiceover_radio_09_hiphop_old_morning_option_oiginal",
+                "id": "voiceover_radio_09_hiphop_old_morning_option_original",
                 "src": {
                   "trackLists": [
                     "radio_09_hiphop_old_time_morning"
@@ -1615,7 +1615,7 @@
                 ]
               },
               {
-                "id": "voiceover_radio_09_hiphop_old_evening_option_oiginal",
+                "id": "voiceover_radio_09_hiphop_old_evening_option_original",
                 "src": {
                   "trackLists": [
                     "radio_09_hiphop_old_time_evening"
@@ -1634,7 +1634,7 @@
                 ]
               },
               {
-                "id": "voiceover_radio_09_hiphop_old_to_news_option_oiginal",
+                "id": "voiceover_radio_09_hiphop_old_to_news_option_original",
                 "condition": {
                   "probability": 0.666,
                   "nextFragment": "fragment_radio_09_hiphop_old_news"
@@ -1649,7 +1649,7 @@
                 }
               },
               {
-                "id": "voiceover_radio_09_hiphop_old_to_ad_option_oiginal",
+                "id": "voiceover_radio_09_hiphop_old_to_ad_option_original",
                 "condition": {
                   "probability": 0.666,
                   "nextFragment": "fragment_radio_09_hiphop_old_adverts"
@@ -1670,8 +1670,8 @@
                 "probability": 0.357
               },
               {
-                "fragment": "fragment_radio_09_hiphop_old_djsolo_option_oiginal",
-                "option": "option_oiginal",
+                "fragment": "fragment_radio_09_hiphop_old_djsolo_option_original",
+                "option": "option_original",
                 "probability": 0.286
               },
               {
@@ -1684,8 +1684,8 @@
                 "probability": 0.143
               },
               {
-                "fragment": "fragment_radio_09_hiphop_old_music_option_oiginal",
-                "option": "option_oiginal"
+                "fragment": "fragment_radio_09_hiphop_old_music_option_original",
+                "option": "option_original"
               },
               {
                 "fragment": "fragment_radio_09_hiphop_old_music_option_dre_day",
@@ -1808,8 +1808,8 @@
                 "probability": 0.357
               },
               {
-                "fragment": "fragment_radio_09_hiphop_old_djsolo_option_oiginal",
-                "option": "option_oiginal",
+                "fragment": "fragment_radio_09_hiphop_old_djsolo_option_original",
+                "option": "option_original",
                 "probability": 0.286
               },
               {
@@ -1822,8 +1822,8 @@
                 "probability": 0.143
               },
               {
-                "fragment": "fragment_radio_09_hiphop_old_music_option_oiginal",
-                "option": "option_oiginal"
+                "fragment": "fragment_radio_09_hiphop_old_music_option_original",
+                "option": "option_original"
               },
               {
                 "fragment": "fragment_radio_09_hiphop_old_music_option_dre_day",
@@ -1832,7 +1832,7 @@
             ]
           },
           {
-            "id": "fragment_radio_09_hiphop_old_djsolo_option_oiginal",
+            "id": "fragment_radio_09_hiphop_old_djsolo_option_original",
             "src": {
               "trackLists": [
                 "radio_09_hiphop_old_djsolo",
@@ -1844,8 +1844,8 @@
                 "probability": 0.4
               },
               {
-                "fragment": "fragment_radio_09_hiphop_old_music_option_oiginal",
-                "option": "option_oiginal"
+                "fragment": "fragment_radio_09_hiphop_old_music_option_original",
+                "option": "option_original"
               },
               {
                 "fragment": "fragment_radio_09_hiphop_old_music_option_dre_day",
@@ -1867,8 +1867,8 @@
                 "probability": 0.4
               },
               {
-                "fragment": "fragment_radio_09_hiphop_old_music_option_oiginal",
-                "option": "option_oiginal"
+                "fragment": "fragment_radio_09_hiphop_old_music_option_original",
+                "option": "option_original"
               },
               {
                 "fragment": "fragment_radio_09_hiphop_old_music_option_dre_day",
@@ -1885,8 +1885,8 @@
             },
             "next": [
               {
-                "fragment": "fragment_radio_09_hiphop_old_ident_option_oiginal",
-                "option": "option_oiginal",
+                "fragment": "fragment_radio_09_hiphop_old_ident_option_original",
+                "option": "option_original",
                 "probability": 0.667
               },
               {
@@ -1895,8 +1895,8 @@
                 "probability": 0.667
               },
               {
-                "fragment": "fragment_radio_09_hiphop_old_music_option_oiginal",
-                "option": "option_oiginal"
+                "fragment": "fragment_radio_09_hiphop_old_music_option_original",
+                "option": "option_original"
               },
               {
                 "fragment": "fragment_radio_09_hiphop_old_music_option_dre_day",
@@ -1913,8 +1913,8 @@
             },
             "next": [
               {
-                "fragment": "fragment_radio_09_hiphop_old_music_option_oiginal",
-                "option": "option_oiginal"
+                "fragment": "fragment_radio_09_hiphop_old_music_option_original",
+                "option": "option_original"
               },
               {
                 "fragment": "fragment_radio_09_hiphop_old_music_option_dre_day",
@@ -2440,7 +2440,7 @@
           },
           {
             "fragment": "fragment_radio_13_jazz_music_edited_01",
-            "option": "option_oiginal"
+            "option": "option_original"
           },
           {
             "fragment": "fragment_radio_13_jazz_music_edited_06",
@@ -2454,7 +2454,7 @@
               "title": "All Tracks"
             },
             {
-              "id": "option_oiginal",
+              "id": "option_original",
               "title": "Original"
             },
             {
@@ -2532,7 +2532,7 @@
             "next": [
               {
                 "fragment": "fragment_radio_13_jazz_music_edited_01",
-                "option": "option_oiginal"
+                "option": "option_original"
               },
               {
                 "fragment": "fragment_radio_13_jazz_music_edited_06",
@@ -2639,7 +2639,7 @@
           },
           {
             "fragment": "fragment_radio_14_dance_02_01",
-            "option": "option_oiginal"
+            "option": "option_original"
           },
           {
             "fragment": "fragment_radio_14_dance_02_06",
@@ -2650,10 +2650,10 @@
           "available": [
             {
               "id": "option_all",
-              "title": "All Tracks"
+              "title": "All Playlists"
             },
             {
-              "id": "option_oiginal",
+              "id": "option_original",
               "title": "Original"
             },
             {
@@ -2688,7 +2688,7 @@
             "next": [
               {
                 "fragment": "fragment_radio_14_dance_02_01",
-                "option": "option_oiginal"
+                "option": "option_original"
               },
               {
                 "fragment": "fragment_radio_14_dance_02_03",
@@ -3769,7 +3769,248 @@
         "battle_mix2_radio",
         "battle_mix3_radio",
         "battle_mix4_radio"
-      ]
+      ],
+      "playlist": {
+        "firstFragment": [
+          {
+            "fragment": "fragment_radio_22_dlc_battle_mix1_radio_01",
+            "option": "option_all"
+          },
+          {
+            "fragment": "fragment_radio_22_dlc_battle_mix1_radio_01",
+            "option": "option_battle_mix1_radio"
+          },
+          {
+            "fragment": "fragment_radio_22_dlc_battle_mix1_radio_06",
+            "option": "option_battle_mix2_radio"
+          },
+          {
+            "fragment": "fragment_radio_22_dlc_battle_mix1_radio_06",
+            "option": "option_battle_mix3_radio"
+          },
+          {
+            "fragment": "fragment_radio_22_dlc_battle_mix1_radio_06",
+            "option": "option_battle_mix4_radio"
+          }
+        ],
+        "options": {
+          "available": [
+            {
+              "id": "option_all",
+              "title": "All Playlists"
+            },
+            {
+              "id": "option_battle_mix1_radio",
+              "title": "Solomun"
+            },
+            {
+              "id": "option_battle_mix2_radio",
+              "title": "Tale Of Us"
+            },
+            {
+              "id": "option_battle_mix3_radio",
+              "title": "Dixon"
+            },
+            {
+              "id": "option_battle_mix4_radio",
+              "title": "The Black Madonna"
+            }
+          ]
+        },
+        "fragments": [
+          {
+            "id": "fragment_radio_22_dlc_battle_mix1_radio_01",
+            "src": {
+              "trackLists": [
+                "battle_mix1_radio"
+              ],
+              "track": "dlc_battle_music_battle_mix1_radio_01"
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_22_dlc_battle_mix1_radio_02"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_22_dlc_battle_mix1_radio_02",
+            "src": {
+              "trackLists": [
+                "battle_mix1_radio"
+              ],
+              "track": "dlc_battle_music_battle_mix1_radio_02"
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_22_dlc_battle_mix1_radio_03"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_22_dlc_battle_mix1_radio_03",
+            "src": {
+              "trackLists": [
+                "battle_mix1_radio"
+              ],
+              "track": "dlc_battle_music_battle_mix1_radio_03"
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_22_dlc_battle_mix1_radio_01",
+                "option": "option_battle_mix1_radio"
+              },
+              {
+                "fragment": "fragment_radio_22_dlc_battle_mix1_radio_04",
+                "option": "option_all"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_22_dlc_battle_mix1_radio_04",
+            "src": {
+              "trackLists": [
+                "battle_mix2_radio"
+              ],
+              "track": "dlc_battle_music_battle_mix2_radio_01",
+              "trackStart": 279.982
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_22_dlc_battle_mix1_radio_05"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_22_dlc_battle_mix1_radio_05",
+            "src": {
+              "trackLists": [
+                "battle_mix2_radio"
+              ],
+              "track": "dlc_battle_music_battle_mix2_radio_02"
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_22_dlc_battle_mix1_radio_06",
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_22_dlc_battle_mix1_radio_06",
+            "src": {
+              "trackLists": [
+                "battle_mix2_radio"
+              ],
+              "track": "dlc_battle_music_battle_mix2_radio_03"
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_22_dlc_battle_mix1_radio_04",
+                "option": "option_battle_mix2_radio"
+              },
+              {
+                "fragment": "fragment_radio_22_dlc_battle_mix1_radio_07",
+                "option": "option_all"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_22_dlc_battle_mix1_radio_07",
+            "src": {
+              "trackLists": [
+                "battle_mix3_radio"
+              ],
+              "track": "dlc_battle_music_battle_mix3_radio_01",
+              "trackStart": 279.982
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_22_dlc_battle_mix1_radio_08"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_22_dlc_battle_mix1_radio_08",
+            "src": {
+              "trackLists": [
+                "battle_mix3_radio"
+              ],
+              "track": "dlc_battle_music_battle_mix3_radio_02"
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_22_dlc_battle_mix1_radio_09",
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_22_dlc_battle_mix1_radio_09",
+            "src": {
+              "trackLists": [
+                "battle_mix3_radio"
+              ],
+              "track": "dlc_battle_music_battle_mix3_radio_03"
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_22_dlc_battle_mix1_radio_07",
+                "option": "option_battle_mix3_radio"
+              },
+              {
+                "fragment": "fragment_radio_22_dlc_battle_mix1_radio_10",
+                "option": "option_all"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_22_dlc_battle_mix1_radio_10",
+            "src": {
+              "trackLists": [
+                "battle_mix4_radio"
+              ],
+              "track": "dlc_battle_music_battle_mix4_radio_01",
+              "trackStart": 279.982
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_22_dlc_battle_mix1_radio_11"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_22_dlc_battle_mix1_radio_11",
+            "src": {
+              "trackLists": [
+                "battle_mix4_radio"
+              ],
+              "track": "dlc_battle_music_battle_mix4_radio_02"
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_22_dlc_battle_mix1_radio_12",
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_22_dlc_battle_mix1_radio_12",
+            "src": {
+              "trackLists": [
+                "battle_mix4_radio"
+              ],
+              "track": "dlc_battle_music_battle_mix4_radio_03"
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_22_dlc_battle_mix1_radio_10",
+                "option": "option_battle_mix4_radio"
+              },
+              {
+                "fragment": "fragment_radio_22_dlc_battle_mix1_radio_01",
+                "option": "option_all"
+              }
+            ]
+          }
+        ]
+      }
     },
     {
       "id": "radio_23_dlc_xm19_radio",
