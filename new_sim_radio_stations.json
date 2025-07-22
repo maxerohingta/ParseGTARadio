@@ -3179,7 +3179,213 @@
         "radio_17_funk_to_ad",
         "radio_17_funk_to_news",
         "radio_news"
-      ]
+      ],
+      "playlist": {
+        "firstFragment": [
+          {
+            "fragment": "fragment_radio_17_funk_ident"
+          }
+        ],
+        "positions": [
+          {
+            "id": "track_start",
+            "relativeOffset": 0.03
+          },
+          {
+            "id": "track_end",
+            "relativeOffset": 0.97
+          }
+        ],
+        "fragments": [
+          {
+            "id": "fragment_radio_17_funk_ident",
+            "src": {
+              "trackLists": [
+                "radio_17_funk_idents"
+              ]
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_17_funk_music"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_17_funk_music",
+            "src": {
+              "trackLists": [
+                "radio_17_funk_music",
+                "radio_17_funk_music_new"
+              ]
+            },
+            "voiceOver": [
+              {
+                "id": "voiceover_radio_17_funk_intro",
+                "src": {
+                  "introTrackLists": [
+                    "radio_17_funk_music_intro",
+                    "radio_17_funk_music_new_intro"
+                  ]
+                },
+                "condition": {
+                  "probability": 0.333
+                },
+                "positions": [
+                  "track_start",
+                  "track_end"
+                ]
+              },
+              {
+                "id": "voiceover_radio_17_funk_general",
+                "src": {
+                  "trackLists": [
+                    "radio_17_funk_general"
+                  ]
+                },
+                "condition": {
+                  "probability": 0.333
+                },
+                "positions": [
+                  "track_start",
+                  "track_end"
+                ]
+              },
+              {
+                "id": "voiceover_radio_17_funk_morning",
+                "src": {
+                  "trackLists": [
+                    "radio_17_funk_time_morning"
+                  ]
+                },
+                "condition": {
+                  "probability": 0.333,
+                  "timeInterval": {
+                    "from": "5:00",
+                    "to": "11:00"
+                  }
+                },
+                "positions": [
+                  "track_start",
+                  "track_end"
+                ]
+              },
+              {
+                "id": "voiceover_radio_17_funk_evening",
+                "src": {
+                  "trackLists": [
+                    "radio_17_funk_time_evening"
+                  ]
+                },
+                "condition": {
+                  "probability": 0.333,
+                  "timeInterval": {
+                    "from": "18:00",
+                    "to": "24:00"
+                  }
+                },
+                "positions": [
+                  "track_start",
+                  "track_end"
+                ]
+              },
+              {
+                "id": "voiceover_radio_17_funk_to_news",
+                "condition": {
+                  "probability": 0.666,
+                  "nextFragment": "fragment_radio_17_funk_news"
+                },
+                "positions": [
+                  "track_end"
+                ],
+                "src": {
+                  "trackLists": [
+                    "radio_17_funk_to_news"
+                  ]
+                }
+              },
+              {
+                "id": "voiceover_radio_17_funk_to_ad",
+                "condition": {
+                  "probability": 0.666,
+                  "nextFragment": "fragment_radio_17_funk_adverts"
+                },
+                "positions": [
+                  "track_end"
+                ],
+                "src": {
+                  "trackLists": [
+                    "radio_17_funk_to_ad"
+                  ]
+                }
+              }
+            ],
+            "next": [
+              {
+                "fragment": "fragment_radio_17_funk_adverts",
+                "probability": 0.357
+              },
+              {
+                "fragment": "fragment_radio_17_funk_djsolo",
+                "probability": 0.286
+              },
+              {
+                "fragment": "fragment_radio_17_funk_news",
+                "probability": 0.143
+              },
+              {
+                "fragment": "fragment_radio_17_funk_music"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_17_funk_djsolo",
+            "src": {
+              "trackLists": [
+                "radio_17_funk_djsolo"
+              ]
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_17_funk_news",
+                "probability": 0.4
+              },
+              {
+                "fragment": "fragment_radio_17_funk_music"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_17_funk_news",
+            "src": {
+              "trackLists": [
+                "radio_news"
+              ]
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_17_funk_ident",
+                "probability": 0.667
+              },
+              {
+                "fragment": "fragment_radio_17_funk_music"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_17_funk_adverts",
+            "src": {
+              "trackLists": [
+                "general_adverts"
+              ]
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_17_funk_music"
+              }
+            ]
+          }
+        ]
+      }
     },
     {
       "id": "radio_18_90s_rock",
@@ -3204,7 +3410,213 @@
         "radio_18_90s_rock_to_ad",
         "radio_18_90s_rock_to_news",
         "radio_news"
-      ]
+      ],
+      "playlist": {
+        "firstFragment": [
+          {
+            "fragment": "fragment_radio_18_90s_rock_ident"
+          }
+        ],
+        "positions": [
+          {
+            "id": "track_start",
+            "relativeOffset": 0.03
+          },
+          {
+            "id": "track_end",
+            "relativeOffset": 0.97
+          }
+        ],
+        "fragments": [
+          {
+            "id": "fragment_radio_18_90s_rock_ident",
+            "src": {
+              "trackLists": [
+                "radio_18_90s_rock_idents"
+              ]
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_18_90s_rock_music"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_18_90s_rock_music",
+            "src": {
+              "trackLists": [
+                "radio_18_90s_rock_music",
+                "radio_18_90s_rock_music_new"
+              ]
+            },
+            "voiceOver": [
+              {
+                "id": "voiceover_radio_18_90s_rock_intro",
+                "src": {
+                  "introTrackLists": [
+                    "radio_18_90s_rock_music_intro",
+                    "radio_18_90s_rock_music_new_intro"
+                  ]
+                },
+                "condition": {
+                  "probability": 0.333
+                },
+                "positions": [
+                  "track_start",
+                  "track_end"
+                ]
+              },
+              {
+                "id": "voiceover_radio_18_90s_rock_general",
+                "src": {
+                  "trackLists": [
+                    "radio_18_90s_rock_general"
+                  ]
+                },
+                "condition": {
+                  "probability": 0.333
+                },
+                "positions": [
+                  "track_start",
+                  "track_end"
+                ]
+              },
+              {
+                "id": "voiceover_radio_18_90s_rock_morning",
+                "src": {
+                  "trackLists": [
+                    "radio_18_90s_rock_time_morning"
+                  ]
+                },
+                "condition": {
+                  "probability": 0.333,
+                  "timeInterval": {
+                    "from": "5:00",
+                    "to": "11:00"
+                  }
+                },
+                "positions": [
+                  "track_start",
+                  "track_end"
+                ]
+              },
+              {
+                "id": "voiceover_radio_18_90s_rock_evening",
+                "src": {
+                  "trackLists": [
+                    "radio_18_90s_rock_time_evening"
+                  ]
+                },
+                "condition": {
+                  "probability": 0.333,
+                  "timeInterval": {
+                    "from": "18:00",
+                    "to": "24:00"
+                  }
+                },
+                "positions": [
+                  "track_start",
+                  "track_end"
+                ]
+              },
+              {
+                "id": "voiceover_radio_18_90s_rock_to_news",
+                "condition": {
+                  "probability": 0.666,
+                  "nextFragment": "fragment_radio_18_90s_rock_news"
+                },
+                "positions": [
+                  "track_end"
+                ],
+                "src": {
+                  "trackLists": [
+                    "radio_18_90s_rock_to_news"
+                  ]
+                }
+              },
+              {
+                "id": "voiceover_radio_18_90s_rock_to_ad",
+                "condition": {
+                  "probability": 0.666,
+                  "nextFragment": "fragment_radio_18_90s_rock_adverts"
+                },
+                "positions": [
+                  "track_end"
+                ],
+                "src": {
+                  "trackLists": [
+                    "radio_18_90s_rock_to_ad"
+                  ]
+                }
+              }
+            ],
+            "next": [
+              {
+                "fragment": "fragment_radio_18_90s_rock_adverts",
+                "probability": 0.357
+              },
+              {
+                "fragment": "fragment_radio_18_90s_rock_djsolo",
+                "probability": 0.286
+              },
+              {
+                "fragment": "fragment_radio_18_90s_rock_news",
+                "probability": 0.143
+              },
+              {
+                "fragment": "fragment_radio_18_90s_rock_music"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_18_90s_rock_djsolo",
+            "src": {
+              "trackLists": [
+                "radio_18_90s_rock_djsolo"
+              ]
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_18_90s_rock_news",
+                "probability": 0.4
+              },
+              {
+                "fragment": "fragment_radio_18_90s_rock_music"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_18_90s_rock_news",
+            "src": {
+              "trackLists": [
+                "radio_news"
+              ]
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_18_90s_rock_ident",
+                "probability": 0.667
+              },
+              {
+                "fragment": "fragment_radio_18_90s_rock_music"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_18_90s_rock_adverts",
+            "src": {
+              "trackLists": [
+                "general_adverts"
+              ]
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_18_90s_rock_music"
+              }
+            ]
+          }
+        ]
+      }
     },
     {
       "isHidden": true,
