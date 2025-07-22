@@ -2982,7 +2982,7 @@
             "src": {
               "trackLists": [
                 "radio_16_silverlake_music",
-                "radio_16_silverlake_music_new", 
+                "radio_16_silverlake_music_new",
                 "mirrorpark_locked"
               ]
             },
@@ -3652,7 +3652,44 @@
       },
       "trackLists": [
         "dlc_thelab_music"
-      ]
+      ],
+      "playlist": {
+        "firstFragment": [
+          {
+            "fragment": "fragment_dlc_thelab_music_01"
+          }
+        ],
+        "fragments": [
+          {
+            "id": "fragment_dlc_thelab_music_01",
+            "src": {
+              "trackLists": [
+                "dlc_thelab_music"
+              ],
+              "track": "dlc_thelab_lab_p1"
+            },
+            "next": [
+              {
+                "fragment": "fragment_dlc_thelab_music_02"
+              }
+            ]
+          },
+          {
+            "id": "fragment_dlc_thelab_music_02",
+            "src": {
+              "trackLists": [
+                "dlc_thelab_music"
+              ],
+              "track": "dlc_thelab_lab_p2"
+            },
+            "next": [
+              {
+                "fragment": "fragment_dlc_thelab_music_01"
+              }
+            ]
+          }
+        ]
+      }
     },
     {
       "id": "radio_21_dlc_xm17",
@@ -3665,7 +3702,58 @@
       },
       "trackLists": [
         "dlc_christmas2017_music"
-      ]
+      ],
+      "playlist": {
+        "firstFragment": [
+          {
+            "fragment": "fragment_radio_21_dlc_xm17_01"
+          }
+        ],
+        "fragments": [
+          {
+            "id": "fragment_radio_21_dlc_xm17_01",
+            "src": {
+              "trackLists": [
+                "dlc_christmas2017_music"
+              ],
+              "track": "dlc_christmas2017_radio_xm17_p1"
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_21_dlc_xm17_02"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_21_dlc_xm17_02",
+            "src": {
+              "trackLists": [
+                "dlc_christmas2017_music"
+              ],
+              "track": "dlc_christmas2017_radio_xm17_p2"
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_21_dlc_xm17_03"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_21_dlc_xm17_03",
+            "src": {
+              "trackLists": [
+                "dlc_christmas2017_music"
+              ],
+              "track": "dlc_christmas2017_radio_xm17_p3"
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_21_dlc_xm17_01"
+              }
+            ]
+          }
+        ]
+      }
     },
     {
       "id": "radio_22_dlc_battle_mix1_radio",
