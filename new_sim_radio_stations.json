@@ -1835,7 +1835,7 @@
             "id": "fragment_radio_09_hiphop_old_djsolo_option_original",
             "src": {
               "trackLists": [
-                "radio_09_hiphop_old_djsolo",
+                "radio_09_hiphop_old_djsolo"
               ]
             },
             "next": [
@@ -4032,7 +4032,287 @@
         "dlc_heist3_heist3_radio_takeover_musi_ord",
         "dlc_heist3_time_evening",
         "dlc_heist3_time_morning"
-      ]
+      ],
+      "playlist": {
+        "firstFragment": [
+          {
+            "fragment": "fragment_heist3_radio_ident_option_original",
+            "option": "option_original"
+          },
+          {
+            "fragment": "fragment_heist3_radio_ident_option_takeover",
+            "option": "option_takeover"
+          }
+        ],
+        "options": {
+          "alternateInterval": 7200.0,
+          "available": [
+            {
+              "id": "option_original",
+              "title": "Original"
+            },
+            {
+              "id": "option_takeover",
+              "title": "Skepta Takeover"
+            }
+          ]
+        },
+        "positions": [
+          {
+            "id": "track_start",
+            "relativeOffset": 0.03
+          },
+          {
+            "id": "track_end",
+            "relativeOffset": 0.97
+          }
+        ],
+        "fragments": [
+          {
+            "id": "fragment_heist3_radio_ident_option_original",
+            "src": {
+              "trackLists": [
+                "dlc_heist3_heist3_radio_idents"
+              ]
+            },
+            "next": [
+              {
+                "fragment": "fragment_heist3_radio_music_option_original",
+                "option": "option_original"
+              },
+              {
+                "fragment": "fragment_heist3_radio_music_option_takeover",
+                "option": "option_takeover"
+              }
+            ]
+          },
+          {
+            "id": "fragment_heist3_radio_ident_option_takeover",
+            "src": {
+              "trackLists": [
+                "dlc_heist3_heist3_radio_takeover_idents"
+              ]
+            },
+            "next": [
+              {
+                "fragment": "fragment_heist3_radio_music_option_original",
+                "option": "option_original"
+              },
+              {
+                "fragment": "fragment_heist3_radio_music_option_takeover",
+                "option": "option_takeover"
+              }
+            ]
+          },
+          {
+            "id": "fragment_heist3_radio_music_option_original",
+            "src": {
+              "trackLists": [
+                "dlc_heist3_heist3_radio_music_ord"
+              ]
+            },
+            "voiceOver": [
+              {
+                "id": "voiceover_heist3_radio_intro_option_original",
+                "src": {
+                  "introTrackLists": [
+                    "dlc_heist3_heist3_radio_music_ord_intro"
+                  ]
+                },
+                "condition": {
+                  "probability": 0.666
+                },
+                "positions": [
+                  "track_start",
+                  "track_end"
+                ]
+              },
+              {
+                "id": "voiceover_heist3_radio_morning_option_original",
+                "src": {
+                  "trackLists": [
+                    "dlc_heist3_time_morning"
+                  ]
+                },
+                "condition": {
+                  "probability": 0.333,
+                  "timeInterval": {
+                    "from": "5:00",
+                    "to": "11:00"
+                  }
+                },
+                "positions": [
+                  "track_start",
+                  "track_end"
+                ]
+              },
+              {
+                "id": "voiceover_heist3_radio_evening_option_original",
+                "src": {
+                  "trackLists": [
+                    "dlc_heist3_time_evening"
+                  ]
+                },
+                "condition": {
+                  "probability": 0.333,
+                  "timeInterval": {
+                    "from": "18:00",
+                    "to": "24:00"
+                  }
+                },
+                "positions": [
+                  "track_start",
+                  "track_end"
+                ]
+              }
+            ],
+            "next": [
+              {
+                "fragment": "fragment_heist3_radio_djsolo_option_original",
+                "option": "option_original",
+                "probability": 0.333
+              },
+              {
+                "fragment": "fragment_heist3_radio_djsolo_option_takeover",
+                "option": "option_takeover",
+                "probability": 0.333
+              },
+              {
+                "fragment": "fragment_heist3_radio_ident_option_original",
+                "option": "option_original",
+                "probability": 0.134
+              },
+              {
+                "fragment": "fragment_heist3_radio_ident_option_takeover",
+                "option": "option_takeover",
+                "probability": 0.134
+              },
+              {
+                "fragment": "fragment_heist3_radio_music_option_original",
+                "option": "option_original"
+              },
+              {
+                "fragment": "fragment_heist3_radio_music_option_takeover",
+                "option": "option_takeover"
+              }
+            ]
+          },
+          {
+            "id": "fragment_heist3_radio_music_option_takeover",
+            "src": {
+              "trackLists": [
+                "dlc_heist3_heist3_radio_takeover_musi_ord"
+              ]
+            },
+            "voiceOver": [
+              {
+                "id": "voiceover_heist3_radio_morning_option_takeover",
+                "src": {
+                  "trackLists": [
+                    "dlc_heist3_time_morning"
+                  ]
+                },
+                "condition": {
+                  "probability": 0.134,
+                  "timeInterval": {
+                    "from": "5:00",
+                    "to": "11:00"
+                  }
+                },
+                "positions": [
+                  "track_start",
+                  "track_end"
+                ]
+              },
+              {
+                "id": "voiceover_heist3_radio_evening_option_takeover",
+                "src": {
+                  "trackLists": [
+                    "dlc_heist3_time_evening"
+                  ]
+                },
+                "condition": {
+                  "probability": 0.134,
+                  "timeInterval": {
+                    "from": "18:00",
+                    "to": "24:00"
+                  }
+                },
+                "positions": [
+                  "track_start",
+                  "track_end"
+                ]
+              }
+            ],
+            "next": [
+              {
+                "fragment": "fragment_heist3_radio_djsolo_option_original",
+                "option": "option_original",
+                "probability": 0.333
+              },
+              {
+                "fragment": "fragment_heist3_radio_djsolo_option_takeover",
+                "option": "option_takeover",
+                "probability": 0.333
+              },
+              {
+                "fragment": "fragment_heist3_radio_ident_option_original",
+                "option": "option_original",
+                "probability": 0.134
+              },
+              {
+                "fragment": "fragment_heist3_radio_ident_option_takeover",
+                "option": "option_takeover",
+                "probability": 0.134
+              },
+              {
+                "fragment": "fragment_heist3_radio_music_option_original",
+                "option": "option_original"
+              },
+              {
+                "fragment": "fragment_heist3_radio_music_option_takeover",
+                "option": "option_takeover"
+              }
+            ]
+          },
+          {
+            "id": "fragment_heist3_radio_djsolo_option_original",
+            "src": {
+              "trackLists": [
+                "dlc_heist3_heist3_radio_djsolo"
+              ]
+            },
+            "next": [
+              {
+                "fragment": "fragment_heist3_radio_music_option_original",
+                "option": "option_original"
+              },
+              {
+                "fragment": "fragment_heist3_radio_music_option_takeover",
+                "option": "option_takeover"
+              }
+            ]
+          },
+          {
+            "id": "fragment_heist3_radio_djsolo_option_takeover",
+            "src": {
+              "trackLists": [
+                "dlc_heist3_heist3_radio_takeover_djsolo"
+              ]
+            },
+            "next": [
+              {
+                "fragment": "fragment_heist3_radio_music_option_original",
+                "option": "option_original"
+              },
+              {
+                "fragment": "fragment_heist3_radio_music_option_takeover",
+                "option": "option_takeover"
+              }
+            ]
+          }
+        ]
+      }
     },
     {
       "id": "radio_27_dlc_prhei4",
