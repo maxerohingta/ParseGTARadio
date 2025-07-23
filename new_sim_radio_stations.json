@@ -4412,7 +4412,161 @@
         "hei4_radio_kult_music",
         "hei4_radio_kult_music_edit",
         "hei4_radio_kult_music_intro"
-      ]
+      ],
+      "playlist": {
+        "firstFragment": [
+          {
+            "fragment": "fragment_hei4_radio_kult_ident"
+          }
+        ],
+        "positions": [
+          {
+            "id": "track_start",
+            "relativeOffset": 0.03
+          },
+          {
+            "id": "track_end",
+            "relativeOffset": 0.97
+          }
+        ],
+        "fragments": [
+          {
+            "id": "fragment_hei4_radio_kult_ident",
+            "src": {
+              "trackLists": [
+                "hei4_radio_kult_custom_idents"
+              ]
+            },
+            "next": [
+              {
+                "fragment": "fragment_hei4_radio_kult_music"
+              }
+            ]
+          },
+          {
+            "id": "fragment_hei4_radio_kult_music",
+            "src": {
+              "trackLists": [
+                "hei4_radio_kult_music",
+                "hei4_radio_kult_music_edit"
+              ]
+            },
+            "voiceOver": [
+              {
+                "id": "voiceover_hei4_radio_kult_intro",
+                "src": {
+                  "introTrackLists": [
+                    "hei4_radio_kult_music_intro"
+                  ]
+                },
+                "condition": {
+                  "probability": 0.333
+                },
+                "positions": [
+                  "track_start",
+                  "track_end"
+                ]
+              },
+              {
+                "id": "voiceover_hei4_radio_kult_general",
+                "src": {
+                  "trackLists": [
+                    "dlc_hei4_general"
+                  ]
+                },
+                "condition": {
+                  "probability": 0.333
+                },
+                "positions": [
+                  "track_start",
+                  "track_end"
+                ]
+              },
+              {
+                "id": "voiceover_hei4_radio_kult_morning",
+                "src": {
+                  "trackLists": [
+                    "dlc_hei4_time_morning"
+                  ]
+                },
+                "condition": {
+                  "probability": 0.333,
+                  "timeInterval": {
+                    "from": "5:00",
+                    "to": "11:00"
+                  }
+                },
+                "positions": [
+                  "track_start",
+                  "track_end"
+                ]
+              },
+              {
+                "id": "voiceover_hei4_radio_kult_evening",
+                "src": {
+                  "trackLists": [
+                    "dlc_hei4_time_evening"
+                  ]
+                },
+                "condition": {
+                  "probability": 0.333,
+                  "timeInterval": {
+                    "from": "18:00",
+                    "to": "24:00"
+                  }
+                },
+                "positions": [
+                  "track_start",
+                  "track_end"
+                ]
+              }
+            ],
+            "next": [
+              {
+                "fragment": "fragment_hei4_radio_kult_adverts",
+                "probability": 0.357
+              },
+              {
+                "fragment": "fragment_hei4_radio_kult_djsolo",
+                "probability": 0.286
+              },
+              {
+                "fragment": "fragment_hei4_radio_kult_music"
+              }
+            ]
+          },
+          {
+            "id": "fragment_hei4_radio_kult_djsolo",
+            "src": {
+              "trackLists": [
+                "hei4_radio_kult_djsolo"
+              ]
+            },
+            "next": [
+              {
+                "fragment": "fragment_hei4_radio_kult_adverts",
+                "probability": 0.134
+              },
+              {
+                "fragment": "fragment_hei4_radio_kult_music"
+              }
+            ]
+          },
+          {
+            "id": "fragment_hei4_radio_kult_adverts",
+            "src": {
+              "trackLists": [
+                "hei4_radio_kult_ads"
+              ]
+            },
+            "next": [
+              {
+                "fragment": "fragment_hei4_radio_kult_music"
+              }
+            ]
+          }
+        ]
+      }
     },
     {
       "id": "radio_35_dlc_hei4_mlr",
