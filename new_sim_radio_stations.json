@@ -3781,15 +3781,15 @@
             "option": "option_battle_mix1_radio"
           },
           {
-            "fragment": "fragment_radio_22_dlc_battle_mix1_radio_06",
+            "fragment": "fragment_radio_22_dlc_battle_mix1_radio_04",
             "option": "option_battle_mix2_radio"
           },
           {
-            "fragment": "fragment_radio_22_dlc_battle_mix1_radio_06",
+            "fragment": "fragment_radio_22_dlc_battle_mix1_radio_07",
             "option": "option_battle_mix3_radio"
           },
           {
-            "fragment": "fragment_radio_22_dlc_battle_mix1_radio_06",
+            "fragment": "fragment_radio_22_dlc_battle_mix1_radio_10",
             "option": "option_battle_mix4_radio"
           }
         ],
@@ -4580,7 +4580,287 @@
         "hei4_km_club_radio_music",
         "hei4_mm_radio_music",
         "hei4_pt_radio_music"
-      ]
+      ],
+      "playlist": {
+        "firstFragment": [
+          {
+            "fragment": "fragment_radio_35_dlc_hei4_mlr_01",
+            "option": "option_all"
+          },
+          {
+            "fragment": "fragment_radio_35_dlc_hei4_mlr_01",
+            "option": "option_hei4_km_beach"
+          },
+          {
+            "fragment": "fragment_radio_35_dlc_hei4_mlr_05",
+            "option": "option_hei4_km_club"
+          },
+          {
+            "fragment": "fragment_radio_35_dlc_hei4_mlr_09",
+            "option": "option_hei4_mm"
+          },
+          {
+            "fragment": "fragment_radio_35_dlc_hei4_mlr_13",
+            "option": "option_hei4_pt"
+          }
+        ],
+        "options": {
+          "available": [
+            {
+              "id": "option_all",
+              "title": "All Playlists"
+            },
+            {
+              "id": "option_hei4_km_beach",
+              "title": "Keinemusik (Beach Set)"
+            },
+            {
+              "id": "option_hei4_km_club",
+              "title": "Keinemusik (Club Set)"
+            },
+            {
+              "id": "option_hei4_mm",
+              "title": "Moodymann"
+            },
+            {
+              "id": "option_hei4_pt",
+              "title": "Palms Trax"
+            }
+          ]
+        },
+        "fragments": [
+          {
+            "id": "fragment_radio_35_dlc_hei4_mlr_01",
+            "src": {
+              "trackLists": [
+                "hei4_km_beach_radio_music"
+              ],
+              "track": "dlc_hei4_music_hei4_mlr_km_beach_p1"
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_35_dlc_hei4_mlr_02"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_35_dlc_hei4_mlr_02",
+            "src": {
+              "trackLists": [
+                "hei4_km_beach_radio_music"
+              ],
+              "track": "dlc_hei4_music_hei4_mlr_km_beach_p2"
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_35_dlc_hei4_mlr_03"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_35_dlc_hei4_mlr_03",
+            "src": {
+              "trackLists": [
+                "hei4_km_beach_radio_music"
+              ],
+              "track": "dlc_hei4_music_hei4_mlr_km_beach_p3"
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_35_dlc_hei4_mlr_04",
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_35_dlc_hei4_mlr_04",
+            "src": {
+              "trackLists": [
+                "hei4_km_beach_radio_music"
+              ],
+              "track": "dlc_hei4_music_hei4_mlr_km_beach_p4"
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_35_dlc_hei4_mlr_01",
+                "option": "option_hei4_km_beach"
+              },
+              {
+                "fragment": "fragment_radio_35_dlc_hei4_mlr_05",
+                "option": "option_all"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_35_dlc_hei4_mlr_05",
+            "src": {
+              "trackLists": [
+                "hei4_km_club_radio_music"
+              ],
+              "track": "dlc_hei4_music_hei4_mlr_km_club_p1"
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_35_dlc_hei4_mlr_06"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_35_dlc_hei4_mlr_06",
+            "src": {
+              "trackLists": [
+                "hei4_km_club_radio_music"
+              ],
+              "track": "dlc_hei4_music_hei4_mlr_km_club_p2"
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_35_dlc_hei4_mlr_07"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_35_dlc_hei4_mlr_07",
+            "src": {
+              "trackLists": [
+                "hei4_km_club_radio_music"
+              ],
+              "track": "dlc_hei4_music_hei4_mlr_km_club_p3"
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_35_dlc_hei4_mlr_08",
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_35_dlc_hei4_mlr_08",
+            "src": {
+              "trackLists": [
+                "hei4_km_club_radio_music"
+              ],
+              "track": "dlc_hei4_music_hei4_mlr_km_club_p4"
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_35_dlc_hei4_mlr_05",
+                "option": "option_hei4_km_club"
+              },
+              {
+                "fragment": "fragment_radio_35_dlc_hei4_mlr_09",
+                "option": "option_all"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_35_dlc_hei4_mlr_09",
+            "src": {
+              "trackLists": [
+                "hei4_mm_radio_music"
+              ],
+              "track": "dlc_hei4_music_hei4_mlr_mm_p1"
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_35_dlc_hei4_mlr_10"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_35_dlc_hei4_mlr_10",
+            "src": {
+              "trackLists": [
+                "hei4_mm_radio_music"
+              ],
+              "track": "dlc_hei4_music_hei4_mlr_mm_p2"
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_35_dlc_hei4_mlr_11"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_35_dlc_hei4_mlr_11",
+            "src": {
+              "trackLists": [
+                "hei4_mm_radio_music"
+              ],
+              "track": "dlc_hei4_music_hei4_mlr_mm_p3"
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_35_dlc_hei4_mlr_12",
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_35_dlc_hei4_mlr_12",
+            "src": {
+              "trackLists": [
+                "hei4_mm_radio_music"
+              ],
+              "track": "dlc_hei4_music_hei4_mlr_mm_p4"
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_35_dlc_hei4_mlr_09",
+                "option": "option_hei4_mm"
+              },
+              {
+                "fragment": "fragment_radio_35_dlc_hei4_mlr_13",
+                "option": "option_all"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_35_dlc_hei4_mlr_13",
+            "src": {
+              "trackLists": [
+                "hei4_pt_radio_music"
+              ],
+              "track": "dlc_hei4_music_hei4_mlr_pt_p1"
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_35_dlc_hei4_mlr_14"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_35_dlc_hei4_mlr_14",
+            "src": {
+              "trackLists": [
+                "hei4_pt_radio_music"
+              ],
+              "track": "dlc_hei4_music_hei4_mlr_pt_p2"
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_35_dlc_hei4_mlr_15"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_35_dlc_hei4_mlr_15",
+            "src": {
+              "trackLists": [
+                "hei4_pt_radio_music"
+              ],
+              "track": "dlc_hei4_music_hei4_mlr_pt_p3"
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_35_dlc_hei4_mlr_13",
+                "option": "option_hei4_pt"
+              },
+              {
+                "fragment": "fragment_radio_35_dlc_hei4_mlr_01",
+                "option": "option_all"
+              }
+            ]
+          }
+        ]
+      }
     },
     {
       "isHidden": true,
