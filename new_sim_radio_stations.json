@@ -3639,7 +3639,11 @@
         "dlc_radio_19_user_user_intro",
         "dlc_radio_19_user_user_outro",
         "hash_BFEE598E"
-      ]
+      ],
+      "playlist": {
+        "firstFragment": [],
+        "fragments": []
+      }
     },
     {
       "id": "radio_20_thelab",
@@ -4885,7 +4889,11 @@
         "tuner_ap_mix3_partc",
         "tuner_ap_mix3_partd",
         "tuner_ap_silence_music"
-      ]
+      ],
+      "playlist": {
+        "firstFragment": [],
+        "fragments": []
+      }
     },
     {
       "id": "radio_37_motomami",
