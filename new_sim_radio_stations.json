@@ -4902,7 +4902,101 @@
         "radio_37_motomami_idents_ident",
         "radio_37_motomami_music_ordered",
         "radio_37_motomami_music_ordered_intro"
-      ]
+      ],
+      "playlist": {
+        "firstFragment": [
+          {
+            "fragment": "fragment_radio_37_motomami_ident"
+          }
+        ],
+        "positions": [
+          {
+            "id": "track_start",
+            "relativeOffset": 0.03
+          },
+          {
+            "id": "track_end",
+            "relativeOffset": 0.97
+          }
+        ],
+        "fragments": [
+          {
+            "id": "fragment_radio_37_motomami_ident",
+            "src": {
+              "trackLists": [
+                "radio_37_motomami_idents_ident"
+              ]
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_37_motomami_music"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_37_motomami_music",
+            "src": {
+              "trackLists": [
+                "radio_37_motomami_music_ordered"
+              ]
+            },
+            "voiceOver": [
+              {
+                "id": "voiceover_radio_37_motomami_intro",
+                "src": {
+                  "introTrackLists": [
+                    "radio_37_motomami_music_ordered_intro"
+                  ]
+                },
+                "condition": {
+                  "probability": 0.333
+                },
+                "positions": [
+                  "track_start",
+                  "track_end"
+                ]
+              },
+              {
+                "id": "voiceover_radio_37_motomami_general",
+                "src": {
+                  "trackLists": [
+                    "dlc_security_music_motomami_general"
+                  ]
+                },
+                "condition": {
+                  "probability": 0.333
+                },
+                "positions": [
+                  "track_start",
+                  "track_end"
+                ]
+              }
+            ],
+            "next": [
+              {
+                "fragment": "fragment_radio_37_motomami_djsolo",
+                "probability": 0.286
+              },
+              {
+                "fragment": "fragment_radio_37_motomami_music"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_37_motomami_djsolo",
+            "src": {
+              "trackLists": [
+                "radio_37_motomami_djsolo_djsolo"
+              ]
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_37_motomami_music"
+              }
+            ]
+          }
+        ]
+      }
     }
   ],
   "trackLists": [
