@@ -18,26 +18,6 @@ extension DumpsDTO.RadioData {
         return speeches.flatMap(\.self)
     }
 
-    var stationsTrackListsWithIDs: [(String, DumpsDTO.TrackList)] {
-        let stationsTrackListIDs = trackLists
-            .keys
-            .filter { id in !["RADIO_NEWS_", "_adverts"].contains { id.lowercased().contains($0.lowercased()) } }
-            .sorted()
-        let result = stationsTrackListIDs.compactMap { id in
-            trackLists[id].map {
-                (
-                    id,
-                    DumpsDTO.TrackList(
-                        dlcPath: $0.dlcPath,
-                        flags: $0.flags,
-                        tracks: Array(Set($0.tracks))
-                    )
-                )
-            }
-        }
-        return result
-    }
-
     func stationsTrackLists(
         _ simRadio: OldSimRadioDTO.GameSeries?
     ) -> [NewSimRadioDTO.TrackList] {
@@ -84,6 +64,26 @@ extension DumpsDTO.RadioData {
         return result.flatMap(\.self)
     }
 
+    var stationsTrackListsWithIDs: [(String, DumpsDTO.TrackList)] {
+        let stationsTrackListIDs = trackLists
+            .keys
+            .filter { id in !["RADIO_NEWS_", "_adverts"].contains { id.lowercased().contains($0.lowercased()) } }
+            .sorted()
+        let result = stationsTrackListIDs.compactMap { id in
+            trackLists[id].map {
+                (
+                    id,
+                    DumpsDTO.TrackList(
+                        dlcPath: $0.dlcPath,
+                        flags: $0.flags,
+                        tracks: Array(Set($0.tracks))
+                    )
+                )
+            }
+        }
+        return result
+    }
+    
     func newsTrackLists(
         _ simRadio: OldSimRadioDTO.GameSeries?
     ) -> [NewSimRadioDTO.TrackList] {
