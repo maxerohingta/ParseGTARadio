@@ -1,9 +1,14 @@
 {
+  "version": "1.0",
+  "meta": {
+    "title": "GTA V Radio",
+    "logo": "textures/gta_5_radio"
+  },
   "stations": [
     {
       "id": "radio_01_class_rock",
       "meta": {
-        "artwork": "textures/radio_01_class_rock",
+        "logo": "textures/radio_01_class_rock",
         "genre": "Classic rock, soft rock, pop rock",
         "genreCode": "1",
         "host": "Kenny Loggins",
@@ -44,9 +49,7 @@
           {
             "id": "fragment_radio_01_class_rock_ident",
             "src": {
-              "trackLists": [
-                "radio_01_class_rock_idents"
-              ]
+              "trackLists": ["radio_01_class_rock_idents"]
             },
             "next": [
               {
@@ -74,32 +77,22 @@
                 "condition": {
                   "probability": 0.333
                 },
-                "positions": [
-                  "track_start",
-                  "track_end"
-                ]
+                "positions": ["track_start", "track_end"]
               },
               {
                 "id": "voiceover_radio_01_class_rock_general",
                 "src": {
-                  "trackLists": [
-                    "radio_01_class_rock_general"
-                  ]
+                  "trackLists": ["radio_01_class_rock_general"]
                 },
                 "condition": {
                   "probability": 0.333
                 },
-                "positions": [
-                  "track_start",
-                  "track_end"
-                ]
+                "positions": ["track_start", "track_end"]
               },
               {
                 "id": "voiceover_radio_01_class_rock_morning",
                 "src": {
-                  "trackLists": [
-                    "radio_01_class_rock_time_morning"
-                  ]
+                  "trackLists": ["radio_01_class_rock_time_morning"]
                 },
                 "condition": {
                   "probability": 0.333,
@@ -108,17 +101,12 @@
                     "to": "11:00"
                   }
                 },
-                "positions": [
-                  "track_start",
-                  "track_end"
-                ]
+                "positions": ["track_start", "track_end"]
               },
               {
                 "id": "voiceover_radio_01_class_rock_evening",
                 "src": {
-                  "trackLists": [
-                    "radio_01_class_rock_time_evening"
-                  ]
+                  "trackLists": ["radio_01_class_rock_time_evening"]
                 },
                 "condition": {
                   "probability": 0.333,
@@ -127,10 +115,7 @@
                     "to": "24:00"
                   }
                 },
-                "positions": [
-                  "track_start",
-                  "track_end"
-                ]
+                "positions": ["track_start", "track_end"]
               },
               {
                 "id": "voiceover_radio_01_class_rock_to_news",
@@ -138,13 +123,9 @@
                   "probability": 0.666,
                   "nextFragment": "fragment_radio_01_class_rock_news"
                 },
-                "positions": [
-                  "track_end"
-                ],
+                "positions": ["track_end"],
                 "src": {
-                  "trackLists": [
-                    "radio_01_class_rock_to_news"
-                  ]
+                  "trackLists": ["radio_01_class_rock_to_news"]
                 }
               },
               {
@@ -153,13 +134,9 @@
                   "probability": 0.666,
                   "nextFragment": "fragment_radio_01_class_rock_adverts"
                 },
-                "positions": [
-                  "track_end"
-                ],
+                "positions": ["track_end"],
                 "src": {
-                  "trackLists": [
-                    "radio_01_class_rock_to_ad"
-                  ]
+                  "trackLists": ["radio_01_class_rock_to_ad"]
                 }
               }
             ],
@@ -184,9 +161,7 @@
           {
             "id": "fragment_radio_01_class_rock_djsolo",
             "src": {
-              "trackLists": [
-                "radio_01_class_rock_djsolo"
-              ]
+              "trackLists": ["radio_01_class_rock_djsolo"]
             },
             "next": [
               {
@@ -201,9 +176,7 @@
           {
             "id": "fragment_radio_01_class_rock_news",
             "src": {
-              "trackLists": [
-                "radio_news"
-              ]
+              "trackLists": ["radio_news"]
             },
             "next": [
               {
@@ -218,9 +191,7 @@
           {
             "id": "fragment_radio_01_class_rock_adverts",
             "src": {
-              "trackLists": [
-                "general_adverts"
-              ]
+              "trackLists": ["general_adverts"]
             },
             "next": [
               {
@@ -234,7 +205,7 @@
     {
       "id": "radio_02_pop",
       "meta": {
-        "artwork": "textures/radio_02_pop",
+        "logo": "textures/radio_02_pop",
         "genre": "Pop music, electronic dance music, electro house",
         "genreCode": "3",
         "host": "Cara Delevingne",
@@ -275,9 +246,7 @@
           {
             "id": "fragment_radio_02_pop_ident",
             "src": {
-              "trackLists": [
-                "radio_02_pop_idents"
-              ]
+              "trackLists": ["radio_02_pop_idents"]
             },
             "next": [
               {
@@ -288,10 +257,7 @@
           {
             "id": "fragment_radio_02_pop_music",
             "src": {
-              "trackLists": [
-                "radio_02_pop_music",
-                "radio_02_pop_music_new"
-              ]
+              "trackLists": ["radio_02_pop_music", "radio_02_pop_music_new"]
             },
             "voiceOver": [
               {
@@ -305,32 +271,22 @@
                 "condition": {
                   "probability": 0.333
                 },
-                "positions": [
-                  "track_start",
-                  "track_end"
-                ]
+                "positions": ["track_start", "track_end"]
               },
               {
                 "id": "voiceover_radio_02_pop_general",
                 "src": {
-                  "trackLists": [
-                    "radio_02_pop_general"
-                  ]
+                  "trackLists": ["radio_02_pop_general"]
                 },
                 "condition": {
                   "probability": 0.333
                 },
-                "positions": [
-                  "track_start",
-                  "track_end"
-                ]
+                "positions": ["track_start", "track_end"]
               },
               {
                 "id": "voiceover_radio_02_pop_morning",
                 "src": {
-                  "trackLists": [
-                    "radio_02_pop_time_morning"
-                  ]
+                  "trackLists": ["radio_02_pop_time_morning"]
                 },
                 "condition": {
                   "probability": 0.333,
@@ -339,17 +295,12 @@
                     "to": "11:00"
                   }
                 },
-                "positions": [
-                  "track_start",
-                  "track_end"
-                ]
+                "positions": ["track_start", "track_end"]
               },
               {
                 "id": "voiceover_radio_02_pop_evening",
                 "src": {
-                  "trackLists": [
-                    "radio_02_pop_time_evening"
-                  ]
+                  "trackLists": ["radio_02_pop_time_evening"]
                 },
                 "condition": {
                   "probability": 0.333,
@@ -358,10 +309,7 @@
                     "to": "24:00"
                   }
                 },
-                "positions": [
-                  "track_start",
-                  "track_end"
-                ]
+                "positions": ["track_start", "track_end"]
               },
               {
                 "id": "voiceover_radio_02_pop_to_news",
@@ -369,13 +317,9 @@
                   "probability": 0.666,
                   "nextFragment": "fragment_radio_02_pop_news"
                 },
-                "positions": [
-                  "track_end"
-                ],
+                "positions": ["track_end"],
                 "src": {
-                  "trackLists": [
-                    "radio_02_pop_to_news"
-                  ]
+                  "trackLists": ["radio_02_pop_to_news"]
                 }
               },
               {
@@ -384,13 +328,9 @@
                   "probability": 0.666,
                   "nextFragment": "fragment_radio_02_pop_adverts"
                 },
-                "positions": [
-                  "track_end"
-                ],
+                "positions": ["track_end"],
                 "src": {
-                  "trackLists": [
-                    "radio_02_pop_to_ad"
-                  ]
+                  "trackLists": ["radio_02_pop_to_ad"]
                 }
               }
             ],
@@ -415,9 +355,7 @@
           {
             "id": "fragment_radio_02_pop_djsolo",
             "src": {
-              "trackLists": [
-                "radio_02_pop_djsolo"
-              ]
+              "trackLists": ["radio_02_pop_djsolo"]
             },
             "next": [
               {
@@ -432,9 +370,7 @@
           {
             "id": "fragment_radio_02_pop_news",
             "src": {
-              "trackLists": [
-                "radio_news"
-              ]
+              "trackLists": ["radio_news"]
             },
             "next": [
               {
@@ -449,9 +385,7 @@
           {
             "id": "fragment_radio_02_pop_adverts",
             "src": {
-              "trackLists": [
-                "general_adverts"
-              ]
+              "trackLists": ["general_adverts"]
             },
             "next": [
               {
@@ -465,7 +399,7 @@
     {
       "id": "radio_03_hiphop_new",
       "meta": {
-        "artwork": "textures/radio_03_hiphop_new",
+        "logo": "textures/radio_03_hiphop_new",
         "genre": "Modern contemporary hip hop, trap",
         "genreCode": "4",
         "host": "Big Boy",
@@ -513,9 +447,7 @@
           {
             "id": "fragment_radio_03_hiphop_new_ident",
             "src": {
-              "trackLists": [
-                "radio_03_hiphop_new_idents"
-              ]
+              "trackLists": ["radio_03_hiphop_new_idents"]
             },
             "next": [
               {
@@ -546,10 +478,7 @@
                 "condition": {
                   "probability": 0.333
                 },
-                "positions": [
-                  "track_start",
-                  "track_end"
-                ]
+                "positions": ["track_start", "track_end"]
               },
               {
                 "id": "voiceover_radio_03_hiphop_new_general",
@@ -563,17 +492,12 @@
                 "condition": {
                   "probability": 0.333
                 },
-                "positions": [
-                  "track_start",
-                  "track_end"
-                ]
+                "positions": ["track_start", "track_end"]
               },
               {
                 "id": "voiceover_radio_03_hiphop_new_morning",
                 "src": {
-                  "trackLists": [
-                    "radio_03_hiphop_new_time_morning"
-                  ]
+                  "trackLists": ["radio_03_hiphop_new_time_morning"]
                 },
                 "condition": {
                   "probability": 0.333,
@@ -582,17 +506,12 @@
                     "to": "11:00"
                   }
                 },
-                "positions": [
-                  "track_start",
-                  "track_end"
-                ]
+                "positions": ["track_start", "track_end"]
               },
               {
                 "id": "voiceover_radio_03_hiphop_new_evening",
                 "src": {
-                  "trackLists": [
-                    "radio_03_hiphop_new_time_evening"
-                  ]
+                  "trackLists": ["radio_03_hiphop_new_time_evening"]
                 },
                 "condition": {
                   "probability": 0.333,
@@ -601,10 +520,7 @@
                     "to": "24:00"
                   }
                 },
-                "positions": [
-                  "track_start",
-                  "track_end"
-                ]
+                "positions": ["track_start", "track_end"]
               },
               {
                 "id": "voiceover_radio_03_hiphop_new_to_news",
@@ -612,13 +528,9 @@
                   "probability": 0.666,
                   "nextFragment": "fragment_radio_03_hiphop_new_news"
                 },
-                "positions": [
-                  "track_end"
-                ],
+                "positions": ["track_end"],
                 "src": {
-                  "trackLists": [
-                    "radio_03_hiphop_new_to_news"
-                  ]
+                  "trackLists": ["radio_03_hiphop_new_to_news"]
                 }
               },
               {
@@ -627,13 +539,9 @@
                   "probability": 0.666,
                   "nextFragment": "fragment_radio_03_hiphop_new_adverts"
                 },
-                "positions": [
-                  "track_end"
-                ],
+                "positions": ["track_end"],
                 "src": {
-                  "trackLists": [
-                    "radio_03_hiphop_new_to_ad"
-                  ]
+                  "trackLists": ["radio_03_hiphop_new_to_ad"]
                 }
               }
             ],
@@ -677,9 +585,7 @@
           {
             "id": "fragment_radio_03_hiphop_new_news",
             "src": {
-              "trackLists": [
-                "radio_news"
-              ]
+              "trackLists": ["radio_news"]
             },
             "next": [
               {
@@ -694,9 +600,7 @@
           {
             "id": "fragment_radio_03_hiphop_new_adverts",
             "src": {
-              "trackLists": [
-                "general_adverts"
-              ]
+              "trackLists": ["general_adverts"]
             },
             "next": [
               {
@@ -710,7 +614,7 @@
     {
       "id": "radio_04_punk",
       "meta": {
-        "artwork": "textures/radio_04_punk",
+        "logo": "textures/radio_04_punk",
         "genre": "Punk rock, hardcore punk and grunge",
         "genreCode": "6",
         "host": "Keith Morris",
@@ -751,9 +655,7 @@
           {
             "id": "fragment_radio_04_punk_ident",
             "src": {
-              "trackLists": [
-                "radio_04_punk_idents"
-              ]
+              "trackLists": ["radio_04_punk_idents"]
             },
             "next": [
               {
@@ -764,10 +666,7 @@
           {
             "id": "fragment_radio_04_punk_music",
             "src": {
-              "trackLists": [
-                "radio_04_punk_music",
-                "radio_04_punk_music_new"
-              ]
+              "trackLists": ["radio_04_punk_music", "radio_04_punk_music_new"]
             },
             "voiceOver": [
               {
@@ -781,32 +680,22 @@
                 "condition": {
                   "probability": 0.333
                 },
-                "positions": [
-                  "track_start",
-                  "track_end"
-                ]
+                "positions": ["track_start", "track_end"]
               },
               {
                 "id": "voiceover_radio_04_punk_general",
                 "src": {
-                  "trackLists": [
-                    "radio_04_punk_general"
-                  ]
+                  "trackLists": ["radio_04_punk_general"]
                 },
                 "condition": {
                   "probability": 0.333
                 },
-                "positions": [
-                  "track_start",
-                  "track_end"
-                ]
+                "positions": ["track_start", "track_end"]
               },
               {
                 "id": "voiceover_radio_04_punk_morning",
                 "src": {
-                  "trackLists": [
-                    "radio_04_punk_time_morning"
-                  ]
+                  "trackLists": ["radio_04_punk_time_morning"]
                 },
                 "condition": {
                   "probability": 0.333,
@@ -815,17 +704,12 @@
                     "to": "11:00"
                   }
                 },
-                "positions": [
-                  "track_start",
-                  "track_end"
-                ]
+                "positions": ["track_start", "track_end"]
               },
               {
                 "id": "voiceover_radio_04_punk_evening",
                 "src": {
-                  "trackLists": [
-                    "radio_04_punk_time_evening"
-                  ]
+                  "trackLists": ["radio_04_punk_time_evening"]
                 },
                 "condition": {
                   "probability": 0.333,
@@ -834,10 +718,7 @@
                     "to": "24:00"
                   }
                 },
-                "positions": [
-                  "track_start",
-                  "track_end"
-                ]
+                "positions": ["track_start", "track_end"]
               },
               {
                 "id": "voiceover_radio_04_punk_to_news",
@@ -845,13 +726,9 @@
                   "probability": 0.666,
                   "nextFragment": "fragment_radio_04_punk_news"
                 },
-                "positions": [
-                  "track_end"
-                ],
+                "positions": ["track_end"],
                 "src": {
-                  "trackLists": [
-                    "radio_04_punk_to_news"
-                  ]
+                  "trackLists": ["radio_04_punk_to_news"]
                 }
               },
               {
@@ -860,13 +737,9 @@
                   "probability": 0.666,
                   "nextFragment": "fragment_radio_04_punk_adverts"
                 },
-                "positions": [
-                  "track_end"
-                ],
+                "positions": ["track_end"],
                 "src": {
-                  "trackLists": [
-                    "radio_04_punk_to_ad"
-                  ]
+                  "trackLists": ["radio_04_punk_to_ad"]
                 }
               }
             ],
@@ -891,9 +764,7 @@
           {
             "id": "fragment_radio_04_punk_djsolo",
             "src": {
-              "trackLists": [
-                "radio_04_punk_djsolo"
-              ]
+              "trackLists": ["radio_04_punk_djsolo"]
             },
             "next": [
               {
@@ -908,9 +779,7 @@
           {
             "id": "fragment_radio_04_punk_news",
             "src": {
-              "trackLists": [
-                "radio_news"
-              ]
+              "trackLists": ["radio_news"]
             },
             "next": [
               {
@@ -925,9 +794,7 @@
           {
             "id": "fragment_radio_04_punk_adverts",
             "src": {
-              "trackLists": [
-                "general_adverts"
-              ]
+              "trackLists": ["general_adverts"]
             },
             "next": [
               {
@@ -941,7 +808,7 @@
     {
       "id": "radio_05_talk_01",
       "meta": {
-        "artwork": "textures/radio_05_talk_01",
+        "logo": "textures/radio_05_talk_01",
         "genre": "Public Talk Radio",
         "genreCode": "7",
         "title": "WCTR: West Coast Talk Radio"
@@ -961,9 +828,7 @@
           {
             "id": "fragment_radio_05_talk_01_ident_01",
             "src": {
-              "trackLists": [
-                "radio_05_talk_01_idents"
-              ]
+              "trackLists": ["radio_05_talk_01_idents"]
             },
             "next": [
               {
@@ -974,9 +839,7 @@
           {
             "id": "fragment_radio_05_talk_01_music_01",
             "src": {
-              "trackLists": [
-                "radio_05_talk_01_music"
-              ],
+              "trackLists": ["radio_05_talk_01_music"],
               "track": "radio_05_talk_01_mono_chakra_attack_part_1"
             },
             "next": [
@@ -992,9 +855,7 @@
           {
             "id": "fragment_radio_05_talk_01_adverts_01",
             "src": {
-              "trackLists": [
-                "general_adverts"
-              ]
+              "trackLists": ["general_adverts"]
             },
             "next": [
               {
@@ -1009,9 +870,7 @@
           {
             "id": "fragment_radio_05_talk_01_ident_02",
             "src": {
-              "trackLists": [
-                "radio_05_talk_01_idents"
-              ]
+              "trackLists": ["radio_05_talk_01_idents"]
             },
             "next": [
               {
@@ -1022,9 +881,7 @@
           {
             "id": "fragment_radio_05_talk_01_music_02",
             "src": {
-              "trackLists": [
-                "radio_05_talk_01_music"
-              ],
+              "trackLists": ["radio_05_talk_01_music"],
               "track": "radio_05_talk_01_mono_dchakra_attack_part_2"
             },
             "next": [
@@ -1040,9 +897,7 @@
           {
             "id": "fragment_radio_05_talk_01_adverts_02",
             "src": {
-              "trackLists": [
-                "general_adverts"
-              ]
+              "trackLists": ["general_adverts"]
             },
             "next": [
               {
@@ -1057,9 +912,7 @@
           {
             "id": "fragment_radio_05_talk_01_ident_03",
             "src": {
-              "trackLists": [
-                "radio_05_talk_01_idents"
-              ]
+              "trackLists": ["radio_05_talk_01_idents"]
             },
             "next": [
               {
@@ -1070,9 +923,7 @@
           {
             "id": "fragment_radio_05_talk_01_music_03",
             "src": {
-              "trackLists": [
-                "radio_05_talk_01_music"
-              ],
+              "trackLists": ["radio_05_talk_01_music"],
               "track": "radio_05_talk_01_mono_fernando_show_1"
             },
             "next": [
@@ -1088,9 +939,7 @@
           {
             "id": "fragment_radio_05_talk_01_adverts_03",
             "src": {
-              "trackLists": [
-                "general_adverts"
-              ]
+              "trackLists": ["general_adverts"]
             },
             "next": [
               {
@@ -1105,9 +954,7 @@
           {
             "id": "fragment_radio_05_talk_01_ident_04",
             "src": {
-              "trackLists": [
-                "radio_05_talk_01_idents"
-              ]
+              "trackLists": ["radio_05_talk_01_idents"]
             },
             "next": [
               {
@@ -1118,9 +965,7 @@
           {
             "id": "fragment_radio_05_talk_01_music_04",
             "src": {
-              "trackLists": [
-                "radio_05_talk_01_music"
-              ],
+              "trackLists": ["radio_05_talk_01_music"],
               "track": "radio_05_talk_01_mono_chattersphere"
             },
             "next": [
@@ -1136,9 +981,7 @@
           {
             "id": "fragment_radio_05_talk_01_adverts_04",
             "src": {
-              "trackLists": [
-                "general_adverts"
-              ]
+              "trackLists": ["general_adverts"]
             },
             "next": [
               {
@@ -1156,7 +999,7 @@
     {
       "id": "radio_06_country",
       "meta": {
-        "artwork": "textures/radio_06_country",
+        "logo": "textures/radio_06_country",
         "genre": "Country music and rockabilly",
         "genreCode": "9",
         "host": "Jesco White",
@@ -1196,9 +1039,7 @@
           {
             "id": "fragment_radio_06_country_ident",
             "src": {
-              "trackLists": [
-                "radio_06_country_idents"
-              ]
+              "trackLists": ["radio_06_country_idents"]
             },
             "next": [
               {
@@ -1226,32 +1067,22 @@
                 "condition": {
                   "probability": 0.333
                 },
-                "positions": [
-                  "track_start",
-                  "track_end"
-                ]
+                "positions": ["track_start", "track_end"]
               },
               {
                 "id": "voiceover_radio_06_country_general",
                 "src": {
-                  "trackLists": [
-                    "radio_06_country_general"
-                  ]
+                  "trackLists": ["radio_06_country_general"]
                 },
                 "condition": {
                   "probability": 0.333
                 },
-                "positions": [
-                  "track_start",
-                  "track_end"
-                ]
+                "positions": ["track_start", "track_end"]
               },
               {
                 "id": "voiceover_radio_06_country_morning",
                 "src": {
-                  "trackLists": [
-                    "radio_06_country_time_morning"
-                  ]
+                  "trackLists": ["radio_06_country_time_morning"]
                 },
                 "condition": {
                   "probability": 0.333,
@@ -1260,17 +1091,12 @@
                     "to": "11:00"
                   }
                 },
-                "positions": [
-                  "track_start",
-                  "track_end"
-                ]
+                "positions": ["track_start", "track_end"]
               },
               {
                 "id": "voiceover_radio_06_country_evening",
                 "src": {
-                  "trackLists": [
-                    "radio_06_country_time_evening"
-                  ]
+                  "trackLists": ["radio_06_country_time_evening"]
                 },
                 "condition": {
                   "probability": 0.333,
@@ -1279,10 +1105,7 @@
                     "to": "24:00"
                   }
                 },
-                "positions": [
-                  "track_start",
-                  "track_end"
-                ]
+                "positions": ["track_start", "track_end"]
               },
               {
                 "id": "voiceover_radio_06_country_to_news",
@@ -1290,13 +1113,9 @@
                   "probability": 0.666,
                   "nextFragment": "fragment_radio_06_country_news"
                 },
-                "positions": [
-                  "track_end"
-                ],
+                "positions": ["track_end"],
                 "src": {
-                  "trackLists": [
-                    "radio_06_country_to_news"
-                  ]
+                  "trackLists": ["radio_06_country_to_news"]
                 }
               },
               {
@@ -1305,13 +1124,9 @@
                   "probability": 0.666,
                   "nextFragment": "fragment_radio_06_country_adverts"
                 },
-                "positions": [
-                  "track_end"
-                ],
+                "positions": ["track_end"],
                 "src": {
-                  "trackLists": [
-                    "radio_06_country_to_ad"
-                  ]
+                  "trackLists": ["radio_06_country_to_ad"]
                 }
               }
             ],
@@ -1336,9 +1151,7 @@
           {
             "id": "fragment_radio_06_country_djsolo",
             "src": {
-              "trackLists": [
-                "radio_06_country_djsolo"
-              ]
+              "trackLists": ["radio_06_country_djsolo"]
             },
             "next": [
               {
@@ -1353,9 +1166,7 @@
           {
             "id": "fragment_radio_06_country_news",
             "src": {
-              "trackLists": [
-                "radio_news"
-              ]
+              "trackLists": ["radio_news"]
             },
             "next": [
               {
@@ -1370,9 +1181,7 @@
           {
             "id": "fragment_radio_06_country_adverts",
             "src": {
-              "trackLists": [
-                "country_adverts"
-              ]
+              "trackLists": ["country_adverts"]
             },
             "next": [
               {
@@ -1386,15 +1195,13 @@
     {
       "id": "radio_07_dance_01",
       "meta": {
-        "artwork": "textures/radio_07_dance_01",
+        "logo": "textures/radio_07_dance_01",
         "genre": "Electronic music",
         "genreCode": "10",
         "host": "Soulwax",
         "title": "Soulwax FM"
       },
-      "trackLists": [
-        "radio_07_dance_01_music"
-      ],
+      "trackLists": ["radio_07_dance_01_music"],
       "playlist": {
         "firstFragment": [
           {
@@ -1405,9 +1212,7 @@
           {
             "id": "fragment_radio_07_dance_01_music_01",
             "src": {
-              "trackLists": [
-                "radio_07_dance_01_music"
-              ],
+              "trackLists": ["radio_07_dance_01_music"],
               "track": "radio_07_dance_01_soulwax_fm_final_mix_32k"
             },
             "next": [
@@ -1422,15 +1227,13 @@
     {
       "id": "radio_08_mexican",
       "meta": {
-        "artwork": "textures/radio_08_mexican",
+        "logo": "textures/radio_08_mexican",
         "genre": "Mexican music and Latin music",
         "genreCode": "11",
         "host": "DJ Camilo and Don Cheto",
         "title": "East Los FM"
       },
-      "trackLists": [
-        "radio_08_mexican_music"
-      ],
+      "trackLists": ["radio_08_mexican_music"],
       "playlist": {
         "firstFragment": [
           {
@@ -1441,9 +1244,7 @@
           {
             "id": "fragment_radio_08_mexican_music_01",
             "src": {
-              "trackLists": [
-                "radio_08_mexican_music"
-              ],
+              "trackLists": ["radio_08_mexican_music"],
               "track": "radio_08_mexican_mex_final_mix_32"
             },
             "next": [
@@ -1458,7 +1259,7 @@
     {
       "id": "radio_09_hiphop_old",
       "meta": {
-        "artwork": "textures/radio_09_hiphop_old",
+        "logo": "textures/radio_09_hiphop_old",
         "genre": "Golden age hip hop and gangsta rap",
         "genreCode": "4",
         "host": "DJ Pooh",
@@ -1524,9 +1325,7 @@
           {
             "id": "fragment_radio_09_hiphop_old_ident_option_original",
             "src": {
-              "trackLists": [
-                "radio_09_hiphop_old_idents"
-              ]
+              "trackLists": ["radio_09_hiphop_old_idents"]
             },
             "next": [
               {
@@ -1542,9 +1341,7 @@
           {
             "id": "fragment_radio_09_hiphop_old_ident_option_dre_day",
             "src": {
-              "trackLists": [
-                "radio_09_hiphop_old_dd_idents_launch"
-              ]
+              "trackLists": ["radio_09_hiphop_old_dd_idents_launch"]
             },
             "next": [
               {
@@ -1560,47 +1357,33 @@
           {
             "id": "fragment_radio_09_hiphop_old_music_option_original",
             "src": {
-              "trackLists": [
-                "radio_09_hiphop_old_core_music"
-              ]
+              "trackLists": ["radio_09_hiphop_old_core_music"]
             },
             "voiceOver": [
               {
                 "id": "voiceover_radio_09_hiphop_old_intro_option_original",
                 "src": {
-                  "introTrackLists": [
-                    "radio_09_hiphop_old_core_music_intro"
-                  ]
+                  "introTrackLists": ["radio_09_hiphop_old_core_music_intro"]
                 },
                 "condition": {
                   "probability": 0.333
                 },
-                "positions": [
-                  "track_start",
-                  "track_end"
-                ]
+                "positions": ["track_start", "track_end"]
               },
               {
                 "id": "voiceover_radio_09_hiphop_old_general_option_original",
                 "src": {
-                  "trackLists": [
-                    "radio_09_hiphop_old_general"
-                  ]
+                  "trackLists": ["radio_09_hiphop_old_general"]
                 },
                 "condition": {
                   "probability": 0.333
                 },
-                "positions": [
-                  "track_start",
-                  "track_end"
-                ]
+                "positions": ["track_start", "track_end"]
               },
               {
                 "id": "voiceover_radio_09_hiphop_old_morning_option_original",
                 "src": {
-                  "trackLists": [
-                    "radio_09_hiphop_old_time_morning"
-                  ]
+                  "trackLists": ["radio_09_hiphop_old_time_morning"]
                 },
                 "condition": {
                   "probability": 0.333,
@@ -1609,17 +1392,12 @@
                     "to": "11:00"
                   }
                 },
-                "positions": [
-                  "track_start",
-                  "track_end"
-                ]
+                "positions": ["track_start", "track_end"]
               },
               {
                 "id": "voiceover_radio_09_hiphop_old_evening_option_original",
                 "src": {
-                  "trackLists": [
-                    "radio_09_hiphop_old_time_evening"
-                  ]
+                  "trackLists": ["radio_09_hiphop_old_time_evening"]
                 },
                 "condition": {
                   "probability": 0.333,
@@ -1628,10 +1406,7 @@
                     "to": "24:00"
                   }
                 },
-                "positions": [
-                  "track_start",
-                  "track_end"
-                ]
+                "positions": ["track_start", "track_end"]
               },
               {
                 "id": "voiceover_radio_09_hiphop_old_to_news_option_original",
@@ -1639,13 +1414,9 @@
                   "probability": 0.666,
                   "nextFragment": "fragment_radio_09_hiphop_old_news"
                 },
-                "positions": [
-                  "track_end"
-                ],
+                "positions": ["track_end"],
                 "src": {
-                  "trackLists": [
-                    "radio_09_hiphop_old_to_news"
-                  ]
+                  "trackLists": ["radio_09_hiphop_old_to_news"]
                 }
               },
               {
@@ -1654,13 +1425,9 @@
                   "probability": 0.666,
                   "nextFragment": "fragment_radio_09_hiphop_old_adverts"
                 },
-                "positions": [
-                  "track_end"
-                ],
+                "positions": ["track_end"],
                 "src": {
-                  "trackLists": [
-                    "radio_09_hiphop_old_to_ad"
-                  ]
+                  "trackLists": ["radio_09_hiphop_old_to_ad"]
                 }
               }
             ],
@@ -1713,32 +1480,22 @@
                 "condition": {
                   "probability": 0.333
                 },
-                "positions": [
-                  "track_start",
-                  "track_end"
-                ]
+                "positions": ["track_start", "track_end"]
               },
               {
                 "id": "voiceover_radio_09_hiphop_old_general_option_dre_day",
                 "src": {
-                  "trackLists": [
-                    "dlc_security_music_pl_general"
-                  ]
+                  "trackLists": ["dlc_security_music_pl_general"]
                 },
                 "condition": {
                   "probability": 0.333
                 },
-                "positions": [
-                  "track_start",
-                  "track_end"
-                ]
+                "positions": ["track_start", "track_end"]
               },
               {
                 "id": "voiceover_radio_09_hiphop_old_morning_option_dre_day",
                 "src": {
-                  "trackLists": [
-                    "radio_09_hiphop_old_time_morning"
-                  ]
+                  "trackLists": ["radio_09_hiphop_old_time_morning"]
                 },
                 "condition": {
                   "probability": 0.333,
@@ -1747,17 +1504,12 @@
                     "to": "11:00"
                   }
                 },
-                "positions": [
-                  "track_start",
-                  "track_end"
-                ]
+                "positions": ["track_start", "track_end"]
               },
               {
                 "id": "voiceover_radio_09_hiphop_old_evening_option_dre_day",
                 "src": {
-                  "trackLists": [
-                    "radio_09_hiphop_old_time_evening"
-                  ]
+                  "trackLists": ["radio_09_hiphop_old_time_evening"]
                 },
                 "condition": {
                   "probability": 0.333,
@@ -1766,10 +1518,7 @@
                     "to": "24:00"
                   }
                 },
-                "positions": [
-                  "track_start",
-                  "track_end"
-                ]
+                "positions": ["track_start", "track_end"]
               },
               {
                 "id": "voiceover_radio_09_hiphop_old_to_news_option_dre_day",
@@ -1777,13 +1526,9 @@
                   "probability": 0.666,
                   "nextFragment": "fragment_radio_09_hiphop_old_news"
                 },
-                "positions": [
-                  "track_end"
-                ],
+                "positions": ["track_end"],
                 "src": {
-                  "trackLists": [
-                    "radio_09_hiphop_old_to_news"
-                  ]
+                  "trackLists": ["radio_09_hiphop_old_to_news"]
                 }
               },
               {
@@ -1792,13 +1537,9 @@
                   "probability": 0.666,
                   "nextFragment": "fragment_radio_09_hiphop_old_adverts"
                 },
-                "positions": [
-                  "track_end"
-                ],
+                "positions": ["track_end"],
                 "src": {
-                  "trackLists": [
-                    "radio_09_hiphop_old_to_ad"
-                  ]
+                  "trackLists": ["radio_09_hiphop_old_to_ad"]
                 }
               }
             ],
@@ -1834,9 +1575,7 @@
           {
             "id": "fragment_radio_09_hiphop_old_djsolo_option_original",
             "src": {
-              "trackLists": [
-                "radio_09_hiphop_old_djsolo"
-              ]
+              "trackLists": ["radio_09_hiphop_old_djsolo"]
             },
             "next": [
               {
@@ -1879,9 +1618,7 @@
           {
             "id": "fragment_radio_09_hiphop_old_news",
             "src": {
-              "trackLists": [
-                "radio_news"
-              ]
+              "trackLists": ["radio_news"]
             },
             "next": [
               {
@@ -1907,9 +1644,7 @@
           {
             "id": "fragment_radio_09_hiphop_old_adverts",
             "src": {
-              "trackLists": [
-                "general_adverts"
-              ]
+              "trackLists": ["general_adverts"]
             },
             "next": [
               {
@@ -1928,7 +1663,7 @@
     {
       "id": "radio_11_talk_02",
       "meta": {
-        "artwork": "textures/radio_11_talk_02",
+        "logo": "textures/radio_11_talk_02",
         "genre": "Public Talk Radio",
         "genreCode": "8",
         "title": "Blaine County Talk Radio"
@@ -1948,9 +1683,7 @@
           {
             "id": "fragment_radio_11_talk_02_ident_01",
             "src": {
-              "trackLists": [
-                "radio_11_talk_02_idents"
-              ]
+              "trackLists": ["radio_11_talk_02_idents"]
             },
             "next": [
               {
@@ -1961,9 +1694,7 @@
           {
             "id": "fragment_radio_11_talk_02_music_01",
             "src": {
-              "trackLists": [
-                "radio_11_talk_02_music"
-              ],
+              "trackLists": ["radio_11_talk_02_music"],
               "track": "radio_11_talk_02_mono_bless_your_heart"
             },
             "next": [
@@ -1979,9 +1710,7 @@
           {
             "id": "fragment_radio_11_talk_02_adverts_01",
             "src": {
-              "trackLists": [
-                "country_adverts"
-              ]
+              "trackLists": ["country_adverts"]
             },
             "next": [
               {
@@ -1996,9 +1725,7 @@
           {
             "id": "fragment_radio_11_talk_02_ident_02",
             "src": {
-              "trackLists": [
-                "radio_11_talk_02_idents"
-              ]
+              "trackLists": ["radio_11_talk_02_idents"]
             },
             "next": [
               {
@@ -2009,9 +1736,7 @@
           {
             "id": "fragment_radio_11_talk_02_music_02",
             "src": {
-              "trackLists": [
-                "radio_11_talk_02_music"
-              ],
+              "trackLists": ["radio_11_talk_02_music"],
               "track": "radio_11_talk_02_mono_bcr_community_hour"
             },
             "next": [
@@ -2027,9 +1752,7 @@
           {
             "id": "fragment_radio_11_talk_02_adverts_02",
             "src": {
-              "trackLists": [
-                "country_adverts"
-              ]
+              "trackLists": ["country_adverts"]
             },
             "next": [
               {
@@ -2044,9 +1767,7 @@
           {
             "id": "fragment_radio_11_talk_02_ident_03",
             "src": {
-              "trackLists": [
-                "radio_11_talk_02_idents"
-              ]
+              "trackLists": ["radio_11_talk_02_idents"]
             },
             "next": [
               {
@@ -2057,9 +1778,7 @@
           {
             "id": "fragment_radio_11_talk_02_music_03",
             "src": {
-              "trackLists": [
-                "radio_11_talk_02_music"
-              ],
+              "trackLists": ["radio_11_talk_02_music"],
               "track": "radio_11_talk_02_mono_beyond_insemination"
             },
             "next": [
@@ -2075,9 +1794,7 @@
           {
             "id": "fragment_radio_11_talk_02_adverts_03",
             "src": {
-              "trackLists": [
-                "country_adverts"
-              ]
+              "trackLists": ["country_adverts"]
             },
             "next": [
               {
@@ -2092,9 +1809,7 @@
           {
             "id": "fragment_radio_11_talk_02_ident_04",
             "src": {
-              "trackLists": [
-                "radio_11_talk_02_idents"
-              ]
+              "trackLists": ["radio_11_talk_02_idents"]
             },
             "next": [
               {
@@ -2105,9 +1820,7 @@
           {
             "id": "fragment_radio_11_talk_02_music_04",
             "src": {
-              "trackLists": [
-                "radio_11_talk_02_music"
-              ],
+              "trackLists": ["radio_11_talk_02_music"],
               "track": "radio_11_talk_02_mono_zbeyond_insemination_part_2"
             },
             "next": [
@@ -2123,9 +1836,7 @@
           {
             "id": "fragment_radio_11_talk_02_adverts_04",
             "src": {
-              "trackLists": [
-                "country_adverts"
-              ]
+              "trackLists": ["country_adverts"]
             },
             "next": [
               {
@@ -2140,9 +1851,7 @@
           {
             "id": "fragment_radio_11_talk_02_ident_05",
             "src": {
-              "trackLists": [
-                "radio_11_talk_02_idents"
-              ]
+              "trackLists": ["radio_11_talk_02_idents"]
             },
             "next": [
               {
@@ -2153,9 +1862,7 @@
           {
             "id": "fragment_radio_11_talk_02_music_05",
             "src": {
-              "trackLists": [
-                "radio_11_talk_02_music"
-              ],
+              "trackLists": ["radio_11_talk_02_music"],
               "track": "dlc_smuggler_mono_bcr_2"
             },
             "next": [
@@ -2171,9 +1878,7 @@
           {
             "id": "fragment_radio_11_talk_02_adverts_05",
             "src": {
-              "trackLists": [
-                "country_adverts"
-              ]
+              "trackLists": ["country_adverts"]
             },
             "next": [
               {
@@ -2191,7 +1896,7 @@
     {
       "id": "radio_12_reggae",
       "meta": {
-        "artwork": "textures/radio_12_reggae",
+        "logo": "textures/radio_12_reggae",
         "genre": "Reggae, dancehall and dub",
         "genreCode": "12",
         "host": "Lee \"Scratch\" Perry",
@@ -2232,9 +1937,7 @@
           {
             "id": "fragment_radio_12_reggae_ident",
             "src": {
-              "trackLists": [
-                "radio_12_reggae_idents"
-              ]
+              "trackLists": ["radio_12_reggae_idents"]
             },
             "next": [
               {
@@ -2262,32 +1965,22 @@
                 "condition": {
                   "probability": 0.333
                 },
-                "positions": [
-                  "track_start",
-                  "track_end"
-                ]
+                "positions": ["track_start", "track_end"]
               },
               {
                 "id": "voiceover_radio_12_reggae_general",
                 "src": {
-                  "trackLists": [
-                    "radio_12_reggae_general"
-                  ]
+                  "trackLists": ["radio_12_reggae_general"]
                 },
                 "condition": {
                   "probability": 0.333
                 },
-                "positions": [
-                  "track_start",
-                  "track_end"
-                ]
+                "positions": ["track_start", "track_end"]
               },
               {
                 "id": "voiceover_radio_12_reggae_morning",
                 "src": {
-                  "trackLists": [
-                    "radio_12_reggae_time_morning"
-                  ]
+                  "trackLists": ["radio_12_reggae_time_morning"]
                 },
                 "condition": {
                   "probability": 0.333,
@@ -2296,17 +1989,12 @@
                     "to": "11:00"
                   }
                 },
-                "positions": [
-                  "track_start",
-                  "track_end"
-                ]
+                "positions": ["track_start", "track_end"]
               },
               {
                 "id": "voiceover_radio_12_reggae_evening",
                 "src": {
-                  "trackLists": [
-                    "radio_12_reggae_time_evening"
-                  ]
+                  "trackLists": ["radio_12_reggae_time_evening"]
                 },
                 "condition": {
                   "probability": 0.333,
@@ -2315,10 +2003,7 @@
                     "to": "24:00"
                   }
                 },
-                "positions": [
-                  "track_start",
-                  "track_end"
-                ]
+                "positions": ["track_start", "track_end"]
               },
               {
                 "id": "voiceover_radio_12_reggae_to_news",
@@ -2326,13 +2011,9 @@
                   "probability": 0.666,
                   "nextFragment": "fragment_radio_12_reggae_news"
                 },
-                "positions": [
-                  "track_end"
-                ],
+                "positions": ["track_end"],
                 "src": {
-                  "trackLists": [
-                    "radio_12_reggae_to_news"
-                  ]
+                  "trackLists": ["radio_12_reggae_to_news"]
                 }
               },
               {
@@ -2341,13 +2022,9 @@
                   "probability": 0.666,
                   "nextFragment": "fragment_radio_12_reggae_adverts"
                 },
-                "positions": [
-                  "track_end"
-                ],
+                "positions": ["track_end"],
                 "src": {
-                  "trackLists": [
-                    "radio_12_reggae_to_ad"
-                  ]
+                  "trackLists": ["radio_12_reggae_to_ad"]
                 }
               }
             ],
@@ -2372,9 +2049,7 @@
           {
             "id": "fragment_radio_12_reggae_djsolo",
             "src": {
-              "trackLists": [
-                "radio_12_reggae_djsolo"
-              ]
+              "trackLists": ["radio_12_reggae_djsolo"]
             },
             "next": [
               {
@@ -2389,9 +2064,7 @@
           {
             "id": "fragment_radio_12_reggae_news",
             "src": {
-              "trackLists": [
-                "radio_news"
-              ]
+              "trackLists": ["radio_news"]
             },
             "next": [
               {
@@ -2406,9 +2079,7 @@
           {
             "id": "fragment_radio_12_reggae_adverts",
             "src": {
-              "trackLists": [
-                "general_adverts"
-              ]
+              "trackLists": ["general_adverts"]
             },
             "next": [
               {
@@ -2422,7 +2093,7 @@
     {
       "id": "radio_13_jazz",
       "meta": {
-        "artwork": "textures/radio_13_jazz",
+        "logo": "textures/radio_13_jazz",
         "genre": "Lounge, chillwave, jazz-funk and world",
         "genreCode": "13",
         "host": "Gilles Peterson",
@@ -2467,9 +2138,7 @@
           {
             "id": "fragment_radio_13_jazz_music_edited_01",
             "src": {
-              "trackLists": [
-                "radio_13_jazz_music_edited"
-              ],
+              "trackLists": ["radio_13_jazz_music_edited"],
               "track": "radio_13_jazz_wwfm_p1"
             },
             "next": [
@@ -2481,9 +2150,7 @@
           {
             "id": "fragment_radio_13_jazz_music_edited_02",
             "src": {
-              "trackLists": [
-                "radio_13_jazz_music_edited"
-              ],
+              "trackLists": ["radio_13_jazz_music_edited"],
               "track": "radio_13_jazz_wwfm_p2"
             },
             "next": [
@@ -2495,9 +2162,7 @@
           {
             "id": "fragment_radio_13_jazz_music_edited_03",
             "src": {
-              "trackLists": [
-                "radio_13_jazz_music_edited"
-              ],
+              "trackLists": ["radio_13_jazz_music_edited"],
               "track": "dlc_update_wwfm_p3_start"
             },
             "next": [
@@ -2509,9 +2174,7 @@
           {
             "id": "fragment_radio_13_jazz_music_edited_04",
             "src": {
-              "trackLists": [
-                "radio_13_jazz_music_edited"
-              ],
+              "trackLists": ["radio_13_jazz_music_edited"],
               "track": "radio_13_jazz_wwfm_p3",
               "trackStart": 279.982
             },
@@ -2524,9 +2187,7 @@
           {
             "id": "fragment_radio_13_jazz_music_edited_05",
             "src": {
-              "trackLists": [
-                "radio_13_jazz_music_edited"
-              ],
+              "trackLists": ["radio_13_jazz_music_edited"],
               "track": "radio_13_jazz_wwfm_p4"
             },
             "next": [
@@ -2543,9 +2204,7 @@
           {
             "id": "fragment_radio_13_jazz_music_edited_06",
             "src": {
-              "trackLists": [
-                "wwfm_island_update_music_music"
-              ],
+              "trackLists": ["wwfm_island_update_music_music"],
               "track": "dlc_hei4_music_wwfm_island_update_part_1"
             },
             "next": [
@@ -2557,9 +2216,7 @@
           {
             "id": "fragment_radio_13_jazz_music_edited_07",
             "src": {
-              "trackLists": [
-                "wwfm_island_update_music_music"
-              ],
+              "trackLists": ["wwfm_island_update_music_music"],
               "track": "dlc_hei4_music_wwfm_island_update_part_2"
             },
             "next": [
@@ -2571,9 +2228,7 @@
           {
             "id": "fragment_radio_13_jazz_music_edited_08",
             "src": {
-              "trackLists": [
-                "wwfm_island_update_music_music"
-              ],
+              "trackLists": ["wwfm_island_update_music_music"],
               "track": "dlc_hei4_music_wwfm_island_update_part_3"
             },
             "next": [
@@ -2585,9 +2240,7 @@
           {
             "id": "fragment_radio_13_jazz_music_edited_09",
             "src": {
-              "trackLists": [
-                "wwfm_island_update_music_music"
-              ],
+              "trackLists": ["wwfm_island_update_music_music"],
               "track": "dlc_hei4_music_wwfm_island_update_part_4"
             },
             "next": [
@@ -2599,9 +2252,7 @@
           {
             "id": "fragment_radio_13_jazz_music_edited_10",
             "src": {
-              "trackLists": [
-                "wwfm_island_update_music_music"
-              ],
+              "trackLists": ["wwfm_island_update_music_music"],
               "track": "dlc_hei4_music_wwfm_island_update_part_5"
             },
             "next": [
@@ -2621,7 +2272,7 @@
     {
       "id": "radio_14_dance_02",
       "meta": {
-        "artwork": "textures/radio_14_dance_02",
+        "logo": "textures/radio_14_dance_02",
         "genre": "IDM and Midwest hip hop",
         "genreCode": "10",
         "host": "Flying Lotus",
@@ -2666,9 +2317,7 @@
           {
             "id": "fragment_radio_14_dance_02_01",
             "src": {
-              "trackLists": [
-                "radio_14_dance_02_music"
-              ],
+              "trackLists": ["radio_14_dance_02_music"],
               "track": "radio_14_dance_02_flylo_part1"
             },
             "next": [
@@ -2680,9 +2329,7 @@
           {
             "id": "fragment_radio_14_dance_02_02",
             "src": {
-              "trackLists": [
-                "radio_14_dance_02_music"
-              ],
+              "trackLists": ["radio_14_dance_02_music"],
               "track": "radio_14_dance_02_flylo_part2"
             },
             "next": [
@@ -2699,23 +2346,19 @@
           {
             "id": "fragment_radio_14_dance_02_03",
             "src": {
-              "trackLists": [
-                "flylo_island_update_music_music"
-              ],
+              "trackLists": ["flylo_island_update_music_music"],
               "track": "dlc_hei4_music_flylo_island_update_part_1"
             },
             "next": [
               {
-                "fragment": "fragment_radio_14_dance_02_04",
+                "fragment": "fragment_radio_14_dance_02_04"
               }
             ]
           },
           {
             "id": "fragment_radio_14_dance_02_04",
             "src": {
-              "trackLists": [
-                "flylo_island_update_music_music"
-              ],
+              "trackLists": ["flylo_island_update_music_music"],
               "track": "dlc_hei4_music_flylo_island_update_part_2"
             },
             "next": [
@@ -2735,7 +2378,7 @@
     {
       "id": "radio_15_motown",
       "meta": {
-        "artwork": "textures/radio_15_motown",
+        "logo": "textures/radio_15_motown",
         "genre": "Classic soul, disco, gospel",
         "genreCode": "14",
         "host": "Pam Grier",
@@ -2774,9 +2417,7 @@
           {
             "id": "fragment_radio_15_motown_ident",
             "src": {
-              "trackLists": [
-                "radio_15_motown_idents"
-              ]
+              "trackLists": ["radio_15_motown_idents"]
             },
             "next": [
               {
@@ -2804,32 +2445,22 @@
                 "condition": {
                   "probability": 0.333
                 },
-                "positions": [
-                  "track_start",
-                  "track_end"
-                ]
+                "positions": ["track_start", "track_end"]
               },
               {
                 "id": "voiceover_radio_15_motown_general",
                 "src": {
-                  "trackLists": [
-                    "radio_15_motown_general"
-                  ]
+                  "trackLists": ["radio_15_motown_general"]
                 },
                 "condition": {
                   "probability": 0.333
                 },
-                "positions": [
-                  "track_start",
-                  "track_end"
-                ]
+                "positions": ["track_start", "track_end"]
               },
               {
                 "id": "voiceover_radio_15_motown_morning",
                 "src": {
-                  "trackLists": [
-                    "radio_15_motown_time_morning"
-                  ]
+                  "trackLists": ["radio_15_motown_time_morning"]
                 },
                 "condition": {
                   "probability": 0.333,
@@ -2838,17 +2469,12 @@
                     "to": "11:00"
                   }
                 },
-                "positions": [
-                  "track_start",
-                  "track_end"
-                ]
+                "positions": ["track_start", "track_end"]
               },
               {
                 "id": "voiceover_radio_15_motown_evening",
                 "src": {
-                  "trackLists": [
-                    "radio_15_motown_time_evening"
-                  ]
+                  "trackLists": ["radio_15_motown_time_evening"]
                 },
                 "condition": {
                   "probability": 0.333,
@@ -2857,10 +2483,7 @@
                     "to": "24:00"
                   }
                 },
-                "positions": [
-                  "track_start",
-                  "track_end"
-                ]
+                "positions": ["track_start", "track_end"]
               },
               {
                 "id": "voiceover_radio_15_motown_to_ad",
@@ -2868,13 +2491,9 @@
                   "probability": 0.666,
                   "nextFragment": "fragment_radio_15_motown_adverts"
                 },
-                "positions": [
-                  "track_end"
-                ],
+                "positions": ["track_end"],
                 "src": {
-                  "trackLists": [
-                    "radio_15_motown_to_ad"
-                  ]
+                  "trackLists": ["radio_15_motown_to_ad"]
                 }
               }
             ],
@@ -2895,9 +2514,7 @@
           {
             "id": "fragment_radio_15_motown_djsolo",
             "src": {
-              "trackLists": [
-                "radio_15_motown_djsolo"
-              ]
+              "trackLists": ["radio_15_motown_djsolo"]
             },
             "next": [
               {
@@ -2908,9 +2525,7 @@
           {
             "id": "fragment_radio_15_motown_adverts",
             "src": {
-              "trackLists": [
-                "general_adverts"
-              ]
+              "trackLists": ["general_adverts"]
             },
             "next": [
               {
@@ -2924,7 +2539,7 @@
     {
       "id": "radio_16_silverlake",
       "meta": {
-        "artwork": "textures/radio_16_silverlake",
+        "logo": "textures/radio_16_silverlake",
         "genre": "Indie pop, synthpop, indietronica and chillwave",
         "genreCode": "1",
         "host": "Twin Shadow",
@@ -2967,9 +2582,7 @@
           {
             "id": "fragment_radio_16_silverlake_ident",
             "src": {
-              "trackLists": [
-                "radio_16_silverlake_idents"
-              ]
+              "trackLists": ["radio_16_silverlake_idents"]
             },
             "next": [
               {
@@ -2999,32 +2612,22 @@
                 "condition": {
                   "probability": 0.333
                 },
-                "positions": [
-                  "track_start",
-                  "track_end"
-                ]
+                "positions": ["track_start", "track_end"]
               },
               {
                 "id": "voiceover_radio_16_silverlake_general",
                 "src": {
-                  "trackLists": [
-                    "radio_16_silverlake_general"
-                  ]
+                  "trackLists": ["radio_16_silverlake_general"]
                 },
                 "condition": {
                   "probability": 0.333
                 },
-                "positions": [
-                  "track_start",
-                  "track_end"
-                ]
+                "positions": ["track_start", "track_end"]
               },
               {
                 "id": "voiceover_radio_16_silverlake_morning",
                 "src": {
-                  "trackLists": [
-                    "radio_16_silverlake_time_morning"
-                  ]
+                  "trackLists": ["radio_16_silverlake_time_morning"]
                 },
                 "condition": {
                   "probability": 0.333,
@@ -3033,17 +2636,12 @@
                     "to": "11:00"
                   }
                 },
-                "positions": [
-                  "track_start",
-                  "track_end"
-                ]
+                "positions": ["track_start", "track_end"]
               },
               {
                 "id": "voiceover_radio_16_silverlake_evening",
                 "src": {
-                  "trackLists": [
-                    "radio_16_silverlake_time_evening"
-                  ]
+                  "trackLists": ["radio_16_silverlake_time_evening"]
                 },
                 "condition": {
                   "probability": 0.333,
@@ -3052,10 +2650,7 @@
                     "to": "24:00"
                   }
                 },
-                "positions": [
-                  "track_start",
-                  "track_end"
-                ]
+                "positions": ["track_start", "track_end"]
               },
               {
                 "id": "voiceover_radio_16_silverlake_to_news",
@@ -3063,13 +2658,9 @@
                   "probability": 0.666,
                   "nextFragment": "fragment_radio_16_silverlake_news"
                 },
-                "positions": [
-                  "track_end"
-                ],
+                "positions": ["track_end"],
                 "src": {
-                  "trackLists": [
-                    "radio_16_silverlake_to_news"
-                  ]
+                  "trackLists": ["radio_16_silverlake_to_news"]
                 }
               },
               {
@@ -3078,13 +2669,9 @@
                   "probability": 0.666,
                   "nextFragment": "fragment_radio_16_silverlake_adverts"
                 },
-                "positions": [
-                  "track_end"
-                ],
+                "positions": ["track_end"],
                 "src": {
-                  "trackLists": [
-                    "radio_16_silverlake_to_ad"
-                  ]
+                  "trackLists": ["radio_16_silverlake_to_ad"]
                 }
               }
             ],
@@ -3109,9 +2696,7 @@
           {
             "id": "fragment_radio_16_silverlake_djsolo",
             "src": {
-              "trackLists": [
-                "radio_16_silverlake_djsolo"
-              ]
+              "trackLists": ["radio_16_silverlake_djsolo"]
             },
             "next": [
               {
@@ -3126,9 +2711,7 @@
           {
             "id": "fragment_radio_16_silverlake_news",
             "src": {
-              "trackLists": [
-                "radio_news"
-              ]
+              "trackLists": ["radio_news"]
             },
             "next": [
               {
@@ -3143,9 +2726,7 @@
           {
             "id": "fragment_radio_16_silverlake_adverts",
             "src": {
-              "trackLists": [
-                "general_adverts"
-              ]
+              "trackLists": ["general_adverts"]
             },
             "next": [
               {
@@ -3159,7 +2740,7 @@
     {
       "id": "radio_17_funk",
       "meta": {
-        "artwork": "textures/radio_17_funk",
+        "logo": "textures/radio_17_funk",
         "genre": "Funk and R&B",
         "genreCode": "14",
         "host": "Bootsy Collins",
@@ -3200,9 +2781,7 @@
           {
             "id": "fragment_radio_17_funk_ident",
             "src": {
-              "trackLists": [
-                "radio_17_funk_idents"
-              ]
+              "trackLists": ["radio_17_funk_idents"]
             },
             "next": [
               {
@@ -3213,10 +2792,7 @@
           {
             "id": "fragment_radio_17_funk_music",
             "src": {
-              "trackLists": [
-                "radio_17_funk_music",
-                "radio_17_funk_music_new"
-              ]
+              "trackLists": ["radio_17_funk_music", "radio_17_funk_music_new"]
             },
             "voiceOver": [
               {
@@ -3230,32 +2806,22 @@
                 "condition": {
                   "probability": 0.333
                 },
-                "positions": [
-                  "track_start",
-                  "track_end"
-                ]
+                "positions": ["track_start", "track_end"]
               },
               {
                 "id": "voiceover_radio_17_funk_general",
                 "src": {
-                  "trackLists": [
-                    "radio_17_funk_general"
-                  ]
+                  "trackLists": ["radio_17_funk_general"]
                 },
                 "condition": {
                   "probability": 0.333
                 },
-                "positions": [
-                  "track_start",
-                  "track_end"
-                ]
+                "positions": ["track_start", "track_end"]
               },
               {
                 "id": "voiceover_radio_17_funk_morning",
                 "src": {
-                  "trackLists": [
-                    "radio_17_funk_time_morning"
-                  ]
+                  "trackLists": ["radio_17_funk_time_morning"]
                 },
                 "condition": {
                   "probability": 0.333,
@@ -3264,17 +2830,12 @@
                     "to": "11:00"
                   }
                 },
-                "positions": [
-                  "track_start",
-                  "track_end"
-                ]
+                "positions": ["track_start", "track_end"]
               },
               {
                 "id": "voiceover_radio_17_funk_evening",
                 "src": {
-                  "trackLists": [
-                    "radio_17_funk_time_evening"
-                  ]
+                  "trackLists": ["radio_17_funk_time_evening"]
                 },
                 "condition": {
                   "probability": 0.333,
@@ -3283,10 +2844,7 @@
                     "to": "24:00"
                   }
                 },
-                "positions": [
-                  "track_start",
-                  "track_end"
-                ]
+                "positions": ["track_start", "track_end"]
               },
               {
                 "id": "voiceover_radio_17_funk_to_news",
@@ -3294,13 +2852,9 @@
                   "probability": 0.666,
                   "nextFragment": "fragment_radio_17_funk_news"
                 },
-                "positions": [
-                  "track_end"
-                ],
+                "positions": ["track_end"],
                 "src": {
-                  "trackLists": [
-                    "radio_17_funk_to_news"
-                  ]
+                  "trackLists": ["radio_17_funk_to_news"]
                 }
               },
               {
@@ -3309,13 +2863,9 @@
                   "probability": 0.666,
                   "nextFragment": "fragment_radio_17_funk_adverts"
                 },
-                "positions": [
-                  "track_end"
-                ],
+                "positions": ["track_end"],
                 "src": {
-                  "trackLists": [
-                    "radio_17_funk_to_ad"
-                  ]
+                  "trackLists": ["radio_17_funk_to_ad"]
                 }
               }
             ],
@@ -3340,9 +2890,7 @@
           {
             "id": "fragment_radio_17_funk_djsolo",
             "src": {
-              "trackLists": [
-                "radio_17_funk_djsolo"
-              ]
+              "trackLists": ["radio_17_funk_djsolo"]
             },
             "next": [
               {
@@ -3357,9 +2905,7 @@
           {
             "id": "fragment_radio_17_funk_news",
             "src": {
-              "trackLists": [
-                "radio_news"
-              ]
+              "trackLists": ["radio_news"]
             },
             "next": [
               {
@@ -3374,9 +2920,7 @@
           {
             "id": "fragment_radio_17_funk_adverts",
             "src": {
-              "trackLists": [
-                "general_adverts"
-              ]
+              "trackLists": ["general_adverts"]
             },
             "next": [
               {
@@ -3390,7 +2934,7 @@
     {
       "id": "radio_18_90s_rock",
       "meta": {
-        "artwork": "textures/radio_18_90s_rock",
+        "logo": "textures/radio_18_90s_rock",
         "genre": "Garage rock, alternative rock and noise rock",
         "genreCode": "1",
         "host": "Nate Williams and Stephen Pope",
@@ -3431,9 +2975,7 @@
           {
             "id": "fragment_radio_18_90s_rock_ident",
             "src": {
-              "trackLists": [
-                "radio_18_90s_rock_idents"
-              ]
+              "trackLists": ["radio_18_90s_rock_idents"]
             },
             "next": [
               {
@@ -3461,32 +3003,22 @@
                 "condition": {
                   "probability": 0.333
                 },
-                "positions": [
-                  "track_start",
-                  "track_end"
-                ]
+                "positions": ["track_start", "track_end"]
               },
               {
                 "id": "voiceover_radio_18_90s_rock_general",
                 "src": {
-                  "trackLists": [
-                    "radio_18_90s_rock_general"
-                  ]
+                  "trackLists": ["radio_18_90s_rock_general"]
                 },
                 "condition": {
                   "probability": 0.333
                 },
-                "positions": [
-                  "track_start",
-                  "track_end"
-                ]
+                "positions": ["track_start", "track_end"]
               },
               {
                 "id": "voiceover_radio_18_90s_rock_morning",
                 "src": {
-                  "trackLists": [
-                    "radio_18_90s_rock_time_morning"
-                  ]
+                  "trackLists": ["radio_18_90s_rock_time_morning"]
                 },
                 "condition": {
                   "probability": 0.333,
@@ -3495,17 +3027,12 @@
                     "to": "11:00"
                   }
                 },
-                "positions": [
-                  "track_start",
-                  "track_end"
-                ]
+                "positions": ["track_start", "track_end"]
               },
               {
                 "id": "voiceover_radio_18_90s_rock_evening",
                 "src": {
-                  "trackLists": [
-                    "radio_18_90s_rock_time_evening"
-                  ]
+                  "trackLists": ["radio_18_90s_rock_time_evening"]
                 },
                 "condition": {
                   "probability": 0.333,
@@ -3514,10 +3041,7 @@
                     "to": "24:00"
                   }
                 },
-                "positions": [
-                  "track_start",
-                  "track_end"
-                ]
+                "positions": ["track_start", "track_end"]
               },
               {
                 "id": "voiceover_radio_18_90s_rock_to_news",
@@ -3525,13 +3049,9 @@
                   "probability": 0.666,
                   "nextFragment": "fragment_radio_18_90s_rock_news"
                 },
-                "positions": [
-                  "track_end"
-                ],
+                "positions": ["track_end"],
                 "src": {
-                  "trackLists": [
-                    "radio_18_90s_rock_to_news"
-                  ]
+                  "trackLists": ["radio_18_90s_rock_to_news"]
                 }
               },
               {
@@ -3540,13 +3060,9 @@
                   "probability": 0.666,
                   "nextFragment": "fragment_radio_18_90s_rock_adverts"
                 },
-                "positions": [
-                  "track_end"
-                ],
+                "positions": ["track_end"],
                 "src": {
-                  "trackLists": [
-                    "radio_18_90s_rock_to_ad"
-                  ]
+                  "trackLists": ["radio_18_90s_rock_to_ad"]
                 }
               }
             ],
@@ -3571,9 +3087,7 @@
           {
             "id": "fragment_radio_18_90s_rock_djsolo",
             "src": {
-              "trackLists": [
-                "radio_18_90s_rock_djsolo"
-              ]
+              "trackLists": ["radio_18_90s_rock_djsolo"]
             },
             "next": [
               {
@@ -3588,9 +3102,7 @@
           {
             "id": "fragment_radio_18_90s_rock_news",
             "src": {
-              "trackLists": [
-                "radio_news"
-              ]
+              "trackLists": ["radio_news"]
             },
             "next": [
               {
@@ -3605,9 +3117,7 @@
           {
             "id": "fragment_radio_18_90s_rock_adverts",
             "src": {
-              "trackLists": [
-                "general_adverts"
-              ]
+              "trackLists": ["general_adverts"]
             },
             "next": [
               {
@@ -3622,7 +3132,7 @@
       "isHidden": true,
       "id": "radio_19_user",
       "meta": {
-        "artwork": "textures/radio_19_user",
+        "logo": "textures/radio_19_user",
         "genre": "User radio station",
         "genreCode": "16",
         "host": "Cliff Lane and Andee",
@@ -3648,15 +3158,13 @@
     {
       "id": "radio_20_thelab",
       "meta": {
-        "artwork": "textures/radio_20_thelab",
+        "logo": "textures/radio_20_thelab",
         "genre": "Hip hop",
         "genreCode": "4",
         "host": "Oh No and The Alchemist",
         "title": "The Lab"
       },
-      "trackLists": [
-        "dlc_thelab_music"
-      ],
+      "trackLists": ["dlc_thelab_music"],
       "playlist": {
         "firstFragment": [
           {
@@ -3667,9 +3175,7 @@
           {
             "id": "fragment_dlc_thelab_music_01",
             "src": {
-              "trackLists": [
-                "dlc_thelab_music"
-              ],
+              "trackLists": ["dlc_thelab_music"],
               "track": "dlc_thelab_lab_p1"
             },
             "next": [
@@ -3681,9 +3187,7 @@
           {
             "id": "fragment_dlc_thelab_music_02",
             "src": {
-              "trackLists": [
-                "dlc_thelab_music"
-              ],
+              "trackLists": ["dlc_thelab_music"],
               "track": "dlc_thelab_lab_p2"
             },
             "next": [
@@ -3698,15 +3202,13 @@
     {
       "id": "radio_21_dlc_xm17",
       "meta": {
-        "artwork": "textures/radio_21_dlc_xm17",
+        "logo": "textures/radio_21_dlc_xm17",
         "genre": "Hip hop",
         "genreCode": "4",
         "host": "Frank Ocean",
         "title": "Blonded Los Santos 97.8 FM"
       },
-      "trackLists": [
-        "dlc_christmas2017_music"
-      ],
+      "trackLists": ["dlc_christmas2017_music"],
       "playlist": {
         "firstFragment": [
           {
@@ -3717,9 +3219,7 @@
           {
             "id": "fragment_radio_21_dlc_xm17_01",
             "src": {
-              "trackLists": [
-                "dlc_christmas2017_music"
-              ],
+              "trackLists": ["dlc_christmas2017_music"],
               "track": "dlc_christmas2017_radio_xm17_p1"
             },
             "next": [
@@ -3731,9 +3231,7 @@
           {
             "id": "fragment_radio_21_dlc_xm17_02",
             "src": {
-              "trackLists": [
-                "dlc_christmas2017_music"
-              ],
+              "trackLists": ["dlc_christmas2017_music"],
               "track": "dlc_christmas2017_radio_xm17_p2"
             },
             "next": [
@@ -3745,9 +3243,7 @@
           {
             "id": "fragment_radio_21_dlc_xm17_03",
             "src": {
-              "trackLists": [
-                "dlc_christmas2017_music"
-              ],
+              "trackLists": ["dlc_christmas2017_music"],
               "track": "dlc_christmas2017_radio_xm17_p3"
             },
             "next": [
@@ -3762,7 +3258,7 @@
     {
       "id": "radio_22_dlc_battle_mix1_radio",
       "meta": {
-        "artwork": "textures/radio_22_dlc_battle_mix1_radio",
+        "logo": "textures/radio_22_dlc_battle_mix1_radio",
         "genre": "House and techno music",
         "genreCode": "10",
         "host": "Donna Frank",
@@ -3825,9 +3321,7 @@
           {
             "id": "fragment_radio_22_dlc_battle_mix1_radio_01",
             "src": {
-              "trackLists": [
-                "battle_mix1_radio"
-              ],
+              "trackLists": ["battle_mix1_radio"],
               "track": "dlc_battle_music_battle_mix1_radio_01"
             },
             "next": [
@@ -3839,9 +3333,7 @@
           {
             "id": "fragment_radio_22_dlc_battle_mix1_radio_02",
             "src": {
-              "trackLists": [
-                "battle_mix1_radio"
-              ],
+              "trackLists": ["battle_mix1_radio"],
               "track": "dlc_battle_music_battle_mix1_radio_02"
             },
             "next": [
@@ -3853,9 +3345,7 @@
           {
             "id": "fragment_radio_22_dlc_battle_mix1_radio_03",
             "src": {
-              "trackLists": [
-                "battle_mix1_radio"
-              ],
+              "trackLists": ["battle_mix1_radio"],
               "track": "dlc_battle_music_battle_mix1_radio_03"
             },
             "next": [
@@ -3872,9 +3362,7 @@
           {
             "id": "fragment_radio_22_dlc_battle_mix1_radio_04",
             "src": {
-              "trackLists": [
-                "battle_mix2_radio"
-              ],
+              "trackLists": ["battle_mix2_radio"],
               "track": "dlc_battle_music_battle_mix2_radio_01",
               "trackStart": 279.982
             },
@@ -3887,23 +3375,19 @@
           {
             "id": "fragment_radio_22_dlc_battle_mix1_radio_05",
             "src": {
-              "trackLists": [
-                "battle_mix2_radio"
-              ],
+              "trackLists": ["battle_mix2_radio"],
               "track": "dlc_battle_music_battle_mix2_radio_02"
             },
             "next": [
               {
-                "fragment": "fragment_radio_22_dlc_battle_mix1_radio_06",
+                "fragment": "fragment_radio_22_dlc_battle_mix1_radio_06"
               }
             ]
           },
           {
             "id": "fragment_radio_22_dlc_battle_mix1_radio_06",
             "src": {
-              "trackLists": [
-                "battle_mix2_radio"
-              ],
+              "trackLists": ["battle_mix2_radio"],
               "track": "dlc_battle_music_battle_mix2_radio_03"
             },
             "next": [
@@ -3920,9 +3404,7 @@
           {
             "id": "fragment_radio_22_dlc_battle_mix1_radio_07",
             "src": {
-              "trackLists": [
-                "battle_mix3_radio"
-              ],
+              "trackLists": ["battle_mix3_radio"],
               "track": "dlc_battle_music_battle_mix3_radio_01",
               "trackStart": 279.982
             },
@@ -3935,23 +3417,19 @@
           {
             "id": "fragment_radio_22_dlc_battle_mix1_radio_08",
             "src": {
-              "trackLists": [
-                "battle_mix3_radio"
-              ],
+              "trackLists": ["battle_mix3_radio"],
               "track": "dlc_battle_music_battle_mix3_radio_02"
             },
             "next": [
               {
-                "fragment": "fragment_radio_22_dlc_battle_mix1_radio_09",
+                "fragment": "fragment_radio_22_dlc_battle_mix1_radio_09"
               }
             ]
           },
           {
             "id": "fragment_radio_22_dlc_battle_mix1_radio_09",
             "src": {
-              "trackLists": [
-                "battle_mix3_radio"
-              ],
+              "trackLists": ["battle_mix3_radio"],
               "track": "dlc_battle_music_battle_mix3_radio_03"
             },
             "next": [
@@ -3968,9 +3446,7 @@
           {
             "id": "fragment_radio_22_dlc_battle_mix1_radio_10",
             "src": {
-              "trackLists": [
-                "battle_mix4_radio"
-              ],
+              "trackLists": ["battle_mix4_radio"],
               "track": "dlc_battle_music_battle_mix4_radio_01",
               "trackStart": 279.982
             },
@@ -3983,23 +3459,19 @@
           {
             "id": "fragment_radio_22_dlc_battle_mix1_radio_11",
             "src": {
-              "trackLists": [
-                "battle_mix4_radio"
-              ],
+              "trackLists": ["battle_mix4_radio"],
               "track": "dlc_battle_music_battle_mix4_radio_02"
             },
             "next": [
               {
-                "fragment": "fragment_radio_22_dlc_battle_mix1_radio_12",
+                "fragment": "fragment_radio_22_dlc_battle_mix1_radio_12"
               }
             ]
           },
           {
             "id": "fragment_radio_22_dlc_battle_mix1_radio_12",
             "src": {
-              "trackLists": [
-                "battle_mix4_radio"
-              ],
+              "trackLists": ["battle_mix4_radio"],
               "track": "dlc_battle_music_battle_mix4_radio_03"
             },
             "next": [
@@ -4019,7 +3491,7 @@
     {
       "id": "radio_23_dlc_xm19_radio",
       "meta": {
-        "artwork": "textures/radio_23_dlc_xm19_radio",
+        "logo": "textures/radio_23_dlc_xm19_radio",
         "genre": "Modern Hip-Hop, UK Rap and Afro-Fusion",
         "genreCode": "4",
         "host": "Danny Brown and Skepta (guest)",
@@ -4075,9 +3547,7 @@
           {
             "id": "fragment_heist3_radio_ident_option_original",
             "src": {
-              "trackLists": [
-                "dlc_heist3_heist3_radio_idents"
-              ]
+              "trackLists": ["dlc_heist3_heist3_radio_idents"]
             },
             "next": [
               {
@@ -4093,9 +3563,7 @@
           {
             "id": "fragment_heist3_radio_ident_option_takeover",
             "src": {
-              "trackLists": [
-                "dlc_heist3_heist3_radio_takeover_idents"
-              ]
+              "trackLists": ["dlc_heist3_heist3_radio_takeover_idents"]
             },
             "next": [
               {
@@ -4111,32 +3579,23 @@
           {
             "id": "fragment_heist3_radio_music_option_original",
             "src": {
-              "trackLists": [
-                "dlc_heist3_heist3_radio_music_ord"
-              ]
+              "trackLists": ["dlc_heist3_heist3_radio_music_ord"]
             },
             "voiceOver": [
               {
                 "id": "voiceover_heist3_radio_intro_option_original",
                 "src": {
-                  "introTrackLists": [
-                    "dlc_heist3_heist3_radio_music_ord_intro"
-                  ]
+                  "introTrackLists": ["dlc_heist3_heist3_radio_music_ord_intro"]
                 },
                 "condition": {
                   "probability": 0.666
                 },
-                "positions": [
-                  "track_start",
-                  "track_end"
-                ]
+                "positions": ["track_start", "track_end"]
               },
               {
                 "id": "voiceover_heist3_radio_morning_option_original",
                 "src": {
-                  "trackLists": [
-                    "dlc_heist3_time_morning"
-                  ]
+                  "trackLists": ["dlc_heist3_time_morning"]
                 },
                 "condition": {
                   "probability": 0.333,
@@ -4145,17 +3604,12 @@
                     "to": "11:00"
                   }
                 },
-                "positions": [
-                  "track_start",
-                  "track_end"
-                ]
+                "positions": ["track_start", "track_end"]
               },
               {
                 "id": "voiceover_heist3_radio_evening_option_original",
                 "src": {
-                  "trackLists": [
-                    "dlc_heist3_time_evening"
-                  ]
+                  "trackLists": ["dlc_heist3_time_evening"]
                 },
                 "condition": {
                   "probability": 0.333,
@@ -4164,10 +3618,7 @@
                     "to": "24:00"
                   }
                 },
-                "positions": [
-                  "track_start",
-                  "track_end"
-                ]
+                "positions": ["track_start", "track_end"]
               }
             ],
             "next": [
@@ -4204,17 +3655,13 @@
           {
             "id": "fragment_heist3_radio_music_option_takeover",
             "src": {
-              "trackLists": [
-                "dlc_heist3_heist3_radio_takeover_musi_ord"
-              ]
+              "trackLists": ["dlc_heist3_heist3_radio_takeover_musi_ord"]
             },
             "voiceOver": [
               {
                 "id": "voiceover_heist3_radio_morning_option_takeover",
                 "src": {
-                  "trackLists": [
-                    "dlc_heist3_time_morning"
-                  ]
+                  "trackLists": ["dlc_heist3_time_morning"]
                 },
                 "condition": {
                   "probability": 0.134,
@@ -4223,17 +3670,12 @@
                     "to": "11:00"
                   }
                 },
-                "positions": [
-                  "track_start",
-                  "track_end"
-                ]
+                "positions": ["track_start", "track_end"]
               },
               {
                 "id": "voiceover_heist3_radio_evening_option_takeover",
                 "src": {
-                  "trackLists": [
-                    "dlc_heist3_time_evening"
-                  ]
+                  "trackLists": ["dlc_heist3_time_evening"]
                 },
                 "condition": {
                   "probability": 0.134,
@@ -4242,10 +3684,7 @@
                     "to": "24:00"
                   }
                 },
-                "positions": [
-                  "track_start",
-                  "track_end"
-                ]
+                "positions": ["track_start", "track_end"]
               }
             ],
             "next": [
@@ -4282,9 +3721,7 @@
           {
             "id": "fragment_heist3_radio_djsolo_option_original",
             "src": {
-              "trackLists": [
-                "dlc_heist3_heist3_radio_djsolo"
-              ]
+              "trackLists": ["dlc_heist3_heist3_radio_djsolo"]
             },
             "next": [
               {
@@ -4300,9 +3737,7 @@
           {
             "id": "fragment_heist3_radio_djsolo_option_takeover",
             "src": {
-              "trackLists": [
-                "dlc_heist3_heist3_radio_takeover_djsolo"
-              ]
+              "trackLists": ["dlc_heist3_heist3_radio_takeover_djsolo"]
             },
             "next": [
               {
@@ -4321,15 +3756,13 @@
     {
       "id": "radio_27_dlc_prhei4",
       "meta": {
-        "artwork": "textures/radio_27_dlc_prhei4",
+        "logo": "textures/radio_27_dlc_prhei4",
         "genre": "Electronic, house and techno",
         "genreCode": "3",
         "host": "Joy Orbison",
         "title": "Still Slipping Los Santos"
       },
-      "trackLists": [
-        "still_slipping_music_music"
-      ],
+      "trackLists": ["still_slipping_music_music"],
       "playlist": {
         "firstFragment": [
           {
@@ -4340,9 +3773,7 @@
           {
             "id": "fragment_radio_27_dlc_prhei4_music_01",
             "src": {
-              "trackLists": [
-                "still_slipping_music_music"
-              ],
+              "trackLists": ["still_slipping_music_music"],
               "track": "dlc_hei4_music_hei4_still_slipping_p1"
             },
             "next": [
@@ -4354,9 +3785,7 @@
           {
             "id": "fragment_radio_27_dlc_prhei4_music_02",
             "src": {
-              "trackLists": [
-                "still_slipping_music_music"
-              ],
+              "trackLists": ["still_slipping_music_music"],
               "track": "dlc_hei4_music_hei4_still_slipping_p2"
             },
             "next": [
@@ -4368,9 +3797,7 @@
           {
             "id": "fragment_radio_27_dlc_prhei4_music_03",
             "src": {
-              "trackLists": [
-                "still_slipping_music_music"
-              ],
+              "trackLists": ["still_slipping_music_music"],
               "track": "dlc_hei4_music_hei4_still_slipping_p3"
             },
             "next": [
@@ -4382,9 +3809,7 @@
           {
             "id": "fragment_radio_27_dlc_prhei4_music_04",
             "src": {
-              "trackLists": [
-                "still_slipping_music_music"
-              ],
+              "trackLists": ["still_slipping_music_music"],
               "track": "dlc_hei4_music_hei4_still_slipping_p4"
             },
             "next": [
@@ -4399,7 +3824,7 @@
     {
       "id": "radio_34_dlc_hei4_kult",
       "meta": {
-        "artwork": "textures/radio_34_dlc_hei4_kult",
+        "logo": "textures/radio_34_dlc_hei4_kult",
         "genre": "Alternative rock",
         "genreCode": "1",
         "host": "Julian Casablancas, Zachary, Mac DeMarco and Tony Mac",
@@ -4436,9 +3861,7 @@
           {
             "id": "fragment_hei4_radio_kult_ident",
             "src": {
-              "trackLists": [
-                "hei4_radio_kult_custom_idents"
-              ]
+              "trackLists": ["hei4_radio_kult_custom_idents"]
             },
             "next": [
               {
@@ -4458,39 +3881,27 @@
               {
                 "id": "voiceover_hei4_radio_kult_intro",
                 "src": {
-                  "introTrackLists": [
-                    "hei4_radio_kult_music_intro"
-                  ]
+                  "introTrackLists": ["hei4_radio_kult_music_intro"]
                 },
                 "condition": {
                   "probability": 0.333
                 },
-                "positions": [
-                  "track_start",
-                  "track_end"
-                ]
+                "positions": ["track_start", "track_end"]
               },
               {
                 "id": "voiceover_hei4_radio_kult_general",
                 "src": {
-                  "trackLists": [
-                    "dlc_hei4_general"
-                  ]
+                  "trackLists": ["dlc_hei4_general"]
                 },
                 "condition": {
                   "probability": 0.333
                 },
-                "positions": [
-                  "track_start",
-                  "track_end"
-                ]
+                "positions": ["track_start", "track_end"]
               },
               {
                 "id": "voiceover_hei4_radio_kult_morning",
                 "src": {
-                  "trackLists": [
-                    "dlc_hei4_time_morning"
-                  ]
+                  "trackLists": ["dlc_hei4_time_morning"]
                 },
                 "condition": {
                   "probability": 0.333,
@@ -4499,17 +3910,12 @@
                     "to": "11:00"
                   }
                 },
-                "positions": [
-                  "track_start",
-                  "track_end"
-                ]
+                "positions": ["track_start", "track_end"]
               },
               {
                 "id": "voiceover_hei4_radio_kult_evening",
                 "src": {
-                  "trackLists": [
-                    "dlc_hei4_time_evening"
-                  ]
+                  "trackLists": ["dlc_hei4_time_evening"]
                 },
                 "condition": {
                   "probability": 0.333,
@@ -4518,10 +3924,7 @@
                     "to": "24:00"
                   }
                 },
-                "positions": [
-                  "track_start",
-                  "track_end"
-                ]
+                "positions": ["track_start", "track_end"]
               }
             ],
             "next": [
@@ -4541,9 +3944,7 @@
           {
             "id": "fragment_hei4_radio_kult_djsolo",
             "src": {
-              "trackLists": [
-                "hei4_radio_kult_djsolo"
-              ]
+              "trackLists": ["hei4_radio_kult_djsolo"]
             },
             "next": [
               {
@@ -4558,9 +3959,7 @@
           {
             "id": "fragment_hei4_radio_kult_adverts",
             "src": {
-              "trackLists": [
-                "hei4_radio_kult_ads"
-              ]
+              "trackLists": ["hei4_radio_kult_ads"]
             },
             "next": [
               {
@@ -4574,7 +3973,7 @@
     {
       "id": "radio_35_dlc_hei4_mlr",
       "meta": {
-        "artwork": "textures/radio_35_dlc_hei4_mlr",
+        "logo": "textures/radio_35_dlc_hei4_mlr",
         "genre": "House, disco and techno music",
         "genreCode": "10",
         "title": "The Music Locker"
@@ -4636,9 +4035,7 @@
           {
             "id": "fragment_radio_35_dlc_hei4_mlr_01",
             "src": {
-              "trackLists": [
-                "hei4_km_beach_radio_music"
-              ],
+              "trackLists": ["hei4_km_beach_radio_music"],
               "track": "dlc_hei4_music_hei4_mlr_km_beach_p1"
             },
             "next": [
@@ -4650,9 +4047,7 @@
           {
             "id": "fragment_radio_35_dlc_hei4_mlr_02",
             "src": {
-              "trackLists": [
-                "hei4_km_beach_radio_music"
-              ],
+              "trackLists": ["hei4_km_beach_radio_music"],
               "track": "dlc_hei4_music_hei4_mlr_km_beach_p2"
             },
             "next": [
@@ -4664,23 +4059,19 @@
           {
             "id": "fragment_radio_35_dlc_hei4_mlr_03",
             "src": {
-              "trackLists": [
-                "hei4_km_beach_radio_music"
-              ],
+              "trackLists": ["hei4_km_beach_radio_music"],
               "track": "dlc_hei4_music_hei4_mlr_km_beach_p3"
             },
             "next": [
               {
-                "fragment": "fragment_radio_35_dlc_hei4_mlr_04",
+                "fragment": "fragment_radio_35_dlc_hei4_mlr_04"
               }
             ]
           },
           {
             "id": "fragment_radio_35_dlc_hei4_mlr_04",
             "src": {
-              "trackLists": [
-                "hei4_km_beach_radio_music"
-              ],
+              "trackLists": ["hei4_km_beach_radio_music"],
               "track": "dlc_hei4_music_hei4_mlr_km_beach_p4"
             },
             "next": [
@@ -4697,9 +4088,7 @@
           {
             "id": "fragment_radio_35_dlc_hei4_mlr_05",
             "src": {
-              "trackLists": [
-                "hei4_km_club_radio_music"
-              ],
+              "trackLists": ["hei4_km_club_radio_music"],
               "track": "dlc_hei4_music_hei4_mlr_km_club_p1"
             },
             "next": [
@@ -4711,9 +4100,7 @@
           {
             "id": "fragment_radio_35_dlc_hei4_mlr_06",
             "src": {
-              "trackLists": [
-                "hei4_km_club_radio_music"
-              ],
+              "trackLists": ["hei4_km_club_radio_music"],
               "track": "dlc_hei4_music_hei4_mlr_km_club_p2"
             },
             "next": [
@@ -4725,23 +4112,19 @@
           {
             "id": "fragment_radio_35_dlc_hei4_mlr_07",
             "src": {
-              "trackLists": [
-                "hei4_km_club_radio_music"
-              ],
+              "trackLists": ["hei4_km_club_radio_music"],
               "track": "dlc_hei4_music_hei4_mlr_km_club_p3"
             },
             "next": [
               {
-                "fragment": "fragment_radio_35_dlc_hei4_mlr_08",
+                "fragment": "fragment_radio_35_dlc_hei4_mlr_08"
               }
             ]
           },
           {
             "id": "fragment_radio_35_dlc_hei4_mlr_08",
             "src": {
-              "trackLists": [
-                "hei4_km_club_radio_music"
-              ],
+              "trackLists": ["hei4_km_club_radio_music"],
               "track": "dlc_hei4_music_hei4_mlr_km_club_p4"
             },
             "next": [
@@ -4758,9 +4141,7 @@
           {
             "id": "fragment_radio_35_dlc_hei4_mlr_09",
             "src": {
-              "trackLists": [
-                "hei4_mm_radio_music"
-              ],
+              "trackLists": ["hei4_mm_radio_music"],
               "track": "dlc_hei4_music_hei4_mlr_mm_p1"
             },
             "next": [
@@ -4772,9 +4153,7 @@
           {
             "id": "fragment_radio_35_dlc_hei4_mlr_10",
             "src": {
-              "trackLists": [
-                "hei4_mm_radio_music"
-              ],
+              "trackLists": ["hei4_mm_radio_music"],
               "track": "dlc_hei4_music_hei4_mlr_mm_p2"
             },
             "next": [
@@ -4786,23 +4165,19 @@
           {
             "id": "fragment_radio_35_dlc_hei4_mlr_11",
             "src": {
-              "trackLists": [
-                "hei4_mm_radio_music"
-              ],
+              "trackLists": ["hei4_mm_radio_music"],
               "track": "dlc_hei4_music_hei4_mlr_mm_p3"
             },
             "next": [
               {
-                "fragment": "fragment_radio_35_dlc_hei4_mlr_12",
+                "fragment": "fragment_radio_35_dlc_hei4_mlr_12"
               }
             ]
           },
           {
             "id": "fragment_radio_35_dlc_hei4_mlr_12",
             "src": {
-              "trackLists": [
-                "hei4_mm_radio_music"
-              ],
+              "trackLists": ["hei4_mm_radio_music"],
               "track": "dlc_hei4_music_hei4_mlr_mm_p4"
             },
             "next": [
@@ -4819,9 +4194,7 @@
           {
             "id": "fragment_radio_35_dlc_hei4_mlr_13",
             "src": {
-              "trackLists": [
-                "hei4_pt_radio_music"
-              ],
+              "trackLists": ["hei4_pt_radio_music"],
               "track": "dlc_hei4_music_hei4_mlr_pt_p1"
             },
             "next": [
@@ -4833,9 +4206,7 @@
           {
             "id": "fragment_radio_35_dlc_hei4_mlr_14",
             "src": {
-              "trackLists": [
-                "hei4_pt_radio_music"
-              ],
+              "trackLists": ["hei4_pt_radio_music"],
               "track": "dlc_hei4_music_hei4_mlr_pt_p2"
             },
             "next": [
@@ -4847,9 +4218,7 @@
           {
             "id": "fragment_radio_35_dlc_hei4_mlr_15",
             "src": {
-              "trackLists": [
-                "hei4_pt_radio_music"
-              ],
+              "trackLists": ["hei4_pt_radio_music"],
               "track": "dlc_hei4_music_hei4_mlr_pt_p3"
             },
             "next": [
@@ -4870,7 +4239,7 @@
       "isHidden": true,
       "id": "radio_36_audioplayer",
       "meta": {
-        "artwork": "textures/radio_36_audioplayer",
+        "logo": "textures/radio_36_audioplayer",
         "genre": "Various",
         "genreCode": "16",
         "title": "Media Player"
@@ -4898,7 +4267,7 @@
     {
       "id": "radio_37_motomami",
       "meta": {
-        "artwork": "textures/radio_37_motomami",
+        "logo": "textures/radio_37_motomami",
         "genre": "Latin",
         "genreCode": "3",
         "host": "ROSALÍA and Arca",
@@ -4931,9 +4300,7 @@
           {
             "id": "fragment_radio_37_motomami_ident",
             "src": {
-              "trackLists": [
-                "radio_37_motomami_idents_ident"
-              ]
+              "trackLists": ["radio_37_motomami_idents_ident"]
             },
             "next": [
               {
@@ -4944,40 +4311,28 @@
           {
             "id": "fragment_radio_37_motomami_music",
             "src": {
-              "trackLists": [
-                "radio_37_motomami_music_ordered"
-              ]
+              "trackLists": ["radio_37_motomami_music_ordered"]
             },
             "voiceOver": [
               {
                 "id": "voiceover_radio_37_motomami_intro",
                 "src": {
-                  "introTrackLists": [
-                    "radio_37_motomami_music_ordered_intro"
-                  ]
+                  "introTrackLists": ["radio_37_motomami_music_ordered_intro"]
                 },
                 "condition": {
                   "probability": 0.333
                 },
-                "positions": [
-                  "track_start",
-                  "track_end"
-                ]
+                "positions": ["track_start", "track_end"]
               },
               {
                 "id": "voiceover_radio_37_motomami_general",
                 "src": {
-                  "trackLists": [
-                    "dlc_security_music_motomami_general"
-                  ]
+                  "trackLists": ["dlc_security_music_motomami_general"]
                 },
                 "condition": {
                   "probability": 0.333
                 },
-                "positions": [
-                  "track_start",
-                  "track_end"
-                ]
+                "positions": ["track_start", "track_end"]
               }
             ],
             "next": [
@@ -4993,9 +4348,7 @@
           {
             "id": "fragment_radio_37_motomami_djsolo",
             "src": {
-              "trackLists": [
-                "radio_37_motomami_djsolo_djsolo"
-              ]
+              "trackLists": ["radio_37_motomami_djsolo_djsolo"]
             },
             "next": [
               {
@@ -11669,10 +11022,7 @@
         {
           "duration": 152.937,
           "id": "dlc_heist3_aliens",
-          "intro": [
-            "dlc_heist3_intro_aliens_01",
-            "dlc_heist3_intro_aliens_02"
-          ],
+          "intro": ["dlc_heist3_intro_aliens_01", "dlc_heist3_intro_aliens_02"],
           "markers": {
             "dj": [
               {
@@ -11698,9 +11048,7 @@
         {
           "duration": 164.031,
           "id": "dlc_heist3_crime_pays",
-          "intro": [
-            "dlc_heist3_intro_crime_pays_01"
-          ],
+          "intro": ["dlc_heist3_intro_crime_pays_01"],
           "markers": {
             "dj": [
               {
@@ -11808,9 +11156,7 @@
         {
           "duration": 107.559,
           "id": "dlc_heist3_numb_numb_juice",
-          "intro": [
-            "dlc_heist3_intro_numb_numb_juice_01"
-          ],
+          "intro": ["dlc_heist3_intro_numb_numb_juice_01"],
           "markers": {
             "track": [
               {
@@ -11855,10 +11201,7 @@
         {
           "duration": 229.138,
           "id": "dlc_heist3_w",
-          "intro": [
-            "dlc_heist3_intro_w_01",
-            "dlc_heist3_intro_w_02"
-          ],
+          "intro": ["dlc_heist3_intro_w_01", "dlc_heist3_intro_w_02"],
           "markers": {
             "dj": [
               {
@@ -11960,10 +11303,7 @@
         {
           "duration": 158.428,
           "id": "dlc_heist3_bop",
-          "intro": [
-            "dlc_heist3_intro_bop_01",
-            "dlc_heist3_intro_bop_02"
-          ],
+          "intro": ["dlc_heist3_intro_bop_01", "dlc_heist3_intro_bop_02"],
           "markers": {
             "dj": [
               {
@@ -11989,9 +11329,7 @@
         {
           "duration": 163.207,
           "id": "dlc_heist3_tbd",
-          "intro": [
-            "dlc_heist3_intro_tbd_01"
-          ],
+          "intro": ["dlc_heist3_intro_tbd_01"],
           "markers": {
             "dj": [
               {
@@ -12017,10 +11355,7 @@
         {
           "duration": 149.453,
           "id": "dlc_heist3_act_up",
-          "intro": [
-            "dlc_heist3_intro_act_up_01",
-            "dlc_heist3_intro_act_up_02"
-          ],
+          "intro": ["dlc_heist3_intro_act_up_01", "dlc_heist3_intro_act_up_02"],
           "markers": {
             "dj": [
               {
@@ -12046,9 +11381,7 @@
         {
           "duration": 154.789,
           "id": "dlc_heist3_dance_in_the_water",
-          "intro": [
-            "dlc_heist3_intro_dance_in_the_water_01"
-          ],
+          "intro": ["dlc_heist3_intro_dance_in_the_water_01"],
           "markers": {
             "dj": [
               {
@@ -20212,9 +19545,7 @@
         {
           "duration": 399.392,
           "id": "hei4_radio_kult_baby_i_love_you_so",
-          "intro": [
-            "dlc_hei4_intro_baby_i_love_you_so_01"
-          ],
+          "intro": ["dlc_hei4_intro_baby_i_love_you_so_01"],
           "markers": {
             "beat": [
               {
@@ -20348,9 +19679,7 @@
         {
           "duration": 147.924,
           "id": "hei4_radio_kult_so_it_goes",
-          "intro": [
-            "dlc_hei4_intro_so_it_goes_01"
-          ],
+          "intro": ["dlc_hei4_intro_so_it_goes_01"],
           "markers": {
             "beat": [
               {
@@ -20452,9 +19781,7 @@
         {
           "duration": 318.733,
           "id": "hei4_radio_kult_lft_me_lonely",
-          "intro": [
-            "dlc_hei4_intro_lft_me_lonely_01"
-          ],
+          "intro": ["dlc_hei4_intro_lft_me_lonely_01"],
           "markers": {
             "beat": [
               {
@@ -20568,9 +19895,7 @@
         {
           "duration": 217.018,
           "id": "hei4_radio_kult_on_the_level",
-          "intro": [
-            "dlc_hei4_intro_on_the_level_01"
-          ],
+          "intro": ["dlc_hei4_intro_on_the_level_01"],
           "markers": {
             "beat": [
               {
@@ -20660,9 +19985,7 @@
         {
           "duration": 271.991,
           "id": "hei4_radio_kult_drab_measure",
-          "intro": [
-            "dlc_hei4_intro_drab_measure_01"
-          ],
+          "intro": ["dlc_hei4_intro_drab_measure_01"],
           "markers": {
             "beat": [
               {
@@ -20808,9 +20131,7 @@
         {
           "duration": 246.624,
           "id": "hei4_radio_kult_nightclubbing",
-          "intro": [
-            "dlc_hei4_intro_nightclubbing_01"
-          ],
+          "intro": ["dlc_hei4_intro_nightclubbing_01"],
           "markers": {
             "beat": [
               {
@@ -20916,9 +20237,7 @@
         {
           "duration": 228.872,
           "id": "hei4_radio_kult_shes_lost_control",
-          "intro": [
-            "dlc_hei4_intro_shes_lost_control_01"
-          ],
+          "intro": ["dlc_hei4_intro_shes_lost_control_01"],
           "markers": {
             "beat": [
               {
@@ -21052,9 +20371,7 @@
         {
           "duration": 260.59,
           "id": "hei4_radio_kult_eisbar",
-          "intro": [
-            "dlc_hei4_intro_eisbar_01"
-          ],
+          "intro": ["dlc_hei4_intro_eisbar_01"],
           "markers": {
             "beat": [
               {
@@ -21180,9 +20497,7 @@
         {
           "duration": 215.347,
           "id": "hei4_radio_kult_four_shadows",
-          "intro": [
-            "dlc_hei4_intro_four_shadows_01"
-          ],
+          "intro": ["dlc_hei4_intro_four_shadows_01"],
           "markers": {
             "beat": [
               {
@@ -21268,9 +20583,7 @@
         {
           "duration": 233.167,
           "id": "hei4_radio_kult_liebe_auf_den_ersten_blick",
-          "intro": [
-            "dlc_hei4_intro_liebe_auf_den_ersten_blick_01"
-          ],
+          "intro": ["dlc_hei4_intro_liebe_auf_den_ersten_blick_01"],
           "markers": {
             "beat": [
               {
@@ -21366,9 +20679,7 @@
         {
           "duration": 197,
           "id": "hei4_radio_kult_pool_song",
-          "intro": [
-            "dlc_hei4_intro_pool_song_01"
-          ],
+          "intro": ["dlc_hei4_intro_pool_song_01"],
           "markers": {
             "beat": [
               {
@@ -21559,9 +20870,7 @@
         {
           "duration": 134.966,
           "id": "hei4_radio_kult_too_much_money",
-          "intro": [
-            "dlc_hei4_intro_too_much_money_01"
-          ],
+          "intro": ["dlc_hei4_intro_too_much_money_01"],
           "markers": {
             "beat": [
               {
@@ -21679,9 +20988,7 @@
         {
           "duration": 277.333,
           "id": "hei4_radio_kult_girls_and_boys",
-          "intro": [
-            "dlc_hei4_intro_girls_and_boys_01"
-          ],
+          "intro": ["dlc_hei4_intro_girls_and_boys_01"],
           "markers": {
             "beat": [
               {
@@ -21819,9 +21126,7 @@
         {
           "duration": 280,
           "id": "hei4_radio_kult_this_is_the_day",
-          "intro": [
-            "dlc_hei4_intro_this_is_the_day_01"
-          ],
+          "intro": ["dlc_hei4_intro_this_is_the_day_01"],
           "markers": {
             "beat": [
               {
@@ -21967,9 +21272,7 @@
         {
           "duration": 187.436,
           "id": "hei4_radio_kult_take_down_the_house",
-          "intro": [
-            "dlc_hei4_intro_take_down_the_house_01"
-          ],
+          "intro": ["dlc_hei4_intro_take_down_the_house_01"],
           "markers": {
             "beat": [
               {
@@ -22075,9 +21378,7 @@
         {
           "duration": 258.864,
           "id": "hei4_radio_kult_alien_crime_lord",
-          "intro": [
-            "dlc_hei4_intro_alien_crime_lord_01"
-          ],
+          "intro": ["dlc_hei4_intro_alien_crime_lord_01"],
           "markers": {
             "beat": [
               {
@@ -22195,9 +21496,7 @@
         {
           "duration": 187.828,
           "id": "hei4_radio_kult_cycle",
-          "intro": [
-            "dlc_hei4_intro_cycle_01"
-          ],
+          "intro": ["dlc_hei4_intro_cycle_01"],
           "markers": {
             "beat": [
               {
@@ -22291,9 +21590,7 @@
         {
           "duration": 279.895,
           "id": "hei4_radio_kult_rock_and_roll",
-          "intro": [
-            "dlc_hei4_intro_rock_and_roll_01"
-          ],
+          "intro": ["dlc_hei4_intro_rock_and_roll_01"],
           "markers": {
             "beat": [
               {
@@ -22435,9 +21732,7 @@
         {
           "duration": 220.943,
           "id": "hei4_radio_kult_typical_girls",
-          "intro": [
-            "dlc_hei4_intro_typical_girls_01"
-          ],
+          "intro": ["dlc_hei4_intro_typical_girls_01"],
           "markers": {
             "beat": [
               {
@@ -22559,9 +21854,7 @@
         {
           "duration": 222.583,
           "id": "hei4_radio_kult_down_on_the_street",
-          "intro": [
-            "dlc_hei4_intro_down_on_the_street_01"
-          ],
+          "intro": ["dlc_hei4_intro_down_on_the_street_01"],
           "markers": {
             "beat": [
               {
@@ -22683,9 +21976,7 @@
         {
           "duration": 137.823,
           "id": "hei4_radio_kult_faceless",
-          "intro": [
-            "dlc_hei4_intro_faceless_01"
-          ],
+          "intro": ["dlc_hei4_intro_faceless_01"],
           "markers": {
             "beat": [
               {
@@ -22799,9 +22090,7 @@
         {
           "duration": 128.64,
           "id": "hei4_radio_kult_time_bomb",
-          "intro": [
-            "dlc_hei4_intro_time_bomb_01"
-          ],
+          "intro": ["dlc_hei4_intro_time_bomb_01"],
           "markers": {
             "beat": [
               {
@@ -22911,9 +22200,7 @@
         {
           "duration": 223.285,
           "id": "hei4_radio_kult_where_no_eagles_fly",
-          "intro": [
-            "dlc_hei4_intro_where_no_eagles_fly_01"
-          ],
+          "intro": ["dlc_hei4_intro_where_no_eagles_fly_01"],
           "markers": {
             "beat": [
               {
@@ -23059,9 +22346,7 @@
         {
           "duration": 311.304,
           "id": "hei4_radio_kult_age_of_consent",
-          "intro": [
-            "dlc_hei4_intro_age_of_consent_01"
-          ],
+          "intro": ["dlc_hei4_intro_age_of_consent_01"],
           "markers": {
             "beat": [
               {
@@ -23243,9 +22528,7 @@
         {
           "duration": 131,
           "id": "hei4_radio_kult_human_fly",
-          "intro": [
-            "dlc_hei4_intro_human_fly_01"
-          ],
+          "intro": ["dlc_hei4_intro_human_fly_01"],
           "markers": {
             "beat": [
               {
@@ -23339,9 +22622,7 @@
         {
           "duration": 260.293,
           "id": "hei4_radio_kult_its_yours",
-          "intro": [
-            "dlc_hei4_intro_its_yours_01"
-          ],
+          "intro": ["dlc_hei4_intro_its_yours_01"],
           "markers": {
             "beat": [
               {
@@ -23459,9 +22740,7 @@
         {
           "duration": 228.245,
           "id": "hei4_radio_kult_deep",
-          "intro": [
-            "dlc_hei4_intro_deep_01"
-          ],
+          "intro": ["dlc_hei4_intro_deep_01"],
           "markers": {
             "beat": [
               {
@@ -23555,9 +22834,7 @@
         {
           "duration": 224.025,
           "id": "hei4_radio_kult_hard_to_explain",
-          "intro": [
-            "dlc_hei4_intro_hard_to_explain_01"
-          ],
+          "intro": ["dlc_hei4_intro_hard_to_explain_01"],
           "markers": {
             "beat": [
               {
@@ -23699,9 +22976,7 @@
         {
           "duration": 114.12,
           "id": "hei4_radio_kult_many_tears_ago",
-          "intro": [
-            "dlc_hei4_intro_many_tears_ago_01"
-          ],
+          "intro": ["dlc_hei4_intro_many_tears_ago_01"],
           "markers": {
             "beat": [
               {
@@ -23787,9 +23062,7 @@
         {
           "duration": 299.25,
           "id": "hei4_radio_kult_raga_madhuvanti",
-          "intro": [
-            "dlc_hei4_intro_raga_madhuvanti_01"
-          ],
+          "intro": ["dlc_hei4_intro_raga_madhuvanti_01"],
           "markers": {
             "beat": [
               {
@@ -23923,9 +23196,7 @@
         {
           "duration": 145.6,
           "id": "hei4_radio_kult_tv_casualty",
-          "intro": [
-            "dlc_hei4_intro_tv_casualty_01"
-          ],
+          "intro": ["dlc_hei4_intro_tv_casualty_01"],
           "markers": {
             "beat": [
               {
@@ -24132,9 +23403,7 @@
         {
           "duration": 308.696,
           "id": "hei4_radio_kult_the_adults_are_talking",
-          "intro": [
-            "dlc_hei4_intro_the_adults_are_talking_01"
-          ],
+          "intro": ["dlc_hei4_intro_the_adults_are_talking_01"],
           "markers": {
             "beat": [
               {
@@ -26574,9 +25843,7 @@
         {
           "duration": 278.613,
           "id": "radio_01_class_rock_radio_ga_ga",
-          "intro": [
-            "radio_01_class_rock_intro_radio_ga_ga_01"
-          ],
+          "intro": ["radio_01_class_rock_intro_radio_ga_ga_01"],
           "markers": {
             "beat": [
               {
@@ -28612,9 +27879,7 @@
         {
           "duration": 219.498,
           "id": "radio_01_class_rock_cats_in_the_cradle",
-          "intro": [
-            "radio_01_class_rock_intro_cats_in_the_cradle_01"
-          ],
+          "intro": ["radio_01_class_rock_intro_cats_in_the_cradle_01"],
           "markers": {
             "beat": [
               {
@@ -32968,10 +32233,7 @@
         {
           "duration": 186.65,
           "id": "radio_02_pop_work",
-          "intro": [
-            "radio_02_pop_intro_work_01",
-            "radio_02_pop_intro_work_02"
-          ],
+          "intro": ["radio_02_pop_intro_work_01", "radio_02_pop_intro_work_02"],
           "markers": {
             "dj": [
               {
@@ -34351,10 +33613,7 @@
         {
           "duration": 184.757,
           "id": "radio_02_pop_wait",
-          "intro": [
-            "radio_02_pop_intro_wait_01",
-            "radio_02_pop_intro_wait_02"
-          ],
+          "intro": ["radio_02_pop_intro_wait_01", "radio_02_pop_intro_wait_02"],
           "markers": {
             "beat": [
               {
@@ -35132,10 +34391,7 @@
         {
           "duration": 257.773,
           "id": "radio_02_pop_kids",
-          "intro": [
-            "radio_02_pop_intro_kids_01",
-            "radio_02_pop_intro_kids_02"
-          ],
+          "intro": ["radio_02_pop_intro_kids_01", "radio_02_pop_intro_kids_02"],
           "markers": {
             "beat": [
               {
@@ -40324,9 +39580,7 @@
         {
           "duration": 165.96,
           "id": "radio_03_hiphop_new_work_ferg",
-          "intro": [
-            "radio_03_hiphop_new_intro_work_ferg_01"
-          ],
+          "intro": ["radio_03_hiphop_new_intro_work_ferg_01"],
           "markers": {
             "beat": [
               {
@@ -43592,9 +42846,7 @@
         },
         {
           "id": "dlc_security_music_radio_03_hiphop_new_miami_vice",
-          "intro": [
-            "dlc_security_music_hiphop_new_intro_miami_vice_01"
-          ],
+          "intro": ["dlc_security_music_hiphop_new_intro_miami_vice_01"],
           "trackList": "dlc_security_music_common"
         },
         {
@@ -44090,9 +43342,7 @@
         },
         {
           "id": "dlc_security_music_radio_03_hiphop_new_miami_vice",
-          "intro": [
-            "dlc_security_music_hiphop_new_intro_miami_vice_01"
-          ],
+          "intro": ["dlc_security_music_hiphop_new_intro_miami_vice_01"],
           "trackList": "dlc_security_music_common"
         },
         {
@@ -49308,9 +48558,7 @@
         {
           "duration": 158.037,
           "id": "radio_06_country_are_you_sure_hank",
-          "intro": [
-            "radio_06_country_intro_are_you_sure_hank_01"
-          ],
+          "intro": ["radio_06_country_intro_are_you_sure_hank_01"],
           "markers": {
             "beat": [
               {
@@ -49749,9 +48997,7 @@
         {
           "duration": 207.722,
           "id": "radio_06_country_i_aint_living_long_like_this",
-          "intro": [
-            "radio_06_country_intro_i_aint_living_long_like_this_01"
-          ],
+          "intro": ["radio_06_country_intro_i_aint_living_long_like_this_01"],
           "markers": {
             "beat": [
               {
@@ -65922,9 +65168,7 @@
         {
           "duration": 136.906,
           "id": "radio_15_motown_funny_feeling",
-          "intro": [
-            "radio_15_motown_intro_funny_feeling_01"
-          ],
+          "intro": ["radio_15_motown_intro_funny_feeling_01"],
           "markers": {
             "beat": [
               {
@@ -67402,9 +66646,7 @@
         {
           "duration": 224.298,
           "id": "radio_16_silverlake_old_love",
-          "intro": [
-            "radio_16_silverlake_intro_old_love_01"
-          ],
+          "intro": ["radio_16_silverlake_intro_old_love_01"],
           "markers": {
             "beat": [
               {
@@ -79969,9 +79211,7 @@
         {
           "duration": 199.627,
           "id": "dlc_security_music_radio_37_motomami_snap_and_roll",
-          "intro": [
-            "dlc_security_music_motomami_intro_snap_and_roll_01"
-          ],
+          "intro": ["dlc_security_music_motomami_intro_snap_and_roll_01"],
           "markers": {
             "dj": [
               {
@@ -80847,9 +80087,7 @@
         {
           "duration": 197.786,
           "id": "dlc_security_music_radio_37_motomami_bank_robber",
-          "intro": [
-            "dlc_security_music_motomami_intro_bank_robber_01"
-          ],
+          "intro": ["dlc_security_music_motomami_intro_bank_robber_01"],
           "markers": {
             "beat": [
               {
@@ -81169,9 +80407,7 @@
         {
           "duration": 182.519,
           "id": "dlc_security_music_radio_37_motomami_body_so_good",
-          "intro": [
-            "dlc_security_music_motomami_intro_body_so_good_01"
-          ],
+          "intro": ["dlc_security_music_motomami_intro_body_so_good_01"],
           "markers": {
             "beat": [
               {
@@ -81427,9 +80663,7 @@
         {
           "duration": 186.966,
           "id": "dlc_security_music_radio_37_motomami_418",
-          "intro": [
-            "dlc_security_music_motomami_intro_418_01"
-          ],
+          "intro": ["dlc_security_music_motomami_intro_418_01"],
           "markers": {
             "beat": [
               {
@@ -81622,9 +80856,7 @@
         {
           "duration": 422.979,
           "id": "dlc_security_music_radio_37_motomami_mystery_love",
-          "intro": [
-            "dlc_security_music_motomami_intro_mystery_love_01"
-          ],
+          "intro": ["dlc_security_music_motomami_intro_mystery_love_01"],
           "markers": {
             "beat": [
               {
