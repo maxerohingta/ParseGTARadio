@@ -514,8 +514,128 @@
         "title": "The Journey"
       },
       "playlist": {
-        "firstFragment": [],
-        "fragments": []
+        "firstFragment": [
+          {
+            "fragment": "fragment_radio_classical_ambient_ident"
+          }
+        ],
+        "positions": [
+          {
+            "id": "track_start",
+            "relativeOffset": 0.03
+          },
+          {
+            "id": "track_end",
+            "relativeOffset": 0.97
+          }
+        ],
+        "fragments": [
+          {
+            "id": "fragment_radio_classical_ambient_ident",
+            "src": {
+              "trackLists": ["radio_classical_ambient_id"]
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_classical_ambient_music"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_classical_ambient_music",
+            "src": {
+              "trackLists": ["radio_classical_ambient_track"]
+            },
+            "voiceOver": [
+              {
+                "id": "voiceover_radio_classical_ambient_general",
+                "src": {
+                  "trackLists": ["radio_classical_ambient_general"]
+                },
+                "condition": {
+                  "probability": 0.333
+                },
+                "positions": ["track_start", "track_end"]
+              },
+              {
+                "id": "voiceover_radio_classical_ambient_morning",
+                "src": {
+                  "trackLists": ["radio_classical_ambient_time_morning"]
+                },
+                "condition": {
+                  "probability": 0.333,
+                  "timeInterval": {
+                    "from": "5:00",
+                    "to": "12:00"
+                  }
+                },
+                "positions": ["track_start", "track_end"]
+              },
+              {
+                "id": "voiceover_radio_classical_ambient_afternoon",
+                "src": {
+                  "trackLists": ["radio_classical_ambient_time_afternoon"]
+                },
+                "condition": {
+                  "probability": 0.333,
+                  "timeInterval": {
+                    "from": "12:01",
+                    "to": "17:00"
+                  }
+                },
+                "positions": ["track_start", "track_end"]
+              },
+              {
+                "id": "voiceover_radio_classical_ambient_evening",
+                "src": {
+                  "trackLists": ["radio_classical_ambient_time_evening"]
+                },
+                "condition": {
+                  "probability": 0.333,
+                  "timeInterval": {
+                    "from": "18:00",
+                    "to": "21:00"
+                  }
+                },
+                "positions": ["track_start", "track_end"]
+              },
+              {
+                "id": "voiceover_radio_classical_ambient_night",
+                "src": {
+                  "trackLists": ["radio_classical_ambient_time_night"]
+                },
+                "condition": {
+                  "probability": 0.333,
+                  "timeInterval": {
+                    "from": "21:01",
+                    "to": "4:00"
+                  }
+                },
+                "positions": ["track_start", "track_end"]
+              },
+            ],
+            "next": [
+              {
+                "fragment": "fragment_radio_classical_ambient_djsolo",
+                "probability": 0.333
+              },
+              {
+                "fragment": "fragment_radio_classical_ambient_music"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_classical_ambient_djsolo",
+            "src": {
+              "trackLists": ["radio_classical_ambient_mono_solo"]
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_classical_ambient_music"
+              }
+            ]
+          }
+        ]
       },
       "trackLists": [
         "radio_classical_ambient_mono_solo",
