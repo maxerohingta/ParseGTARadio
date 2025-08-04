@@ -210,17 +210,6 @@
             ]
           },
           {
-            "id": "fragment_radio_afro_beat_adverts",
-            "src": {
-              "trackLists": ["adverts"]
-            },
-            "next": [
-              {
-                "fragment": "fragment_radio_afro_beat_music"
-              }
-            ]
-          },
-          {
             "id": "fragment_radio_afro_beat_weather",
             "src": {
               "trackLists": ["weather"]
@@ -230,6 +219,17 @@
                 "fragment": "fragment_radio_afro_beat_ident",
                 "probability": 0.667
               },
+              {
+                "fragment": "fragment_radio_afro_beat_music"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_afro_beat_adverts",
+            "src": {
+              "trackLists": ["adverts"]
+            },
+            "next": [
               {
                 "fragment": "fragment_radio_afro_beat_music"
               }
@@ -460,17 +460,6 @@
             ]
           },
           {
-            "id": "fragment_radio_babylon_adverts",
-            "src": {
-              "trackLists": ["adverts"]
-            },
-            "next": [
-              {
-                "fragment": "fragment_radio_babylon_music"
-              }
-            ]
-          },
-          {
             "id": "fragment_radio_babylon_weather",
             "src": {
               "trackLists": ["weather"]
@@ -480,6 +469,17 @@
                 "fragment": "fragment_radio_babylon_ident",
                 "probability": 0.667
               },
+              {
+                "fragment": "fragment_radio_babylon_music"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_babylon_adverts",
+            "src": {
+              "trackLists": ["adverts"]
+            },
+            "next": [
               {
                 "fragment": "fragment_radio_babylon_music"
               }
@@ -853,17 +853,6 @@
             ]
           },
           {
-            "id": "fragment_radio_dance_rock_adverts",
-            "src": {
-              "trackLists": ["adverts"]
-            },
-            "next": [
-              {
-                "fragment": "fragment_radio_dance_rock_music"
-              }
-            ]
-          },
-          {
             "id": "fragment_radio_dance_rock_weather",
             "src": {
               "trackLists": ["weather"]
@@ -873,6 +862,17 @@
                 "fragment": "fragment_radio_dance_rock_ident",
                 "probability": 0.667
               },
+              {
+                "fragment": "fragment_radio_dance_rock_music"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_dance_rock_adverts",
+            "src": {
+              "trackLists": ["adverts"]
+            },
+            "next": [
               {
                 "fragment": "fragment_radio_dance_rock_music"
               }
