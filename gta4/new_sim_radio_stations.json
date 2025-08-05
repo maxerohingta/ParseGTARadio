@@ -2811,8 +2811,228 @@
         "title": "Vice City FM"
       },
       "playlist": {
-        "firstFragment": [],
-        "fragments": []
+        "firstFragment": [
+          {
+            "fragment": "fragment_radio_vcfm_ident"
+          }
+        ],
+        "positions": [
+          {
+            "id": "track_start",
+            "relativeOffset": 0.03
+          },
+          {
+            "id": "track_end",
+            "relativeOffset": 0.97
+          }
+        ],
+        "fragments": [
+          {
+            "id": "fragment_radio_vcfm_ident",
+            "src": {
+              "trackLists": ["radio_vcfm_id"]
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_vcfm_music"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_vcfm_music",
+            "src": {
+              "trackLists": ["radio_vcfm_track"]
+            },
+            "voiceOver": [
+              {
+                "id": "voiceover_radio_vcfm_intro",
+                "src": {
+                  "introTrackLists": ["radio_vcfm_intro"]
+                },
+                "condition": {
+                  "probability": 0.333
+                },
+                "positions": ["track_start", "track_end"]
+              },
+              {
+                "id": "voiceover_radio_vcfm_general",
+                "src": {
+                  "trackLists": ["radio_vcfm_general"]
+                },
+                "condition": {
+                  "probability": 0.333
+                },
+                "positions": ["track_start", "track_end"]
+              },
+              {
+                "id": "voiceover_radio_vcfm_morning",
+                "src": {
+                  "trackLists": ["radio_vcfm_time_morning"]
+                },
+                "condition": {
+                  "probability": 0.333,
+                  "timeInterval": {
+                    "from": "5:00",
+                    "to": "12:00"
+                  }
+                },
+                "positions": ["track_start", "track_end"]
+              },
+              {
+                "id": "voiceover_radio_vcfm_afternoon",
+                "src": {
+                  "trackLists": ["radio_vcfm_time_afternoon"]
+                },
+                "condition": {
+                  "probability": 0.333,
+                  "timeInterval": {
+                    "from": "12:01",
+                    "to": "17:00"
+                  }
+                },
+                "positions": ["track_start", "track_end"]
+              },
+              {
+                "id": "voiceover_radio_vcfm_evening",
+                "src": {
+                  "trackLists": ["radio_vcfm_time_evening"]
+                },
+                "condition": {
+                  "probability": 0.333,
+                  "timeInterval": {
+                    "from": "18:00",
+                    "to": "21:00"
+                  }
+                },
+                "positions": ["track_start", "track_end"]
+              },
+              {
+                "id": "voiceover_radio_vcfm_night",
+                "src": {
+                  "trackLists": ["radio_vcfm_time_night"]
+                },
+                "condition": {
+                  "probability": 0.333,
+                  "timeInterval": {
+                    "from": "21:01",
+                    "to": "4:00"
+                  }
+                },
+                "positions": ["track_start", "track_end"]
+              },
+              {
+                "id": "voiceover_radio_vcfm_to_news",
+                "condition": {
+                  "probability": 0.666,
+                  "nextFragment": "fragment_radio_vcfm_news"
+                },
+                "positions": ["track_end"],
+                "src": {
+                  "trackLists": ["radio_vcfm_to_news"]
+                }
+              },
+              {
+                "id": "voiceover_radio_vcfm_to_weather",
+                "condition": {
+                  "probability": 0.666,
+                  "nextFragment": "fragment_radio_vcfm_weather"
+                },
+                "positions": ["track_end"],
+                "src": {
+                  "trackLists": ["radio_vcfm_to_weather"]
+                }
+              },
+              {
+                "id": "voiceover_radio_vcfm_to_ad",
+                "condition": {
+                  "probability": 0.666,
+                  "nextFragment": "fragment_radio_vcfm_adverts"
+                },
+                "positions": ["track_end"],
+                "src": {
+                  "trackLists": ["radio_vcfm_to_adverts"]
+                }
+              }
+            ],
+            "next": [
+              {
+                "fragment": "fragment_radio_vcfm_adverts",
+                "probability": 0.357
+              },
+              {
+                "fragment": "fragment_radio_vcfm_djsolo",
+                "probability": 0.286
+              },
+              {
+                "fragment": "fragment_radio_vcfm_news",
+                "probability": 0.1
+              },
+              {
+                "fragment": "fragment_radio_vcfm_weather",
+                "probability": 0.043
+              },
+              {
+                "fragment": "fragment_radio_vcfm_music"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_vcfm_djsolo",
+            "src": {
+              "trackLists": ["radio_vcfm_mono_solo"]
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_vcfm_news",
+                "probability": 0.4
+              },
+              {
+                "fragment": "fragment_radio_vcfm_music"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_vcfm_news",
+            "src": {
+              "trackLists": ["news"]
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_vcfm_ident",
+                "probability": 0.667
+              },
+              {
+                "fragment": "fragment_radio_vcfm_music"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_vcfm_weather",
+            "src": {
+              "trackLists": ["weather"]
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_vcfm_ident",
+                "probability": 0.667
+              },
+              {
+                "fragment": "fragment_radio_vcfm_music"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_vcfm_adverts",
+            "src": {
+              "trackLists": ["adverts"]
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_vcfm_music"
+              }
+            ]
+          }
+        ]
       },
       "trackLists": [
         "radio_vcfm_mono_solo",
