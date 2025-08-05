@@ -2157,8 +2157,138 @@
         "title": "Self-Actualization FM"
       },
       "playlist": {
-        "firstFragment": [],
-        "fragments": []
+        "firstFragment": [
+          {
+            "fragment": "fragment_radio_meditation_ident"
+          }
+        ],
+        "positions": [
+          {
+            "id": "track_start",
+            "relativeOffset": 0.03
+          },
+          {
+            "id": "track_end",
+            "relativeOffset": 0.97
+          }
+        ],
+        "fragments": [
+          {
+            "id": "fragment_radio_meditation_ident",
+            "src": {
+              "trackLists": ["radio_meditation_id"]
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_meditation_music"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_meditation_music",
+            "src": {
+              "trackLists": ["radio_meditation_track"]
+            },
+            "voiceOver": [
+              {
+                "id": "voiceover_radio_meditation_intro",
+                "src": {
+                  "introTrackLists": ["radio_meditation_intro"]
+                },
+                "condition": {
+                  "probability": 0.333
+                },
+                "positions": ["track_start", "track_end"]
+              },
+              {
+                "id": "voiceover_radio_meditation_general",
+                "src": {
+                  "trackLists": ["radio_meditation_general"]
+                },
+                "condition": {
+                  "probability": 0.333
+                },
+                "positions": ["track_start", "track_end"]
+              },
+              {
+                "id": "voiceover_radio_meditation_morning",
+                "src": {
+                  "trackLists": ["radio_meditation_time_morning"]
+                },
+                "condition": {
+                  "probability": 0.333,
+                  "timeInterval": {
+                    "from": "5:00",
+                    "to": "12:00"
+                  }
+                },
+                "positions": ["track_start", "track_end"]
+              },
+              {
+                "id": "voiceover_radio_meditation_afternoon",
+                "src": {
+                  "trackLists": ["radio_meditation_time_afternoon"]
+                },
+                "condition": {
+                  "probability": 0.333,
+                  "timeInterval": {
+                    "from": "12:01",
+                    "to": "17:00"
+                  }
+                },
+                "positions": ["track_start", "track_end"]
+              },
+              {
+                "id": "voiceover_radio_meditation_evening",
+                "src": {
+                  "trackLists": ["radio_meditation_time_evening"]
+                },
+                "condition": {
+                  "probability": 0.333,
+                  "timeInterval": {
+                    "from": "18:00",
+                    "to": "21:00"
+                  }
+                },
+                "positions": ["track_start", "track_end"]
+              },
+              {
+                "id": "voiceover_radio_meditation_night",
+                "src": {
+                  "trackLists": ["radio_meditation_time_night"]
+                },
+                "condition": {
+                  "probability": 0.333,
+                  "timeInterval": {
+                    "from": "21:01",
+                    "to": "4:00"
+                  }
+                },
+                "positions": ["track_start", "track_end"]
+              },
+            ],
+            "next": [
+              {
+                "fragment": "fragment_radio_meditation_djsolo",
+                "probability": 0.333
+              },
+              {
+                "fragment": "fragment_radio_meditation_music"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_meditation_djsolo",
+            "src": {
+              "trackLists": ["radio_meditation_mono_solo"]
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_meditation_music"
+              }
+            ]
+          }
+        ]
       },
       "trackLists": [
         "radio_meditation_mono_solo",
