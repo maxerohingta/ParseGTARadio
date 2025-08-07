@@ -3311,8 +3311,25 @@
         "title": "The Beat 102.7"
       },
       "playlist": {
-        "firstFragment": [],
-        "fragments": []
+        "firstFragment": [
+          {
+            "fragment": "fragment_radio_beat_95_music_01"
+          }
+        ],
+        "fragments": [
+          {
+            "id": "fragment_radio_beat_95_music_01",
+            "src": {
+              "trackLists": ["radio_beat_95_track"],
+              "track": "radio_beat_95_beat"
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_beat_95_music_01"
+              }
+            ]
+          }
+        ]
       },
       "trackLists": ["radio_beat_95_track"]
     },
@@ -3325,8 +3342,25 @@
         "title": "Massive B Soundsystem 96.9"
       },
       "playlist": {
-        "firstFragment": [],
-        "fragments": []
+        "firstFragment": [
+          {
+            "fragment": "fragment_radio_bobby_konders_music_01"
+          }
+        ],
+        "fragments": [
+          {
+            "id": "fragment_radio_bobby_konders_music_01",
+            "src": {
+              "trackLists": ["radio_bobby_konders_track"],
+              "track": "radio_bobby_konders_massiveb_mix"
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_bobby_konders_music_01"
+              }
+            ]
+          }
+        ]
       },
       "trackLists": ["radio_bobby_konders_track"]
     },
@@ -3339,8 +3373,25 @@
         "title": "Electro-Choc"
       },
       "playlist": {
-        "firstFragment": [],
-        "fragments": []
+        "firstFragment": [
+          {
+            "fragment": "fragment_radio_dance_mix_music_01"
+          }
+        ],
+        "fragments": [
+          {
+            "id": "fragment_radio_dance_mix_music_01",
+            "src": {
+              "trackLists": ["radio_dance_mix_track"],
+              "track": "radio_dance_mix_fk"
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_dance_mix_music_01"
+              }
+            ]
+          }
+        ]
       },
       "trackLists": ["radio_dance_mix_track"]
     },
