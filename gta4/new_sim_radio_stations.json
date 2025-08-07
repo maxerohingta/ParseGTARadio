@@ -3404,8 +3404,25 @@
         "title": "The Classics 104.1"
       },
       "playlist": {
-        "firstFragment": [],
-        "fragments": []
+        "firstFragment": [
+          {
+            "fragment": "fragment_radio_ny_classics_music_01"
+          }
+        ],
+        "fragments": [
+          {
+            "id": "fragment_radio_ny_classics_music_01",
+            "src": {
+              "trackLists": ["radio_ny_classics_track"],
+              "track": "radio_ny_classics_classics_mix"
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_ny_classics_music_01"
+              }
+            ]
+          }
+        ]
       },
       "trackLists": ["radio_ny_classics_track"]
     },
@@ -3418,8 +3435,25 @@
         "title": "RamJam FM"
       },
       "playlist": {
-        "firstFragment": [],
-        "fragments": []
+        "firstFragment": [
+          {
+            "fragment": "fragment_radio_ramjamfm_music_01"
+          }
+        ],
+        "fragments": [
+          {
+            "id": "fragment_radio_ramjamfm_music_01",
+            "src": {
+              "trackLists": ["radio_ramjamfm_track"],
+              "track": "radio_ramjamfm_ramjam_mix"
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_ramjamfm_music_01"
+              }
+            ]
+          }
+        ]
       },
       "trackLists": ["radio_ramjamfm_track"]
     },
