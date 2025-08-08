@@ -3466,8 +3466,105 @@
         "title": "Integrity 2.0"
       },
       "playlist": {
-        "firstFragment": [],
-        "fragments": []
+        "firstFragment": [
+          {
+            "fragment": "fragment_radio_lazlow_ident_01"
+          }
+        ],
+        "fragments": [
+          {
+            "id": "fragment_radio_lazlow_ident_01",
+            "src": {
+              "trackLists": ["radio_plr_id"]
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_lazlow_music_01"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_lazlow_music_01",
+            "src": {
+              "trackLists": ["radio_lazlow_track"],
+              "track": "radio_lazlow_integrity_01"
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_lazlow_ident_02"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_lazlow_ident_02",
+            "src": {
+              "trackLists": ["radio_plr_id"]
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_lazlow_music_02"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_lazlow_music_02",
+            "src": {
+              "trackLists": ["radio_lazlow_track"],
+              "track": "radio_lazlow_integrity_02"
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_lazlow_ident_03"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_lazlow_ident_03",
+            "src": {
+              "trackLists": ["radio_plr_id"]
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_lazlow_music_03"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_lazlow_music_03",
+            "src": {
+              "trackLists": ["radio_lazlow_track"],
+              "track": "radio_lazlow_integrity_03"
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_lazlow_ident_04"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_lazlow_ident_04",
+            "src": {
+              "trackLists": ["radio_plr_id"]
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_lazlow_music_04"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_lazlow_music_04",
+            "src": {
+              "trackLists": ["radio_lazlow_track"],
+              "track": "radio_lazlow_integrity_04"
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_lazlow_ident_01"
+              }
+            ]
+          }
+        ]
       },
       "trackLists": ["radio_lazlow_id", "radio_lazlow_track"]
     },
