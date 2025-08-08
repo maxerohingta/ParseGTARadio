@@ -3577,8 +3577,82 @@
         "title": "Public Liberty Radio"
       },
       "playlist": {
-        "firstFragment": [],
-        "fragments": []
+        "firstFragment": [
+          {
+            "fragment": "fragment_radio_plr_ident_01"
+          }
+        ],
+        "fragments": [
+          {
+            "id": "fragment_radio_plr_ident_01",
+            "src": {
+              "trackLists": ["radio_plr_id"]
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_plr_music_01"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_plr_music_01",
+            "src": {
+              "trackLists": ["radio_plr_track"],
+              "track": "radio_plr_intellagenda"
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_plr_ident_02"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_plr_ident_02",
+            "src": {
+              "trackLists": ["radio_plr_id"]
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_plr_music_02"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_plr_music_02",
+            "src": {
+              "trackLists": ["radio_plr_track"],
+              "track": "radio_plr_the_seance"
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_plr_ident_03"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_plr_ident_03",
+            "src": {
+              "trackLists": ["radio_plr_id"]
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_plr_music_03"
+              }
+            ]
+          },
+          {
+            "id": "fragment_radio_plr_music_03",
+            "src": {
+              "trackLists": ["radio_plr_track"],
+              "track": "radio_plr_pacemaker"
+            },
+            "next": [
+              {
+                "fragment": "fragment_radio_plr_ident_01"
+              }
+            ]
+          }
+        ]
       },
       "trackLists": ["radio_plr_id", "radio_plr_track"]
     },
